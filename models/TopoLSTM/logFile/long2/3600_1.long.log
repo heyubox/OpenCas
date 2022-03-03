@@ -1,0 +1,310 @@
+===========configuration loading success==========
+===================configuration===================
+learning rate :  0.0001
+observation hour [7,19]
+observation threshold :  3600
+prediction time :  86400
+cascade length [5,1000]
+model save at : ../model_save/topolstm/weibo/
+===================configuration===================
+# Epochs:0
+Train Loss MSEL:13.193427, Val Loss MSEL:10.352199, Test Loss MSEL:10.421800,
+Train Loss mSEL:8.726706, Val Loss mSEL:7.143447, Test Loss mSEL:7.271103,
+Train acc:0.030411, Val acc:0.031958, Test acc:0.030758,
+Train Loss mape:10.004688, Val Loss mape:11.365808, Test Loss mape:10.809101,
+
+# Epochs:1
+Train Loss MSEL:8.891483, Val Loss MSEL:7.701572, Test Loss MSEL:8.106612,
+Train Loss mSEL:5.251420, Val Loss mSEL:3.780625, Test Loss mSEL:3.767087,
+Train acc:0.063986, Val acc:0.113170, Test acc:0.110735,
+Train Loss mape:12.676770, Val Loss mape:16.746035, Test Loss mape:15.908894,
+
+# Epochs:2
+Train Loss MSEL:6.722261, Val Loss MSEL:7.674479, Test Loss MSEL:8.214475,
+Train Loss mSEL:3.547740, Val Loss mSEL:2.106475, Test Loss mSEL:2.118079,
+Train acc:0.144244, Val acc:0.244822, Test acc:0.253721,
+Train Loss mape:14.364791, Val Loss mape:19.986773, Test Loss mape:18.940821,
+
+# Epochs:3
+Train Loss MSEL:5.771729, Val Loss MSEL:4.913679, Test Loss MSEL:4.931267,
+Train Loss mSEL:2.462368, Val Loss mSEL:2.051781, Test Loss mSEL:2.087962,
+Train acc:0.226682, Val acc:0.275961, Test acc:0.275753,
+Train Loss mape:15.559844, Val Loss mape:18.149134, Test Loss mape:16.627779,
+
+# Epochs:4
+Train Loss MSEL:4.649837, Val Loss MSEL:4.514788, Test Loss MSEL:4.580609,
+Train Loss mSEL:1.753165, Val Loss mSEL:1.374817, Test Loss mSEL:1.351879,
+Train acc:0.296923, Val acc:0.359380, Test acc:0.355997,
+Train Loss mape:16.721369, Val Loss mape:20.561638, Test Loss mape:19.016783,
+
+# Epochs:5
+Train Loss MSEL:4.182423, Val Loss MSEL:4.060697, Test Loss MSEL:4.062508,
+Train Loss mSEL:1.384181, Val Loss mSEL:1.422169, Test Loss mSEL:1.423257,
+Train acc:0.345883, Val acc:0.344206, Test acc:0.337651,
+Train Loss mape:17.702616, Val Loss mape:19.933956, Test Loss mape:18.152266,
+
+# Epochs:6
+Train Loss MSEL:3.910497, Val Loss MSEL:4.048374, Test Loss MSEL:3.963002,
+Train Loss mSEL:1.234794, Val Loss mSEL:1.429389, Test Loss mSEL:1.378934,
+Train acc:0.363761, Val acc:0.344226, Test acc:0.341601,
+Train Loss mape:18.210339, Val Loss mape:20.025425, Test Loss mape:17.978449,
+
+# Epochs:7
+Train Loss MSEL:3.810663, Val Loss MSEL:3.783961, Test Loss MSEL:3.766730,
+Train Loss mSEL:1.214392, Val Loss mSEL:1.237253, Test Loss mSEL:1.132946,
+Train acc:0.375671, Val acc:0.386835, Test acc:0.387179,
+Train Loss mape:19.781128, Val Loss mape:21.709503, Test Loss mape:19.639761,
+
+# Epochs:8
+Train Loss MSEL:3.679501, Val Loss MSEL:3.710198, Test Loss MSEL:3.686745,
+Train Loss mSEL:1.172335, Val Loss mSEL:1.163608, Test Loss mSEL:1.100795,
+Train acc:0.388995, Val acc:0.393478, Test acc:0.394589,
+Train Loss mape:19.083378, Val Loss mape:22.035589, Test Loss mape:19.945566,
+
+# Epochs:9
+Train Loss MSEL:3.584905, Val Loss MSEL:3.653885, Test Loss MSEL:3.609148,
+Train Loss mSEL:1.163333, Val Loss mSEL:1.206885, Test Loss mSEL:1.166679,
+Train acc:0.388732, Val acc:0.390285, Test acc:0.395103,
+Train Loss mape:19.349888, Val Loss mape:22.091366, Test Loss mape:19.970018,
+
+# Epochs:10
+Train Loss MSEL:3.602717, Val Loss MSEL:3.633424, Test Loss MSEL:3.576589,
+Train Loss mSEL:1.211974, Val Loss mSEL:1.279176, Test Loss mSEL:1.250323,
+Train acc:0.397143, Val acc:0.385161, Test acc:0.391398,
+Train Loss mape:19.600969, Val Loss mape:22.143160, Test Loss mape:19.884134,
+
+# Epochs:11
+Train Loss MSEL:3.557663, Val Loss MSEL:3.622328, Test Loss MSEL:3.585445,
+Train Loss mSEL:1.240944, Val Loss mSEL:1.229287, Test Loss mSEL:1.173446,
+Train acc:0.402416, Val acc:0.405017, Test acc:0.413117,
+Train Loss mape:19.755970, Val Loss mape:22.887918, Test Loss mape:20.572273,
+
+# Epochs:12
+Train Loss MSEL:3.517661, Val Loss MSEL:3.615783, Test Loss MSEL:3.600663,
+Train Loss mSEL:1.223868, Val Loss mSEL:1.174441, Test Loss mSEL:1.145474,
+Train acc:0.401888, Val acc:0.406032, Test acc:0.412313,
+Train Loss mape:19.853746, Val Loss mape:23.093433, Test Loss mape:20.925982,
+
+# Epochs:13
+Train Loss MSEL:3.528401, Val Loss MSEL:3.595931, Test Loss MSEL:3.536767,
+Train Loss mSEL:1.213736, Val Loss mSEL:1.276158, Test Loss mSEL:1.222059,
+Train acc:0.398773, Val acc:0.386316, Test acc:0.396331,
+Train Loss mape:19.916410, Val Loss mape:22.640858, Test Loss mape:20.418564,
+
+# Epochs:14
+Train Loss MSEL:3.500361, Val Loss MSEL:3.616386, Test Loss MSEL:3.585870,
+Train Loss mSEL:1.201570, Val Loss mSEL:1.193123, Test Loss mSEL:1.182559,
+Train acc:0.400019, Val acc:0.404872, Test acc:0.409657,
+Train Loss mape:19.970140, Val Loss mape:23.196287, Test Loss mape:20.878426,
+
+# Epochs:15
+Train Loss MSEL:3.561141, Val Loss MSEL:3.592861, Test Loss MSEL:3.552172,
+Train Loss mSEL:1.207072, Val Loss mSEL:1.234199, Test Loss mSEL:1.216817,
+Train acc:0.402512, Val acc:0.396336, Test acc:0.402067,
+Train Loss mape:20.080660, Val Loss mape:22.805878, Test Loss mape:20.714470,
+
+# Epochs:16
+Train Loss MSEL:3.488358, Val Loss MSEL:3.631972, Test Loss MSEL:3.618174,
+Train Loss mSEL:1.212263, Val Loss mSEL:1.193935, Test Loss mSEL:1.195892,
+Train acc:0.406178, Val acc:0.416620, Test acc:0.418094,
+Train Loss mape:20.147490, Val Loss mape:23.380907, Test Loss mape:21.128571,
+
+# Epochs:17
+Train Loss MSEL:3.538646, Val Loss MSEL:3.606363, Test Loss MSEL:3.558745,
+Train Loss mSEL:1.219822, Val Loss mSEL:1.309648, Test Loss mSEL:1.255824,
+Train acc:0.406921, Val acc:0.381250, Test acc:0.389768,
+Train Loss mape:20.227278, Val Loss mape:22.455803, Test Loss mape:20.343740,
+
+# Epochs:18
+Train Loss MSEL:3.490161, Val Loss MSEL:3.605930, Test Loss MSEL:3.576747,
+Train Loss mSEL:1.229368, Val Loss mSEL:1.214028, Test Loss mSEL:1.213168,
+Train acc:0.408263, Val acc:0.415678, Test acc:0.416777,
+Train Loss mape:20.132069, Val Loss mape:23.362787, Test Loss mape:21.024822,
+
+# Epochs:19
+Train Loss MSEL:3.501299, Val Loss MSEL:3.618334, Test Loss MSEL:3.613032,
+Train Loss mSEL:1.230778, Val Loss mSEL:1.210056, Test Loss mSEL:1.209748,
+Train acc:0.407328, Val acc:0.417799, Test acc:0.420013,
+Train Loss mape:20.208960, Val Loss mape:23.416525, Test Loss mape:21.227816,
+
+# Epochs:20
+Train Loss MSEL:3.496661, Val Loss MSEL:3.588722, Test Loss MSEL:3.533544,
+Train Loss mSEL:1.236622, Val Loss mSEL:1.270985, Test Loss mSEL:1.254668,
+Train acc:0.407161, Val acc:0.395177, Test acc:0.403183,
+Train Loss mape:20.217617, Val Loss mape:22.846739, Test Loss mape:20.662392,
+
+# Epochs:21
+Train Loss MSEL:3.523134, Val Loss MSEL:3.624148, Test Loss MSEL:3.621998,
+Train Loss mSEL:1.236226, Val Loss mSEL:1.211597, Test Loss mSEL:1.217894,
+Train acc:0.401169, Val acc:0.417561, Test acc:0.420728,
+Train Loss mape:20.146683, Val Loss mape:23.675465, Test Loss mape:21.279358,
+
+# Epochs:22
+Train Loss MSEL:3.497308, Val Loss MSEL:3.579928, Test Loss MSEL:3.533320,
+Train Loss mSEL:1.240878, Val Loss mSEL:1.251429, Test Loss mSEL:1.250561,
+Train acc:0.407113, Val acc:0.405483, Test acc:0.408450,
+Train Loss mape:20.220526, Val Loss mape:23.062981, Test Loss mape:20.811150,
+
+# Epochs:23
+Train Loss MSEL:3.494995, Val Loss MSEL:3.587410, Test Loss MSEL:3.566136,
+Train Loss mSEL:1.238076, Val Loss mSEL:1.238232, Test Loss mSEL:1.235384,
+Train acc:0.409557, Val acc:0.411020, Test acc:0.414120,
+Train Loss mape:20.278946, Val Loss mape:23.283222, Test Loss mape:21.095869,
+
+# Epochs:24
+Train Loss MSEL:3.488943, Val Loss MSEL:3.629167, Test Loss MSEL:3.623157,
+Train Loss mSEL:1.241432, Val Loss mSEL:1.209711, Test Loss mSEL:1.216650,
+Train acc:0.409988, Val acc:0.419386, Test acc:0.422893,
+Train Loss mape:20.256567, Val Loss mape:23.636465, Test Loss mape:21.354725,
+
+# Epochs:25
+Train Loss MSEL:3.511180, Val Loss MSEL:3.692145, Test Loss MSEL:3.734406,
+Train Loss mSEL:1.241298, Val Loss mSEL:1.188088, Test Loss mSEL:1.210657,
+Train acc:0.405363, Val acc:0.423384, Test acc:0.425170,
+Train Loss mape:20.273323, Val Loss mape:23.824493, Test Loss mape:21.537363,
+
+# Epochs:26
+Train Loss MSEL:3.493695, Val Loss MSEL:3.574197, Test Loss MSEL:3.531852,
+Train Loss mSEL:1.239414, Val Loss mSEL:1.263802, Test Loss mSEL:1.248756,
+Train acc:0.410132, Val acc:0.400864, Test acc:0.406284,
+Train Loss mape:20.261709, Val Loss mape:22.911589, Test Loss mape:20.684700,
+
+# Epochs:27
+Train Loss MSEL:3.488858, Val Loss MSEL:3.586628, Test Loss MSEL:3.541759,
+Train Loss mSEL:1.244335, Val Loss mSEL:1.270444, Test Loss mSEL:1.261480,
+Train acc:0.409222, Val acc:0.397161, Test acc:0.403652,
+Train Loss mape:20.200394, Val Loss mape:22.877960, Test Loss mape:20.560307,
+
+# Epochs:28
+Train Loss MSEL:3.471673, Val Loss MSEL:3.751689, Test Loss MSEL:3.778625,
+Train Loss mSEL:1.250962, Val Loss mSEL:1.161665, Test Loss mSEL:1.169390,
+Train acc:0.408862, Val acc:0.430411, Test acc:0.433093,
+Train Loss mape:20.209602, Val Loss mape:24.066126, Test Loss mape:21.826946,
+
+# Epochs:29
+Train Loss MSEL:3.493314, Val Loss MSEL:3.576769, Test Loss MSEL:3.530484,
+Train Loss mSEL:1.245470, Val Loss mSEL:1.264552, Test Loss mSEL:1.263443,
+Train acc:0.409461, Val acc:0.402009, Test acc:0.406754,
+Train Loss mape:20.282604, Val Loss mape:23.018497, Test Loss mape:20.738943,
+
+# Epochs:30
+Train Loss MSEL:3.480588, Val Loss MSEL:3.580379, Test Loss MSEL:3.546024,
+Train Loss mSEL:1.246573, Val Loss mSEL:1.248646, Test Loss mSEL:1.245395,
+Train acc:0.407280, Val acc:0.409574, Test acc:0.413451,
+Train Loss mape:20.270462, Val Loss mape:23.224752, Test Loss mape:20.984182,
+
+# Epochs:31
+Train Loss MSEL:3.471753, Val Loss MSEL:3.588861, Test Loss MSEL:3.582229,
+Train Loss mSEL:1.248340, Val Loss mSEL:1.235230, Test Loss mSEL:1.234420,
+Train acc:0.406801, Val acc:0.414145, Test acc:0.417156,
+Train Loss mape:20.229292, Val Loss mape:23.319798, Test Loss mape:21.051291,
+
+# Epochs:32
+Train Loss MSEL:3.461632, Val Loss MSEL:3.635153, Test Loss MSEL:3.549994,
+Train Loss mSEL:1.240866, Val Loss mSEL:1.326722, Test Loss mSEL:1.288344,
+Train acc:0.412457, Val acc:0.380221, Test acc:0.389099,
+Train Loss mape:20.229261, Val Loss mape:22.585840, Test Loss mape:20.250174,
+
+# Epochs:33
+Train Loss MSEL:3.476132, Val Loss MSEL:3.606633, Test Loss MSEL:3.601415,
+Train Loss mSEL:1.242295, Val Loss mSEL:1.222960, Test Loss mSEL:1.220147,
+Train acc:0.405148, Val acc:0.418405, Test acc:0.421530,
+Train Loss mape:20.169031, Val Loss mape:23.448656, Test Loss mape:21.214029,
+
+# Epochs:34
+Train Loss MSEL:3.462013, Val Loss MSEL:3.571661, Test Loss MSEL:3.534761,
+Train Loss mSEL:1.241870, Val Loss mSEL:1.243172, Test Loss mSEL:1.247209,
+Train acc:0.410036, Val acc:0.407677, Test acc:0.412668,
+Train Loss mape:20.196970, Val Loss mape:22.991039, Test Loss mape:20.823107,
+
+# Epochs:35
+Train Loss MSEL:3.468980, Val Loss MSEL:3.696722, Test Loss MSEL:3.734743,
+Train Loss mSEL:1.240857, Val Loss mSEL:1.174025, Test Loss mSEL:1.193784,
+Train acc:0.411906, Val acc:0.426727, Test acc:0.431574,
+Train Loss mape:20.203577, Val Loss mape:23.897320, Test Loss mape:21.732838,
+
+# Epochs:36
+Train Loss MSEL:3.498666, Val Loss MSEL:3.593621, Test Loss MSEL:3.524539,
+Train Loss mSEL:1.240691, Val Loss mSEL:1.272042, Test Loss mSEL:1.262115,
+Train acc:0.406633, Val acc:0.393920, Test acc:0.401709,
+Train Loss mape:20.281107, Val Loss mape:22.856102, Test Loss mape:20.489641,
+
+# Epochs:37
+Train Loss MSEL:3.477624, Val Loss MSEL:3.605145, Test Loss MSEL:3.555979,
+Train Loss mSEL:1.240081, Val Loss mSEL:1.242403, Test Loss mSEL:1.236504,
+Train acc:0.408982, Val acc:0.411481, Test acc:0.415906,
+Train Loss mape:20.208677, Val Loss mape:23.434269, Test Loss mape:20.984602,
+
+# Epochs:38
+Train Loss MSEL:3.471637, Val Loss MSEL:3.589129, Test Loss MSEL:3.544923,
+Train Loss mSEL:1.240196, Val Loss mSEL:1.250460, Test Loss mSEL:1.245521,
+Train acc:0.405531, Val acc:0.410035, Test acc:0.413407,
+Train Loss mape:20.184753, Val Loss mape:23.166656, Test Loss mape:20.876104,
+
+# Epochs:39
+Train Loss MSEL:3.454591, Val Loss MSEL:3.633839, Test Loss MSEL:3.562429,
+Train Loss mSEL:1.236113, Val Loss mSEL:1.320818, Test Loss mSEL:1.292919,
+Train acc:0.410276, Val acc:0.381963, Test acc:0.387468,
+Train Loss mape:20.221220, Val Loss mape:22.635956, Test Loss mape:20.197519,
+
+# Epochs:40
+Train Loss MSEL:3.457447, Val Loss MSEL:3.587501, Test Loss MSEL:3.526236,
+Train Loss mSEL:1.236947, Val Loss mSEL:1.261617, Test Loss mSEL:1.254820,
+Train acc:0.410683, Val acc:0.400592, Test acc:0.407380,
+Train Loss mape:20.157290, Val Loss mape:22.990744, Test Loss mape:20.604307,
+
+# Epochs:41
+Train Loss MSEL:3.469524, Val Loss MSEL:3.581309, Test Loss MSEL:3.527689,
+Train Loss mSEL:1.237628, Val Loss mSEL:1.259252, Test Loss mSEL:1.245204,
+Train acc:0.408407, Val acc:0.400155, Test acc:0.406084,
+Train Loss mape:20.227383, Val Loss mape:22.984394, Test Loss mape:20.691946,
+
+# Epochs:42
+Train Loss MSEL:3.460649, Val Loss MSEL:3.586282, Test Loss MSEL:3.534489,
+Train Loss mSEL:1.234516, Val Loss mSEL:1.248511, Test Loss mSEL:1.250368,
+Train acc:0.407496, Val acc:0.406022, Test acc:0.410751,
+Train Loss mape:20.194235, Val Loss mape:23.125341, Test Loss mape:20.868731,
+
+# Epochs:43
+Train Loss MSEL:3.457845, Val Loss MSEL:3.766756, Test Loss MSEL:3.816396,
+Train Loss mSEL:1.236893, Val Loss mSEL:1.168831, Test Loss mSEL:1.168693,
+Train acc:0.412601, Val acc:0.430124, Test acc:0.433048,
+Train Loss mape:20.151321, Val Loss mape:24.018587, Test Loss mape:21.846714,
+
+# Epochs:44
+Train Loss MSEL:3.534778, Val Loss MSEL:3.590057, Test Loss MSEL:3.568012,
+Train Loss mSEL:1.236577, Val Loss mSEL:1.228287, Test Loss mSEL:1.228789,
+Train acc:0.409413, Val acc:0.414567, Test acc:0.418272,
+Train Loss mape:20.138210, Val Loss mape:23.242447, Test Loss mape:21.195145,
+
+# Epochs:45
+Train Loss MSEL:3.459334, Val Loss MSEL:3.590136, Test Loss MSEL:3.529549,
+Train Loss mSEL:1.235484, Val Loss mSEL:1.260135, Test Loss mSEL:1.258738,
+Train acc:0.413080, Val acc:0.400262, Test acc:0.405796,
+Train Loss mape:20.208876, Val Loss mape:23.002333, Test Loss mape:20.747511,
+
+# Epochs:46
+Train Loss MSEL:3.472401, Val Loss MSEL:3.609327, Test Loss MSEL:3.572621,
+Train Loss mSEL:1.242995, Val Loss mSEL:1.232326, Test Loss mSEL:1.223327,
+Train acc:0.409102, Val acc:0.413970, Test acc:0.419478,
+Train Loss mape:20.163332, Val Loss mape:23.505529, Test Loss mape:21.112154,
+
+# Epochs:47
+Train Loss MSEL:3.452759, Val Loss MSEL:3.612570, Test Loss MSEL:3.590240,
+Train Loss mSEL:1.234962, Val Loss mSEL:1.218690, Test Loss mSEL:1.213205,
+Train acc:0.410252, Val acc:0.416707, Test acc:0.421018,
+Train Loss mape:20.172531, Val Loss mape:23.562891, Test Loss mape:21.194775,
+
+# Epochs:48
+Train Loss MSEL:3.448549, Val Loss MSEL:3.601012, Test Loss MSEL:3.534113,
+Train Loss mSEL:1.231838, Val Loss mSEL:1.301396, Test Loss mSEL:1.271205,
+Train acc:0.407352, Val acc:0.389184, Test acc:0.395258,
+Train Loss mape:20.180296, Val Loss mape:22.692450, Test Loss mape:20.402319,
+
+# Epochs:49
+Train Loss MSEL:3.541409, Val Loss MSEL:3.593462, Test Loss MSEL:3.540262,
+Train Loss mSEL:1.231338, Val Loss mSEL:1.233748, Test Loss mSEL:1.233697,
+Train acc:0.407352, Val acc:0.411670, Test acc:0.415102,
+Train Loss mape:21.638582, Val Loss mape:23.271936, Test Loss mape:20.983679,
+
+# BEST, Val Loss MSEL:3.571661, Test Loss MSEL:3.524539,

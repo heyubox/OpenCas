@@ -1,0 +1,1270 @@
+===================configuration===================
+learning rate :0.001 
+num_mlp_layers : 1
+num_layers : 2
+gnn input_features : 100
+gnn output_features : 64
+input of rnn/transformer : 64
+hidden_size (out put of rnn/tranformer) : 64
+observation hour [7,19]
+observation interval : 1
+observation threshold : 8
+prediction time : 86400
+cascade length [10,100]
+model save at : ../model_save/cas2vec/dblp3/
+====bidirected: False, attention: , gcn_type: geo, rnn: gru====
+===================configuration===================
+len(Y_train), len(Y_valid), len(Y_test): 63099 13522 13521
+preparing time:60.187222719192505
+geometric gcn
+total parameters 42993
+---------------*****---------------
+Starting training the epoch: 0 
+total batch: 985.921875 
+batch:99 average train loss 2.7325
+batch:199 average train loss 2.2358
+batch:299 average train loss 2.0170
+batch:399 average train loss 1.9058
+batch:499 average train loss 1.8310
+batch:599 average train loss 1.7878
+batch:699 average train loss 1.7537
+batch:799 average train loss 1.7289
+batch:899 average train loss 1.7089
+average train loss 1.6863
+Train Consuming time:22.12 in the epoch: 0
+total val iterations: 212 
+average val loss 1.4492
+accuracy ( less than 0.1 ): 0.1723
+median val loss 0.6312
+total test iterations: 212 
+average test loss 1.5010
+accuracy ( less than 0.1 ): 0.1773
+median test loss 0.6382
+Consuming time:29.06 in the epoch: 0
+Best test loss is 1.50
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 1 
+total batch: 985.921875 
+batch:99 average train loss 1.5284
+batch:199 average train loss 1.5289
+batch:299 average train loss 1.5021
+batch:399 average train loss 1.4938
+batch:499 average train loss 1.4879
+batch:599 average train loss 1.4924
+batch:699 average train loss 1.4945
+batch:799 average train loss 1.4974
+batch:899 average train loss 1.4995
+average train loss 1.4928
+Train Consuming time:22.06 in the epoch: 1
+total val iterations: 212 
+average val loss 1.4900
+accuracy ( less than 0.1 ): 0.1412
+median val loss 0.6625
+total test iterations: 212 
+average test loss 1.5438
+accuracy ( less than 0.1 ): 0.1408
+median test loss 0.6668
+Consuming time:28.99 in the epoch: 1
+Best test loss is 1.50
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 2 
+total batch: 985.921875 
+batch:99 average train loss 1.5065
+batch:199 average train loss 1.5079
+batch:299 average train loss 1.4847
+batch:399 average train loss 1.4763
+batch:499 average train loss 1.4708
+batch:599 average train loss 1.4749
+batch:699 average train loss 1.4775
+batch:799 average train loss 1.4807
+batch:899 average train loss 1.4831
+average train loss 1.4771
+Train Consuming time:22.11 in the epoch: 2
+total val iterations: 212 
+average val loss 1.4671
+accuracy ( less than 0.1 ): 0.1503
+median val loss 0.6370
+total test iterations: 212 
+average test loss 1.5226
+accuracy ( less than 0.1 ): 0.1507
+median test loss 0.6502
+Consuming time:29.07 in the epoch: 2
+Best test loss is 1.50
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 3 
+total batch: 985.921875 
+batch:99 average train loss 1.4947
+batch:199 average train loss 1.4958
+batch:299 average train loss 1.4725
+batch:399 average train loss 1.4650
+batch:499 average train loss 1.4600
+batch:599 average train loss 1.4657
+batch:699 average train loss 1.4679
+batch:799 average train loss 1.4715
+batch:899 average train loss 1.4743
+average train loss 1.4684
+Train Consuming time:21.86 in the epoch: 3
+total val iterations: 212 
+average val loss 1.4853
+accuracy ( less than 0.1 ): 0.1420
+median val loss 0.6535
+total test iterations: 212 
+average test loss 1.5388
+accuracy ( less than 0.1 ): 0.1412
+median test loss 0.6621
+Consuming time:28.83 in the epoch: 3
+Best test loss is 1.50
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 4 
+total batch: 985.921875 
+batch:99 average train loss 1.4937
+batch:199 average train loss 1.4933
+batch:299 average train loss 1.4710
+batch:399 average train loss 1.4630
+batch:499 average train loss 1.4570
+batch:599 average train loss 1.4616
+batch:699 average train loss 1.4642
+batch:799 average train loss 1.4670
+batch:899 average train loss 1.4701
+average train loss 1.4642
+Train Consuming time:22.00 in the epoch: 4
+total val iterations: 212 
+average val loss 1.4506
+accuracy ( less than 0.1 ): 0.1571
+median val loss 0.6280
+total test iterations: 212 
+average test loss 1.5025
+accuracy ( less than 0.1 ): 0.1593
+median test loss 0.6384
+Consuming time:28.67 in the epoch: 4
+Best test loss is 1.50
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 5 
+total batch: 985.921875 
+batch:99 average train loss 1.4845
+batch:199 average train loss 1.4860
+batch:299 average train loss 1.4651
+batch:399 average train loss 1.4576
+batch:499 average train loss 1.4518
+batch:599 average train loss 1.4560
+batch:699 average train loss 1.4589
+batch:799 average train loss 1.4620
+batch:899 average train loss 1.4653
+average train loss 1.4594
+Train Consuming time:22.30 in the epoch: 5
+total val iterations: 212 
+average val loss 1.4389
+accuracy ( less than 0.1 ): 0.1640
+median val loss 0.6256
+total test iterations: 212 
+average test loss 1.4894
+accuracy ( less than 0.1 ): 0.1672
+median test loss 0.6338
+Consuming time:28.98 in the epoch: 5
+Best test loss is 1.49
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 6 
+total batch: 985.921875 
+batch:99 average train loss 1.4807
+batch:199 average train loss 1.4824
+batch:299 average train loss 1.4609
+batch:399 average train loss 1.4532
+batch:499 average train loss 1.4474
+batch:599 average train loss 1.4522
+batch:699 average train loss 1.4553
+batch:799 average train loss 1.4584
+batch:899 average train loss 1.4621
+average train loss 1.4563
+Train Consuming time:21.94 in the epoch: 6
+total val iterations: 212 
+average val loss 1.4335
+accuracy ( less than 0.1 ): 0.1691
+median val loss 0.6200
+total test iterations: 212 
+average test loss 1.4829
+accuracy ( less than 0.1 ): 0.1730
+median test loss 0.6301
+Consuming time:28.65 in the epoch: 6
+Best test loss is 1.48
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 7 
+total batch: 985.921875 
+batch:99 average train loss 1.4782
+batch:199 average train loss 1.4801
+batch:299 average train loss 1.4590
+batch:399 average train loss 1.4519
+batch:499 average train loss 1.4457
+batch:599 average train loss 1.4501
+batch:699 average train loss 1.4529
+batch:799 average train loss 1.4561
+batch:899 average train loss 1.4596
+average train loss 1.4539
+Train Consuming time:21.91 in the epoch: 7
+total val iterations: 212 
+average val loss 1.4314
+accuracy ( less than 0.1 ): 0.1692
+median val loss 0.6232
+total test iterations: 212 
+average test loss 1.4827
+accuracy ( less than 0.1 ): 0.1747
+median test loss 0.6317
+Consuming time:28.70 in the epoch: 7
+Best test loss is 1.48
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 8 
+total batch: 985.921875 
+batch:99 average train loss 1.4766
+batch:199 average train loss 1.4790
+batch:299 average train loss 1.4578
+batch:399 average train loss 1.4498
+batch:499 average train loss 1.4440
+batch:599 average train loss 1.4479
+batch:699 average train loss 1.4507
+batch:799 average train loss 1.4538
+batch:899 average train loss 1.4577
+average train loss 1.4521
+Train Consuming time:22.04 in the epoch: 8
+total val iterations: 212 
+average val loss 1.4335
+accuracy ( less than 0.1 ): 0.1680
+median val loss 0.6251
+total test iterations: 212 
+average test loss 1.4842
+accuracy ( less than 0.1 ): 0.1732
+median test loss 0.6368
+Consuming time:28.88 in the epoch: 8
+Best test loss is 1.48
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 9 
+total batch: 985.921875 
+batch:99 average train loss 1.4756
+batch:199 average train loss 1.4763
+batch:299 average train loss 1.4554
+batch:399 average train loss 1.4474
+batch:499 average train loss 1.4412
+batch:599 average train loss 1.4455
+batch:699 average train loss 1.4481
+batch:799 average train loss 1.4513
+batch:899 average train loss 1.4551
+average train loss 1.4495
+Train Consuming time:21.69 in the epoch: 9
+total val iterations: 212 
+average val loss 1.4360
+accuracy ( less than 0.1 ): 0.1655
+median val loss 0.6191
+total test iterations: 212 
+average test loss 1.4862
+accuracy ( less than 0.1 ): 0.1687
+median test loss 0.6320
+Consuming time:28.29 in the epoch: 9
+Best test loss is 1.48
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 10 
+total batch: 985.921875 
+batch:99 average train loss 1.4757
+batch:199 average train loss 1.4762
+batch:299 average train loss 1.4547
+batch:399 average train loss 1.4464
+batch:499 average train loss 1.4401
+batch:599 average train loss 1.4444
+batch:699 average train loss 1.4472
+batch:799 average train loss 1.4502
+batch:899 average train loss 1.4539
+average train loss 1.4484
+Train Consuming time:20.69 in the epoch: 10
+total val iterations: 212 
+average val loss 1.4361
+accuracy ( less than 0.1 ): 0.1649
+median val loss 0.6228
+total test iterations: 212 
+average test loss 1.4872
+accuracy ( less than 0.1 ): 0.1686
+median test loss 0.6349
+Consuming time:26.78 in the epoch: 10
+Best test loss is 1.48
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 11 
+total batch: 985.921875 
+batch:99 average train loss 1.4729
+batch:199 average train loss 1.4738
+batch:299 average train loss 1.4528
+batch:399 average train loss 1.4444
+batch:499 average train loss 1.4382
+batch:599 average train loss 1.4425
+batch:699 average train loss 1.4453
+batch:799 average train loss 1.4486
+batch:899 average train loss 1.4521
+average train loss 1.4466
+Train Consuming time:19.94 in the epoch: 11
+total val iterations: 212 
+average val loss 1.4379
+accuracy ( less than 0.1 ): 0.1646
+median val loss 0.6249
+total test iterations: 212 
+average test loss 1.4885
+accuracy ( less than 0.1 ): 0.1681
+median test loss 0.6301
+Consuming time:26.05 in the epoch: 11
+Best test loss is 1.48
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 12 
+total batch: 985.921875 
+batch:99 average train loss 1.4708
+batch:199 average train loss 1.4728
+batch:299 average train loss 1.4515
+batch:399 average train loss 1.4434
+batch:499 average train loss 1.4375
+batch:599 average train loss 1.4417
+batch:699 average train loss 1.4444
+batch:799 average train loss 1.4474
+batch:899 average train loss 1.4512
+average train loss 1.4457
+Train Consuming time:19.84 in the epoch: 12
+total val iterations: 212 
+average val loss 1.4372
+accuracy ( less than 0.1 ): 0.1670
+median val loss 0.6198
+total test iterations: 212 
+average test loss 1.4917
+accuracy ( less than 0.1 ): 0.1708
+median test loss 0.6359
+Consuming time:25.88 in the epoch: 12
+Best test loss is 1.48
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 13 
+total batch: 985.921875 
+batch:99 average train loss 1.4690
+batch:199 average train loss 1.4706
+batch:299 average train loss 1.4498
+batch:399 average train loss 1.4419
+batch:499 average train loss 1.4360
+batch:599 average train loss 1.4401
+batch:699 average train loss 1.4433
+batch:799 average train loss 1.4465
+batch:899 average train loss 1.4499
+average train loss 1.4444
+Train Consuming time:19.89 in the epoch: 13
+total val iterations: 212 
+average val loss 1.4412
+accuracy ( less than 0.1 ): 0.1618
+median val loss 0.6235
+total test iterations: 212 
+average test loss 1.4933
+accuracy ( less than 0.1 ): 0.1643
+median test loss 0.6366
+Consuming time:25.92 in the epoch: 13
+Best test loss is 1.48
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 14 
+total batch: 985.921875 
+batch:99 average train loss 1.4697
+batch:199 average train loss 1.4705
+batch:299 average train loss 1.4494
+batch:399 average train loss 1.4407
+batch:499 average train loss 1.4351
+batch:599 average train loss 1.4393
+batch:699 average train loss 1.4422
+batch:799 average train loss 1.4453
+batch:899 average train loss 1.4487
+average train loss 1.4432
+Train Consuming time:19.87 in the epoch: 14
+total val iterations: 212 
+average val loss 1.4428
+accuracy ( less than 0.1 ): 0.1631
+median val loss 0.6329
+total test iterations: 212 
+average test loss 1.4930
+accuracy ( less than 0.1 ): 0.1651
+median test loss 0.6370
+Consuming time:26.07 in the epoch: 14
+Best test loss is 1.48
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 15 
+total batch: 985.921875 
+batch:99 average train loss 1.4687
+batch:199 average train loss 1.4689
+batch:299 average train loss 1.4485
+batch:399 average train loss 1.4401
+batch:499 average train loss 1.4342
+batch:599 average train loss 1.4386
+batch:699 average train loss 1.4413
+batch:799 average train loss 1.4444
+batch:899 average train loss 1.4478
+average train loss 1.4423
+Train Consuming time:19.77 in the epoch: 15
+total val iterations: 212 
+average val loss 1.4434
+accuracy ( less than 0.1 ): 0.1594
+median val loss 0.6274
+total test iterations: 212 
+average test loss 1.4949
+accuracy ( less than 0.1 ): 0.1633
+median test loss 0.6383
+Consuming time:25.77 in the epoch: 15
+Best test loss is 1.48
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 16 
+total batch: 985.921875 
+batch:99 average train loss 1.4676
+batch:199 average train loss 1.4688
+batch:299 average train loss 1.4476
+batch:399 average train loss 1.4390
+batch:499 average train loss 1.4332
+batch:599 average train loss 1.4374
+batch:699 average train loss 1.4403
+batch:799 average train loss 1.4434
+batch:899 average train loss 1.4468
+average train loss 1.4412
+Train Consuming time:19.95 in the epoch: 16
+total val iterations: 212 
+average val loss 1.4483
+accuracy ( less than 0.1 ): 0.1597
+median val loss 0.6299
+total test iterations: 212 
+average test loss 1.5011
+accuracy ( less than 0.1 ): 0.1614
+median test loss 0.6411
+Consuming time:26.22 in the epoch: 16
+Best test loss is 1.48
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 17 
+total batch: 985.921875 
+batch:99 average train loss 1.4665
+batch:199 average train loss 1.4679
+batch:299 average train loss 1.4469
+batch:399 average train loss 1.4381
+batch:499 average train loss 1.4324
+batch:599 average train loss 1.4364
+batch:699 average train loss 1.4390
+batch:799 average train loss 1.4421
+batch:899 average train loss 1.4454
+average train loss 1.4399
+Train Consuming time:19.80 in the epoch: 17
+total val iterations: 212 
+average val loss 1.4495
+accuracy ( less than 0.1 ): 0.1589
+median val loss 0.6341
+total test iterations: 212 
+average test loss 1.5018
+accuracy ( less than 0.1 ): 0.1608
+median test loss 0.6405
+Consuming time:25.95 in the epoch: 17
+Best test loss is 1.48
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 18 
+total batch: 985.921875 
+batch:99 average train loss 1.4658
+batch:199 average train loss 1.4671
+batch:299 average train loss 1.4461
+batch:399 average train loss 1.4368
+batch:499 average train loss 1.4312
+batch:599 average train loss 1.4356
+batch:699 average train loss 1.4384
+batch:799 average train loss 1.4415
+batch:899 average train loss 1.4447
+average train loss 1.4392
+Train Consuming time:20.23 in the epoch: 18
+total val iterations: 212 
+average val loss 1.4531
+accuracy ( less than 0.1 ): 0.1581
+median val loss 0.6354
+total test iterations: 212 
+average test loss 1.5055
+accuracy ( less than 0.1 ): 0.1588
+median test loss 0.6454
+Consuming time:26.45 in the epoch: 18
+Best test loss is 1.48
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 19 
+total batch: 985.921875 
+batch:99 average train loss 1.4648
+batch:199 average train loss 1.4666
+batch:299 average train loss 1.4458
+batch:399 average train loss 1.4370
+batch:499 average train loss 1.4313
+batch:599 average train loss 1.4355
+batch:699 average train loss 1.4384
+batch:799 average train loss 1.4416
+batch:899 average train loss 1.4447
+average train loss 1.4392
+Train Consuming time:20.17 in the epoch: 19
+total val iterations: 212 
+average val loss 1.4527
+accuracy ( less than 0.1 ): 0.1570
+median val loss 0.6343
+total test iterations: 212 
+average test loss 1.5045
+accuracy ( less than 0.1 ): 0.1589
+median test loss 0.6441
+Consuming time:26.32 in the epoch: 19
+Best test loss is 1.48
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 20 
+total batch: 985.921875 
+batch:99 average train loss 1.4569
+batch:199 average train loss 1.4527
+batch:299 average train loss 1.4307
+batch:399 average train loss 1.4212
+batch:499 average train loss 1.4149
+batch:599 average train loss 1.4188
+batch:699 average train loss 1.4213
+batch:799 average train loss 1.4236
+batch:899 average train loss 1.4267
+average train loss 1.4203
+Train Consuming time:19.95 in the epoch: 20
+total val iterations: 212 
+average val loss 1.4244
+accuracy ( less than 0.1 ): 0.1842
+median val loss 0.6110
+total test iterations: 212 
+average test loss 1.4740
+accuracy ( less than 0.1 ): 0.1873
+median test loss 0.6288
+Consuming time:26.25 in the epoch: 20
+Best test loss is 1.47
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 21 
+total batch: 985.921875 
+batch:99 average train loss 1.4512
+batch:199 average train loss 1.4484
+batch:299 average train loss 1.4270
+batch:399 average train loss 1.4179
+batch:499 average train loss 1.4118
+batch:599 average train loss 1.4158
+batch:699 average train loss 1.4184
+batch:799 average train loss 1.4210
+batch:899 average train loss 1.4243
+average train loss 1.4182
+Train Consuming time:20.44 in the epoch: 21
+total val iterations: 212 
+average val loss 1.4230
+accuracy ( less than 0.1 ): 0.1845
+median val loss 0.6112
+total test iterations: 212 
+average test loss 1.4726
+accuracy ( less than 0.1 ): 0.1876
+median test loss 0.6299
+Consuming time:26.85 in the epoch: 21
+Best test loss is 1.47
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 22 
+total batch: 985.921875 
+batch:99 average train loss 1.4506
+batch:199 average train loss 1.4475
+batch:299 average train loss 1.4261
+batch:399 average train loss 1.4170
+batch:499 average train loss 1.4110
+batch:599 average train loss 1.4149
+batch:699 average train loss 1.4176
+batch:799 average train loss 1.4202
+batch:899 average train loss 1.4236
+average train loss 1.4175
+Train Consuming time:20.02 in the epoch: 22
+total val iterations: 212 
+average val loss 1.4226
+accuracy ( less than 0.1 ): 0.1848
+median val loss 0.6135
+total test iterations: 212 
+average test loss 1.4721
+accuracy ( less than 0.1 ): 0.1874
+median test loss 0.6297
+Consuming time:26.16 in the epoch: 22
+Best test loss is 1.47
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 23 
+total batch: 985.921875 
+batch:99 average train loss 1.4496
+batch:199 average train loss 1.4467
+batch:299 average train loss 1.4254
+batch:399 average train loss 1.4164
+batch:499 average train loss 1.4104
+batch:599 average train loss 1.4144
+batch:699 average train loss 1.4171
+batch:799 average train loss 1.4197
+batch:899 average train loss 1.4231
+average train loss 1.4171
+Train Consuming time:19.76 in the epoch: 23
+total val iterations: 212 
+average val loss 1.4223
+accuracy ( less than 0.1 ): 0.1849
+median val loss 0.6132
+total test iterations: 212 
+average test loss 1.4719
+accuracy ( less than 0.1 ): 0.1875
+median test loss 0.6284
+Consuming time:25.91 in the epoch: 23
+Best test loss is 1.47
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 24 
+total batch: 985.921875 
+batch:99 average train loss 1.4491
+batch:199 average train loss 1.4462
+batch:299 average train loss 1.4250
+batch:399 average train loss 1.4160
+batch:499 average train loss 1.4101
+batch:599 average train loss 1.4141
+batch:699 average train loss 1.4168
+batch:799 average train loss 1.4193
+batch:899 average train loss 1.4228
+average train loss 1.4168
+Train Consuming time:19.85 in the epoch: 24
+total val iterations: 212 
+average val loss 1.4221
+accuracy ( less than 0.1 ): 0.1841
+median val loss 0.6124
+total test iterations: 212 
+average test loss 1.4718
+accuracy ( less than 0.1 ): 0.1869
+median test loss 0.6264
+Consuming time:25.99 in the epoch: 24
+Best test loss is 1.47
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 25 
+total batch: 985.921875 
+batch:99 average train loss 1.4488
+batch:199 average train loss 1.4459
+batch:299 average train loss 1.4246
+batch:399 average train loss 1.4157
+batch:499 average train loss 1.4098
+batch:599 average train loss 1.4138
+batch:699 average train loss 1.4165
+batch:799 average train loss 1.4191
+batch:899 average train loss 1.4225
+average train loss 1.4166
+Train Consuming time:20.05 in the epoch: 25
+total val iterations: 212 
+average val loss 1.4221
+accuracy ( less than 0.1 ): 0.1844
+median val loss 0.6107
+total test iterations: 212 
+average test loss 1.4716
+accuracy ( less than 0.1 ): 0.1868
+median test loss 0.6268
+Consuming time:26.18 in the epoch: 25
+Best test loss is 1.47
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 26 
+total batch: 985.921875 
+batch:99 average train loss 1.4485
+batch:199 average train loss 1.4455
+batch:299 average train loss 1.4244
+batch:399 average train loss 1.4154
+batch:499 average train loss 1.4096
+batch:599 average train loss 1.4136
+batch:699 average train loss 1.4163
+batch:799 average train loss 1.4189
+batch:899 average train loss 1.4223
+average train loss 1.4164
+Train Consuming time:19.92 in the epoch: 26
+total val iterations: 212 
+average val loss 1.4221
+accuracy ( less than 0.1 ): 0.1846
+median val loss 0.6101
+total test iterations: 212 
+average test loss 1.4716
+accuracy ( less than 0.1 ): 0.1869
+median test loss 0.6270
+Consuming time:26.07 in the epoch: 26
+Best test loss is 1.47
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 27 
+total batch: 985.921875 
+batch:99 average train loss 1.4484
+batch:199 average train loss 1.4454
+batch:299 average train loss 1.4242
+batch:399 average train loss 1.4153
+batch:499 average train loss 1.4094
+batch:599 average train loss 1.4134
+batch:699 average train loss 1.4162
+batch:799 average train loss 1.4187
+batch:899 average train loss 1.4222
+average train loss 1.4163
+Train Consuming time:19.81 in the epoch: 27
+total val iterations: 212 
+average val loss 1.4220
+accuracy ( less than 0.1 ): 0.1844
+median val loss 0.6095
+total test iterations: 212 
+average test loss 1.4715
+accuracy ( less than 0.1 ): 0.1865
+median test loss 0.6267
+Consuming time:26.08 in the epoch: 27
+Best test loss is 1.47
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 28 
+total batch: 985.921875 
+batch:99 average train loss 1.4481
+batch:199 average train loss 1.4451
+batch:299 average train loss 1.4240
+batch:399 average train loss 1.4151
+batch:499 average train loss 1.4092
+batch:599 average train loss 1.4133
+batch:699 average train loss 1.4160
+batch:799 average train loss 1.4186
+batch:899 average train loss 1.4220
+average train loss 1.4162
+Train Consuming time:19.94 in the epoch: 28
+total val iterations: 212 
+average val loss 1.4220
+accuracy ( less than 0.1 ): 0.1847
+median val loss 0.6102
+total test iterations: 212 
+average test loss 1.4714
+accuracy ( less than 0.1 ): 0.1870
+median test loss 0.6260
+Consuming time:26.14 in the epoch: 28
+Best test loss is 1.47
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 29 
+total batch: 985.921875 
+batch:99 average train loss 1.4477
+batch:199 average train loss 1.4449
+batch:299 average train loss 1.4238
+batch:399 average train loss 1.4149
+batch:499 average train loss 1.4091
+batch:599 average train loss 1.4131
+batch:699 average train loss 1.4159
+batch:799 average train loss 1.4184
+batch:899 average train loss 1.4219
+average train loss 1.4161
+Train Consuming time:19.89 in the epoch: 29
+total val iterations: 212 
+average val loss 1.4220
+accuracy ( less than 0.1 ): 0.1847
+median val loss 0.6099
+total test iterations: 212 
+average test loss 1.4714
+accuracy ( less than 0.1 ): 0.1870
+median test loss 0.6272
+Consuming time:26.08 in the epoch: 29
+Best test loss is 1.47
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 30 
+total batch: 985.921875 
+batch:99 average train loss 1.4476
+batch:199 average train loss 1.4447
+batch:299 average train loss 1.4237
+batch:399 average train loss 1.4147
+batch:499 average train loss 1.4089
+batch:599 average train loss 1.4130
+batch:699 average train loss 1.4158
+batch:799 average train loss 1.4183
+batch:899 average train loss 1.4218
+average train loss 1.4160
+Train Consuming time:20.12 in the epoch: 30
+total val iterations: 212 
+average val loss 1.4220
+accuracy ( less than 0.1 ): 0.1846
+median val loss 0.6096
+total test iterations: 212 
+average test loss 1.4714
+accuracy ( less than 0.1 ): 0.1872
+median test loss 0.6269
+Consuming time:26.37 in the epoch: 30
+Best test loss is 1.47
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 31 
+total batch: 985.921875 
+batch:99 average train loss 1.4473
+batch:199 average train loss 1.4446
+batch:299 average train loss 1.4235
+batch:399 average train loss 1.4146
+batch:499 average train loss 1.4088
+batch:599 average train loss 1.4129
+batch:699 average train loss 1.4157
+batch:799 average train loss 1.4182
+batch:899 average train loss 1.4217
+average train loss 1.4159
+Train Consuming time:20.11 in the epoch: 31
+total val iterations: 212 
+average val loss 1.4220
+accuracy ( less than 0.1 ): 0.1844
+median val loss 0.6101
+total test iterations: 212 
+average test loss 1.4714
+accuracy ( less than 0.1 ): 0.1873
+median test loss 0.6281
+Consuming time:26.23 in the epoch: 31
+Best test loss is 1.47
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 32 
+total batch: 985.921875 
+batch:99 average train loss 1.4472
+batch:199 average train loss 1.4444
+batch:299 average train loss 1.4234
+batch:399 average train loss 1.4145
+batch:499 average train loss 1.4087
+batch:599 average train loss 1.4128
+batch:699 average train loss 1.4156
+batch:799 average train loss 1.4181
+batch:899 average train loss 1.4216
+average train loss 1.4158
+Train Consuming time:20.15 in the epoch: 32
+total val iterations: 212 
+average val loss 1.4221
+accuracy ( less than 0.1 ): 0.1842
+median val loss 0.6092
+total test iterations: 212 
+average test loss 1.4714
+accuracy ( less than 0.1 ): 0.1874
+median test loss 0.6277
+Consuming time:26.28 in the epoch: 32
+Best test loss is 1.47
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 33 
+total batch: 985.921875 
+batch:99 average train loss 1.4470
+batch:199 average train loss 1.4443
+batch:299 average train loss 1.4233
+batch:399 average train loss 1.4144
+batch:499 average train loss 1.4086
+batch:599 average train loss 1.4127
+batch:699 average train loss 1.4156
+batch:799 average train loss 1.4180
+batch:899 average train loss 1.4215
+average train loss 1.4157
+Train Consuming time:19.82 in the epoch: 33
+total val iterations: 212 
+average val loss 1.4221
+accuracy ( less than 0.1 ): 0.1843
+median val loss 0.6101
+total test iterations: 212 
+average test loss 1.4714
+accuracy ( less than 0.1 ): 0.1874
+median test loss 0.6264
+Consuming time:26.38 in the epoch: 33
+Best test loss is 1.47
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 34 
+total batch: 985.921875 
+batch:99 average train loss 1.4470
+batch:199 average train loss 1.4443
+batch:299 average train loss 1.4233
+batch:399 average train loss 1.4144
+batch:499 average train loss 1.4086
+batch:599 average train loss 1.4126
+batch:699 average train loss 1.4155
+batch:799 average train loss 1.4180
+batch:899 average train loss 1.4215
+average train loss 1.4157
+Train Consuming time:21.48 in the epoch: 34
+total val iterations: 212 
+average val loss 1.4221
+accuracy ( less than 0.1 ): 0.1842
+median val loss 0.6100
+total test iterations: 212 
+average test loss 1.4714
+accuracy ( less than 0.1 ): 0.1876
+median test loss 0.6277
+Consuming time:28.17 in the epoch: 34
+Best test loss is 1.47
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 35 
+total batch: 985.921875 
+batch:99 average train loss 1.4465
+batch:199 average train loss 1.4439
+batch:299 average train loss 1.4231
+batch:399 average train loss 1.4142
+batch:499 average train loss 1.4085
+batch:599 average train loss 1.4125
+batch:699 average train loss 1.4154
+batch:799 average train loss 1.4179
+batch:899 average train loss 1.4214
+average train loss 1.4156
+Train Consuming time:21.19 in the epoch: 35
+total val iterations: 212 
+average val loss 1.4221
+accuracy ( less than 0.1 ): 0.1846
+median val loss 0.6100
+total test iterations: 212 
+average test loss 1.4713
+accuracy ( less than 0.1 ): 0.1872
+median test loss 0.6280
+Consuming time:28.03 in the epoch: 35
+Best test loss is 1.47
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 36 
+total batch: 985.921875 
+batch:99 average train loss 1.4464
+batch:199 average train loss 1.4439
+batch:299 average train loss 1.4230
+batch:399 average train loss 1.4141
+batch:499 average train loss 1.4084
+batch:599 average train loss 1.4124
+batch:699 average train loss 1.4153
+batch:799 average train loss 1.4178
+batch:899 average train loss 1.4213
+average train loss 1.4156
+Train Consuming time:21.74 in the epoch: 36
+total val iterations: 212 
+average val loss 1.4221
+accuracy ( less than 0.1 ): 0.1845
+median val loss 0.6098
+total test iterations: 212 
+average test loss 1.4713
+accuracy ( less than 0.1 ): 0.1874
+median test loss 0.6274
+Consuming time:28.48 in the epoch: 36
+Best test loss is 1.47
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 37 
+total batch: 985.921875 
+batch:99 average train loss 1.4465
+batch:199 average train loss 1.4439
+batch:299 average train loss 1.4230
+batch:399 average train loss 1.4142
+batch:499 average train loss 1.4084
+batch:599 average train loss 1.4124
+batch:699 average train loss 1.4153
+batch:799 average train loss 1.4178
+batch:899 average train loss 1.4213
+average train loss 1.4155
+Train Consuming time:21.28 in the epoch: 37
+total val iterations: 212 
+average val loss 1.4222
+accuracy ( less than 0.1 ): 0.1844
+median val loss 0.6099
+total test iterations: 212 
+average test loss 1.4713
+accuracy ( less than 0.1 ): 0.1875
+median test loss 0.6282
+Consuming time:27.81 in the epoch: 37
+Best test loss is 1.47
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 38 
+total batch: 985.921875 
+batch:99 average train loss 1.4461
+batch:199 average train loss 1.4436
+batch:299 average train loss 1.4228
+batch:399 average train loss 1.4140
+batch:499 average train loss 1.4082
+batch:599 average train loss 1.4123
+batch:699 average train loss 1.4152
+batch:799 average train loss 1.4177
+batch:899 average train loss 1.4212
+average train loss 1.4154
+Train Consuming time:21.43 in the epoch: 38
+total val iterations: 212 
+average val loss 1.4222
+accuracy ( less than 0.1 ): 0.1845
+median val loss 0.6091
+total test iterations: 212 
+average test loss 1.4713
+accuracy ( less than 0.1 ): 0.1874
+median test loss 0.6285
+Consuming time:28.00 in the epoch: 38
+Best test loss is 1.47
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 39 
+total batch: 985.921875 
+batch:99 average train loss 1.4460
+batch:199 average train loss 1.4436
+batch:299 average train loss 1.4228
+batch:399 average train loss 1.4139
+batch:499 average train loss 1.4082
+batch:599 average train loss 1.4122
+batch:699 average train loss 1.4152
+batch:799 average train loss 1.4177
+batch:899 average train loss 1.4212
+average train loss 1.4154
+Train Consuming time:21.34 in the epoch: 39
+total val iterations: 212 
+average val loss 1.4223
+accuracy ( less than 0.1 ): 0.1845
+median val loss 0.6097
+total test iterations: 212 
+average test loss 1.4713
+accuracy ( less than 0.1 ): 0.1872
+median test loss 0.6287
+Consuming time:28.13 in the epoch: 39
+Best test loss is 1.47
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 40 
+total batch: 985.921875 
+batch:99 average train loss 1.4459
+batch:199 average train loss 1.4435
+batch:299 average train loss 1.4227
+batch:399 average train loss 1.4139
+batch:499 average train loss 1.4082
+batch:599 average train loss 1.4122
+batch:699 average train loss 1.4151
+batch:799 average train loss 1.4176
+batch:899 average train loss 1.4211
+average train loss 1.4154
+Train Consuming time:21.56 in the epoch: 40
+total val iterations: 212 
+average val loss 1.4224
+accuracy ( less than 0.1 ): 0.1845
+median val loss 0.6097
+total test iterations: 212 
+average test loss 1.4713
+accuracy ( less than 0.1 ): 0.1873
+median test loss 0.6287
+Consuming time:28.29 in the epoch: 40
+Best test loss is 1.47
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 41 
+total batch: 985.921875 
+batch:99 average train loss 1.4459
+batch:199 average train loss 1.4435
+batch:299 average train loss 1.4226
+batch:399 average train loss 1.4138
+batch:499 average train loss 1.4081
+batch:599 average train loss 1.4122
+batch:699 average train loss 1.4151
+batch:799 average train loss 1.4176
+batch:899 average train loss 1.4211
+average train loss 1.4153
+Train Consuming time:21.44 in the epoch: 41
+total val iterations: 212 
+average val loss 1.4224
+accuracy ( less than 0.1 ): 0.1844
+median val loss 0.6094
+total test iterations: 212 
+average test loss 1.4714
+accuracy ( less than 0.1 ): 0.1873
+median test loss 0.6277
+Consuming time:28.26 in the epoch: 41
+Best test loss is 1.47
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 42 
+total batch: 985.921875 
+batch:99 average train loss 1.4458
+batch:199 average train loss 1.4434
+batch:299 average train loss 1.4226
+batch:399 average train loss 1.4138
+batch:499 average train loss 1.4081
+batch:599 average train loss 1.4121
+batch:699 average train loss 1.4150
+batch:799 average train loss 1.4176
+batch:899 average train loss 1.4210
+average train loss 1.4153
+Train Consuming time:21.48 in the epoch: 42
+total val iterations: 212 
+average val loss 1.4224
+accuracy ( less than 0.1 ): 0.1844
+median val loss 0.6096
+total test iterations: 212 
+average test loss 1.4714
+accuracy ( less than 0.1 ): 0.1874
+median test loss 0.6285
+Consuming time:28.40 in the epoch: 42
+Best test loss is 1.47
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 43 
+total batch: 985.921875 
+batch:99 average train loss 1.4457
+batch:199 average train loss 1.4433
+batch:299 average train loss 1.4225
+batch:399 average train loss 1.4137
+batch:499 average train loss 1.4080
+batch:599 average train loss 1.4121
+batch:699 average train loss 1.4150
+batch:799 average train loss 1.4175
+batch:899 average train loss 1.4210
+average train loss 1.4153
+Train Consuming time:21.43 in the epoch: 43
+total val iterations: 212 
+average val loss 1.4225
+accuracy ( less than 0.1 ): 0.1844
+median val loss 0.6106
+total test iterations: 212 
+average test loss 1.4714
+accuracy ( less than 0.1 ): 0.1868
+median test loss 0.6284
+Consuming time:28.06 in the epoch: 43
+Best test loss is 1.47
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 44 
+total batch: 985.921875 
+batch:99 average train loss 1.4456
+batch:199 average train loss 1.4433
+batch:299 average train loss 1.4225
+batch:399 average train loss 1.4137
+batch:499 average train loss 1.4080
+batch:599 average train loss 1.4120
+batch:699 average train loss 1.4149
+batch:799 average train loss 1.4175
+batch:899 average train loss 1.4210
+average train loss 1.4152
+Train Consuming time:21.36 in the epoch: 44
+total val iterations: 212 
+average val loss 1.4225
+accuracy ( less than 0.1 ): 0.1844
+median val loss 0.6111
+total test iterations: 212 
+average test loss 1.4714
+accuracy ( less than 0.1 ): 0.1869
+median test loss 0.6290
+Consuming time:27.95 in the epoch: 44
+Best test loss is 1.47
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 45 
+total batch: 985.921875 
+batch:99 average train loss 1.4454
+batch:199 average train loss 1.4432
+batch:299 average train loss 1.4224
+batch:399 average train loss 1.4136
+batch:499 average train loss 1.4079
+batch:599 average train loss 1.4119
+batch:699 average train loss 1.4149
+batch:799 average train loss 1.4174
+batch:899 average train loss 1.4209
+average train loss 1.4152
+Train Consuming time:21.32 in the epoch: 45
+total val iterations: 212 
+average val loss 1.4225
+accuracy ( less than 0.1 ): 0.1842
+median val loss 0.6107
+total test iterations: 212 
+average test loss 1.4714
+accuracy ( less than 0.1 ): 0.1869
+median test loss 0.6287
+Consuming time:28.26 in the epoch: 45
+Best test loss is 1.47
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 46 
+total batch: 985.921875 
+batch:99 average train loss 1.4453
+batch:199 average train loss 1.4431
+batch:299 average train loss 1.4223
+batch:399 average train loss 1.4136
+batch:499 average train loss 1.4078
+batch:599 average train loss 1.4119
+batch:699 average train loss 1.4148
+batch:799 average train loss 1.4174
+batch:899 average train loss 1.4209
+average train loss 1.4152
+Train Consuming time:21.59 in the epoch: 46
+total val iterations: 212 
+average val loss 1.4225
+accuracy ( less than 0.1 ): 0.1841
+median val loss 0.6112
+total test iterations: 212 
+average test loss 1.4714
+accuracy ( less than 0.1 ): 0.1870
+median test loss 0.6283
+Consuming time:28.40 in the epoch: 46
+Best test loss is 1.47
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 47 
+total batch: 985.921875 
+batch:99 average train loss 1.4452
+batch:199 average train loss 1.4430
+batch:299 average train loss 1.4223
+batch:399 average train loss 1.4135
+batch:499 average train loss 1.4078
+batch:599 average train loss 1.4118
+batch:699 average train loss 1.4148
+batch:799 average train loss 1.4174
+batch:899 average train loss 1.4209
+average train loss 1.4151
+Train Consuming time:21.57 in the epoch: 47
+total val iterations: 212 
+average val loss 1.4226
+accuracy ( less than 0.1 ): 0.1839
+median val loss 0.6106
+total test iterations: 212 
+average test loss 1.4714
+accuracy ( less than 0.1 ): 0.1870
+median test loss 0.6287
+Consuming time:28.24 in the epoch: 47
+Best test loss is 1.47
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 48 
+total batch: 985.921875 
+batch:99 average train loss 1.4452
+batch:199 average train loss 1.4430
+batch:299 average train loss 1.4223
+batch:399 average train loss 1.4135
+batch:499 average train loss 1.4078
+batch:599 average train loss 1.4118
+batch:699 average train loss 1.4148
+batch:799 average train loss 1.4173
+batch:899 average train loss 1.4208
+average train loss 1.4151
+Train Consuming time:21.56 in the epoch: 48
+total val iterations: 212 
+average val loss 1.4226
+accuracy ( less than 0.1 ): 0.1842
+median val loss 0.6105
+total test iterations: 212 
+average test loss 1.4713
+accuracy ( less than 0.1 ): 0.1868
+median test loss 0.6290
+Consuming time:28.29 in the epoch: 48
+Best test loss is 1.47
+---------------*****---------------
+---------------*****---------------
+Starting training the epoch: 49 
+total batch: 985.921875 
+batch:99 average train loss 1.4451
+batch:199 average train loss 1.4429
+batch:299 average train loss 1.4222
+batch:399 average train loss 1.4134
+batch:499 average train loss 1.4077
+batch:599 average train loss 1.4118
+batch:699 average train loss 1.4147
+batch:799 average train loss 1.4173
+batch:899 average train loss 1.4208
+average train loss 1.4151
+Train Consuming time:21.29 in the epoch: 49
+total val iterations: 212 
+average val loss 1.4226
+accuracy ( less than 0.1 ): 0.1842
+median val loss 0.6102
+total test iterations: 212 
+average test loss 1.4713
+accuracy ( less than 0.1 ): 0.1871
+median test loss 0.6293
+Consuming time:28.12 in the epoch: 49
+Best test loss is 1.47
+---------------*****---------------

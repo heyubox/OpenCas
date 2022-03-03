@@ -1,0 +1,339 @@
+error id at cas_id 2508
+['351601', '-1']
+error id at cas_id 24627
+['1089184', '-1']
+error id at cas_id 29214
+['2216751', '-1']
+error id at cas_id 52071
+['953561', '-1']
+error id at cas_id 75918
+['4781546', '-1']
+error id at cas_id 80162
+['5000830', '-1']
+error id at cas_id 85836
+['5263156', '-1']
+error id at cas_id 85836
+['5263156', '-1']
+error id at cas_id 87338
+['652902', '-1']
+error id at cas_id 87919
+['-1']
+error id at cas_id 87962
+['-1']
+error id at cas_id 87997
+['-1']
+error id at cas_id 88004
+['-1']
+error id at cas_id 88035
+['-1']
+error id at cas_id 88065
+['-1']
+error id at cas_id 88066
+['-1']
+error id at cas_id 90486
+['5513165', '-1']
+error id at cas_id 93504
+['1666362', '-1']
+error id at cas_id 94182
+['441319', '-1']
+error id at cas_id 99670
+['3619043', '-1']
+error id at cas_id 101969
+['164582', '-1']
+total_readin: 119313
+discard_midnight: 26084
+discard_outer: 50844
+total: 42385
+train data: 29669
+valid data: 6358
+test data: 6358
+finish gen cascades obser
+54.85657835006714
+54.871073961257935
+length discard_cascade_id: 73156 26291
+generate cascade new!!!
+total qualified cascade 68880
+train:, valid:, test:, 25951 5583 5549
+89.23236417770386
+NUM_SEQUENCE: 100
+Train:25951 Test:5549 Valid:5583
+length of original isd: 573911
+length of original isd: 154943
+length of original isd: 151144
+max node:  100
+create train
+401.8617494106293
+create val and test
+NUM_SEQUENCE: 100 LEN_SEQUENCE: 13
+580.1910998821259
+Finish!!!
+Working in TF version 1.14....
+===================configuration===================
+l2 0.001
+learning rate :  0.0005
+observation hour [7,19]
+observation threshold :  7200
+prediction time :  86400
+cascade length [10,100]
+model save at : ../model_save/cascn/weibo/
+===================configuration===================
+-----------------display step-------------------
+display step : 1621
+1->2->3->4->5->6->7->8->9->10->11->12->13->14->15->16->17->18->19->20->21->22->23->24->25->26->27->28->29->30->31->32->33->34->35->36->37->38->39->40->41->42->43->44->45->46->47->48->49->50->51->52->53->54->55->56->57->58->59->60->61->62->63->64->65->66->67->68->69->70->71->72->73->74->75->76->77->78->79->80->81->82->83->84->85->86->87->88->89->90->91->92->93->94->95->96->97->98->99->100->building time: 137.37508916854858
+-----------------display step-------------------
+display step : 25936
+l2 0.001
+learning rate: 0.0005
+
+feat_in: 100 
+num_nodes: 100 
+n_sequences: 100
+n_nodes:   761300
+-----------start to train--------------
+
+traing time for an epoch: 1394.6757318973541 
+ evaluating.........
+[0.02 0.03 0.05 0.06 0.09 0.11]
+
+last test error: 2.4161887
+
+#1.0, Training Loss= 3.484149, Validation Loss= 2.402281, Test Loss= 2.416189, Best Valid Loss= 2.402281, Best Test Loss= 2.416189
+
+after evaluating: 1825.9342365264893
+
+traing time for an epoch: 1569.1747403144836 
+ evaluating.........
+[0.01 0.03 0.05 0.06 0.09 0.11]
+
+last test error: 2.2496216
+
+#2.0, Training Loss= 2.365012, Validation Loss= 2.275495, Test Loss= 2.249622, Best Valid Loss= 2.275495, Best Test Loss= 2.249622
+
+after evaluating: 1951.304521560669
+
+traing time for an epoch: 1009.9424562454224 
+ evaluating.........
+[0.01 0.03 0.05 0.06 0.1  0.12]
+
+last test error: 2.209114
+
+#3.0, Training Loss= 2.283941, Validation Loss= 2.231907, Test Loss= 2.209114, Best Valid Loss= 2.231907, Best Test Loss= 2.209114
+
+after evaluating: 1237.8154158592224
+
+traing time for an epoch: 1001.8788175582886 
+ evaluating.........
+[0.   0.03 0.05 0.06 0.1  0.12]
+
+last test error: 2.1941638
+
+#4.0, Training Loss= 2.247295, Validation Loss= 2.250215, Test Loss= 2.194164, Best Valid Loss= 2.250215, Best Test Loss= 2.194164
+
+after evaluating: 1261.8228096961975
+
+traing time for an epoch: 1004.8027353286743 
+ evaluating.........
+[0.   0.03 0.05 0.06 0.1  0.12]
+
+last test error: 2.178776
+
+#5.0, Training Loss= 2.229666, Validation Loss= 2.222929, Test Loss= 2.178776, Best Valid Loss= 2.222929, Best Test Loss= 2.178776
+
+after evaluating: 1262.3486857414246
+
+traing time for an epoch: 1004.7711856365204 
+ evaluating.........
+[0.   0.03 0.05 0.07 0.12 0.14]
+
+last test error: 2.161048
+
+#6.0, Training Loss= 2.217293, Validation Loss= 2.202916, Test Loss= 2.161048, Best Valid Loss= 2.202916, Best Test Loss= 2.161048
+
+after evaluating: 1267.4206194877625
+
+traing time for an epoch: 878.0434272289276 
+ evaluating.........
+[0.01 0.04 0.07 0.08 0.13 0.15]
+
+last test error: 2.1497138
+
+#7.0, Training Loss= 2.202821, Validation Loss= 2.179846, Test Loss= 2.149714, Best Valid Loss= 2.179846, Best Test Loss= 2.149714
+
+after evaluating: 1100.7032668590546
+
+traing time for an epoch: 995.4738302230835 
+ evaluating.........
+[0.   0.04 0.07 0.09 0.14 0.17]
+
+last test error: 2.147307
+
+#8.0, Training Loss= 2.188584, Validation Loss= 2.169031, Test Loss= 2.147307, Best Valid Loss= 2.169031, Best Test Loss= 2.147307
+
+after evaluating: 1257.4937014579773
+
+traing time for an epoch: 997.1165146827698 
+ evaluating.........
+[0.   0.05 0.08 0.1  0.16 0.19]
+
+last test error: 2.138238
+
+#9.0, Training Loss= 2.174092, Validation Loss= 2.146409, Test Loss= 2.138238, Best Valid Loss= 2.146409, Best Test Loss= 2.138238
+
+after evaluating: 1229.512128353119
+
+traing time for an epoch: 998.0677344799042 
+ evaluating.........
+[0.01 0.06 0.1  0.11 0.18 0.22]
+
+last test error: 2.1334293
+
+#10.0, Training Loss= 2.171322, Validation Loss= 2.140292, Test Loss= 2.133429, Best Valid Loss= 2.140292, Best Test Loss= 2.133429
+
+after evaluating: 1258.908233165741
+
+traing time for an epoch: 876.6427221298218 
+ evaluating.........
+[0.   0.06 0.11 0.13 0.2  0.25]
+
+last test error: 2.1231565
+
+#11.0, Training Loss= 2.166255, Validation Loss= 2.136342, Test Loss= 2.123157, Best Valid Loss= 2.136342, Best Test Loss= 2.123157
+
+after evaluating: 1097.9570977687836
+
+traing time for an epoch: 997.9058635234833 
+ evaluating.........
+[0.   0.07 0.12 0.14 0.22 0.27]
+
+last test error: 2.106694
+
+#12.0, Training Loss= 2.153405, Validation Loss= 2.129453, Test Loss= 2.106694, Best Valid Loss= 2.129453, Best Test Loss= 2.106694
+
+after evaluating: 1260.4960806369781
+
+traing time for an epoch: 876.5619330406189 
+ evaluating.........
+[-0.    0.07  0.12  0.15  0.23  0.29]
+
+last test error: 2.0470848
+
+#13.0, Training Loss= 2.137743, Validation Loss= 2.079843, Test Loss= 2.047085, Best Valid Loss= 2.079843, Best Test Loss= 2.047085
+
+after evaluating: 1097.894941329956
+
+traing time for an epoch: 998.5185043811798 
+ evaluating.........
+[-0.01  0.05  0.11  0.14  0.22  0.29]
+
+last test error: 1.8928844
+
+#14.0, Training Loss= 2.007506, Validation Loss= 1.934509, Test Loss= 1.892884, Best Valid Loss= 1.934509, Best Test Loss= 1.892884
+
+after evaluating: 1254.4800181388855
+
+traing time for an epoch: 1077.4923958778381 
+ evaluating.........
+[-0.01  0.02  0.1   0.13  0.21  0.29]
+
+last test error: 1.8361202
+
+#15.0, Training Loss= 1.913606, Validation Loss= 1.874255, Test Loss= 1.836120, Best Valid Loss= 1.874255, Best Test Loss= 1.836120
+
+after evaluating: 1354.7933831214905
+
+traing time for an epoch: 1214.2672581672668 
+ evaluating.........
+[-0.01  0.01  0.08  0.12  0.2   0.27]
+
+last test error: 1.7751542
+
+#16.0, Training Loss= 1.852166, Validation Loss= 1.810998, Test Loss= 1.775154, Best Valid Loss= 1.810998, Best Test Loss= 1.775154
+
+after evaluating: 1471.5813617706299
+
+traing time for an epoch: 1292.0037851333618 
+ evaluating.........
+[-0.01  0.    0.07  0.12  0.2   0.27]
+
+last test error: 1.7527084
+
+#17.0, Training Loss= 1.810029, Validation Loss= 1.778516, Test Loss= 1.752708, Best Valid Loss= 1.778516, Best Test Loss= 1.752708
+
+after evaluating: 1548.7058045864105
+
+traing time for an epoch: 1297.8855257034302 
+ evaluating.........
+[-0.01 -0.    0.06  0.11  0.19  0.26]
+
+last test error: 1.7439506
+
+#18.0, Training Loss= 1.785901, Validation Loss= 1.762973, Test Loss= 1.743951, Best Valid Loss= 1.762973, Best Test Loss= 1.743951
+
+after evaluating: 1574.8407588005066
+
+traing time for an epoch: 1213.7794270515442 
+ evaluating.........
+[-0.01 -0.    0.05  0.1   0.19  0.26]
+
+last test error: 1.7382935
+
+#19.0, Training Loss= 1.775445, Validation Loss= 1.749577, Test Loss= 1.738294, Best Valid Loss= 1.749577, Best Test Loss= 1.738294
+
+after evaluating: 1471.294665336609
+
+traing time for an epoch: 1263.0478661060333 
+ evaluating.........
+[-0.01 -0.    0.04  0.08  0.18  0.25]
+
+last test error: 1.7348088
+
+#20.0, Training Loss= 1.773585, Validation Loss= 1.747230, Test Loss= 1.734809, Best Valid Loss= 1.747230, Best Test Loss= 1.734809
+
+after evaluating: 1588.855191707611
+
+traing time for an epoch: 1102.3399572372437 
+ evaluating.........
+[-0.01 -0.    0.04  0.09  0.19  0.26]
+
+last test error: 1.7295833
+
+#21.0, Training Loss= 1.765970, Validation Loss= 1.739451, Test Loss= 1.729583, Best Valid Loss= 1.739451, Best Test Loss= 1.729583
+
+after evaluating: 1328.715903520584
+
+traing time for an epoch: 887.5729055404663 
+ evaluating.........
+[-0.01 -0.    0.04  0.09  0.19  0.28]
+
+last test error: 1.7261108
+
+#22.0, Training Loss= 1.762100, Validation Loss= 1.730121, Test Loss= 1.726111, Best Valid Loss= 1.730121, Best Test Loss= 1.726111
+
+after evaluating: 1111.1631724834442
+
+traing time for an epoch: 998.5231795310974 
+ evaluating.........
+[-0.01 -0.    0.04  0.08  0.2   0.28]
+
+last test error: 1.7316074
+
+#23.0, Training Loss= 1.757790, Validation Loss= 1.730989, Test Loss= 1.731607, Best Valid Loss= 1.730121, Best Test Loss= 1.726111
+
+after evaluating: 1222.4291412830353
+
+traing time for an epoch: 967.1546576023102 
+ evaluating.........
+[-0.01 -0.    0.04  0.1   0.2   0.3 ]
+
+last test error: 1.7356157
+
+#24.0, Training Loss= 1.757765, Validation Loss= 1.740561, Test Loss= 1.735616, Best Valid Loss= 1.730121, Best Test Loss= 1.726111
+
+after evaluating: 1209.2423920631409
+
+ 5552 5549
+Finished!
+----------------------------------------------------------------
+Time: 613.2757978439331
+Valid Loss: 1.7301211
+Test Loss: 1.7261108

@@ -1,0 +1,17 @@
+===================configuration===================
+dropout prob: 1.0
+l2 1e-08
+learning rate: 0.005
+emb_learning_rate: 0.005
+observation hour [7,19]
+observation threshold: 10800
+prediction time: 86400
+cascade length [10,100]
+model save at../model_save/deepcas/weibo/
+===================configuration===================
+29669 6358 6358
+(?, 200, 10, 50)
+<class 'int'> <class 'int'>
+Total_parameters:40580470
+#1, Training Loss= 4.151524, Validation Loss= 2.718186, Test Loss= 2.843072, Best Valid Loss= 2.718186, Best Test Loss= 2.843072
+consuming time in one epoch 355.7760558128357

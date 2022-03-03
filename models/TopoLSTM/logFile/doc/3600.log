@@ -1,0 +1,309 @@
+===========configuration loading success==========
+===================configuration===================
+learning rate :  0.0001
+observation hour [7,19]
+observation threshold :  3600
+prediction time :  86400
+cascade length [10,100]
+model save at : ../model_save/topolstm/weibo/
+===================configuration===================
+
+
+# Epochs:0
+ Train Loss:7.596224, Val Loss:6.657565, Test Loss:6.691147,
+
+
+
+
+# Epochs:1
+ Train Loss:6.240311, Val Loss:6.188251, Test Loss:6.312510,
+
+
+
+
+# Epochs:2
+ Train Loss:5.819840, Val Loss:5.909732, Test Loss:5.817695,
+
+
+
+
+# Epochs:3
+ Train Loss:5.459728, Val Loss:5.565971, Test Loss:5.472516,
+
+
+
+
+# Epochs:4
+ Train Loss:5.140223, Val Loss:5.244504, Test Loss:5.102395,
+
+
+
+
+# Epochs:5
+ Train Loss:4.855493, Val Loss:4.897003, Test Loss:4.916120,
+
+
+
+
+# Epochs:6
+ Train Loss:4.610612, Val Loss:4.649356, Test Loss:4.602460,
+
+
+
+
+# Epochs:7
+ Train Loss:4.381427, Val Loss:4.479723, Test Loss:4.439911,
+
+
+
+
+# Epochs:8
+ Train Loss:4.192506, Val Loss:4.342154, Test Loss:4.299994,
+
+
+
+
+# Epochs:9
+ Train Loss:4.024209, Val Loss:4.224562, Test Loss:4.125372,
+
+
+
+
+# Epochs:10
+ Train Loss:3.899610, Val Loss:3.919600, Test Loss:3.969202,
+
+
+
+
+# Epochs:11
+ Train Loss:3.766458, Val Loss:3.857839, Test Loss:3.921288,
+
+
+
+
+# Epochs:12
+ Train Loss:3.665825, Val Loss:3.770522, Test Loss:3.763642,
+
+
+
+
+# Epochs:13
+ Train Loss:3.583261, Val Loss:3.741799, Test Loss:3.798189,
+
+
+
+
+# Epochs:14
+ Train Loss:3.514582, Val Loss:3.741771, Test Loss:3.648780,
+
+
+
+
+# Epochs:15
+ Train Loss:3.483209, Val Loss:3.605820, Test Loss:3.545010,
+
+
+
+
+# Epochs:16
+ Train Loss:3.422700, Val Loss:3.591170, Test Loss:3.559969,
+
+
+
+
+# Epochs:17
+ Train Loss:3.394289, Val Loss:3.629871, Test Loss:3.466397,
+
+
+
+
+# Epochs:18
+ Train Loss:3.395485, Val Loss:3.516871, Test Loss:3.442452,
+
+
+
+
+# Epochs:19
+ Train Loss:3.352653, Val Loss:3.554005, Test Loss:3.521734,
+
+
+
+
+# Epochs:20
+ Train Loss:3.336155, Val Loss:3.547305, Test Loss:3.433002,
+
+
+
+
+# Epochs:21
+ Train Loss:3.310179, Val Loss:3.456977, Test Loss:3.530765,
+
+
+
+
+# Epochs:22
+ Train Loss:3.305694, Val Loss:3.477432, Test Loss:3.357552,
+
+
+
+
+# Epochs:23
+ Train Loss:3.308143, Val Loss:3.458812, Test Loss:3.416720,
+
+
+
+
+# Epochs:24
+ Train Loss:3.317063, Val Loss:3.501183, Test Loss:3.422520,
+
+
+
+
+# Epochs:25
+ Train Loss:3.293170, Val Loss:3.438247, Test Loss:3.463944,
+
+
+
+
+# Epochs:26
+ Train Loss:3.284564, Val Loss:3.444168, Test Loss:3.393632,
+
+
+
+
+# Epochs:27
+ Train Loss:3.292294, Val Loss:3.447415, Test Loss:3.399714,
+
+
+
+
+# Epochs:28
+ Train Loss:3.286482, Val Loss:3.429894, Test Loss:3.360862,
+
+
+
+
+# Epochs:29
+ Train Loss:3.317575, Val Loss:3.668348, Test Loss:3.712283,
+
+
+
+
+# Epochs:30
+ Train Loss:3.292238, Val Loss:3.429625, Test Loss:3.358822,
+
+
+
+
+# Epochs:31
+ Train Loss:3.292723, Val Loss:3.460697, Test Loss:3.356720,
+
+
+
+
+# Epochs:32
+ Train Loss:3.276792, Val Loss:3.397509, Test Loss:3.303207,
+
+
+
+
+# Epochs:33
+ Train Loss:3.276454, Val Loss:3.384628, Test Loss:3.367256,
+
+
+
+
+# Epochs:34
+ Train Loss:3.269791, Val Loss:3.377501, Test Loss:3.338772,
+
+
+
+
+# Epochs:35
+ Train Loss:3.279316, Val Loss:3.430274, Test Loss:3.401325,
+
+
+
+
+# Epochs:36
+ Train Loss:3.264949, Val Loss:3.421119, Test Loss:3.330224,
+
+
+
+
+# Epochs:37
+ Train Loss:3.288449, Val Loss:3.418955, Test Loss:3.460431,
+
+
+
+
+# Epochs:38
+ Train Loss:3.307111, Val Loss:3.435624, Test Loss:3.497768,
+
+
+
+
+# Epochs:39
+ Train Loss:3.294352, Val Loss:3.363239, Test Loss:3.443779,
+
+
+
+
+# Epochs:40
+ Train Loss:3.280822, Val Loss:3.523927, Test Loss:3.394163,
+
+
+
+
+# Epochs:41
+ Train Loss:3.273619, Val Loss:3.434399, Test Loss:3.423443,
+
+
+
+
+# Epochs:42
+ Train Loss:3.262669, Val Loss:3.386145, Test Loss:3.375117,
+
+
+
+
+# Epochs:43
+ Train Loss:3.282216, Val Loss:3.453033, Test Loss:3.378630,
+
+
+
+
+# Epochs:44
+ Train Loss:3.263981, Val Loss:3.364882, Test Loss:3.339946,
+
+
+
+
+# Epochs:45
+ Train Loss:3.283949, Val Loss:3.476380, Test Loss:3.435104,
+
+
+
+
+# Epochs:46
+ Train Loss:3.268767, Val Loss:3.373899, Test Loss:3.421024,
+
+
+
+
+# Epochs:47
+ Train Loss:3.270912, Val Loss:3.524665, Test Loss:3.443308,
+
+
+
+
+# Epochs:48
+ Train Loss:3.263925, Val Loss:3.398535, Test Loss:3.392079,
+
+
+
+
+# Epochs:49
+ Train Loss:3.257732, Val Loss:3.496516, Test Loss:3.411553,
+
+

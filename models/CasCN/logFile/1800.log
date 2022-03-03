@@ -1,0 +1,10 @@
+Working in TF version 1.14....
+===================configuration===================
+l2 0.001
+learning rate :  0.0005
+observation hour [7,19]
+observation threshold :  1800
+prediction time :  86400
+cascade length [10,100]
+model save at : ../model_save/cascn/citation1/
+===================configuration===================

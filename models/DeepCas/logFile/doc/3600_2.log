@@ -1,0 +1,85 @@
+===================configuration===================
+dropout prob: 1.0
+l2 1e-08
+learning rate: 0.005
+emb_learning_rate: 0.005
+observation hour [7,19]
+observation threshold: 7200
+prediction time: 86400
+cascade length [10,100]
+model save at../model_save/deepcas/weibo/
+===================configuration===================
+29669 6358 6358
+(?, 200, 10, 50)
+<class 'int'> <class 'int'>
+Total_parameters:40580470
+#1, Training Loss= 4.100596, Validation Loss= 2.765988, Test Loss= 2.920358, Best Valid Loss= 2.765988, Best Test Loss= 2.920358
+consuming time in one epoch 52.444244146347046
+#2, Training Loss= 1.502082, Validation Loss= 2.896632, Test Loss= 2.952143, Best Valid Loss= 2.765988, Best Test Loss= 2.920358
+consuming time in one epoch 41.895909547805786
+#3, Training Loss= 0.743437, Validation Loss= 2.501515, Test Loss= 2.596884, Best Valid Loss= 2.501515, Best Test Loss= 2.596884
+consuming time in one epoch 41.40933322906494
+#4, Training Loss= 0.383206, Validation Loss= 2.482202, Test Loss= 2.593380, Best Valid Loss= 2.482202, Best Test Loss= 2.593380
+consuming time in one epoch 41.35152745246887
+#5, Training Loss= 0.218318, Validation Loss= 2.508440, Test Loss= 2.611025, Best Valid Loss= 2.482202, Best Test Loss= 2.593380
+consuming time in one epoch 41.61829352378845
+#6, Training Loss= 0.159737, Validation Loss= 2.518445, Test Loss= 2.658341, Best Valid Loss= 2.482202, Best Test Loss= 2.593380
+consuming time in one epoch 40.77716588973999
+#7, Training Loss= 0.102772, Validation Loss= 2.500614, Test Loss= 2.624116, Best Valid Loss= 2.482202, Best Test Loss= 2.593380
+consuming time in one epoch 41.13669443130493
+#8, Training Loss= 0.090353, Validation Loss= 2.576504, Test Loss= 2.674269, Best Valid Loss= 2.482202, Best Test Loss= 2.593380
+consuming time in one epoch 40.51955533027649
+#9, Training Loss= 0.079240, Validation Loss= 2.491525, Test Loss= 2.645022, Best Valid Loss= 2.482202, Best Test Loss= 2.593380
+consuming time in one epoch 42.645426988601685
+#10, Training Loss= 0.062130, Validation Loss= 2.542902, Test Loss= 2.677779, Best Valid Loss= 2.482202, Best Test Loss= 2.593380
+consuming time in one epoch 53.201882123947144
+#11, Training Loss= 0.049166, Validation Loss= 2.518981, Test Loss= 2.662444, Best Valid Loss= 2.482202, Best Test Loss= 2.593380
+consuming time in one epoch 53.03146743774414
+#12, Training Loss= 0.079848, Validation Loss= 2.568724, Test Loss= 2.715013, Best Valid Loss= 2.482202, Best Test Loss= 2.593380
+consuming time in one epoch 53.11261820793152
+#13, Training Loss= 0.073649, Validation Loss= 2.548146, Test Loss= 2.682801, Best Valid Loss= 2.482202, Best Test Loss= 2.593380
+consuming time in one epoch 52.0736780166626
+#14, Training Loss= 0.056550, Validation Loss= 2.562658, Test Loss= 2.702826, Best Valid Loss= 2.482202, Best Test Loss= 2.593380
+consuming time in one epoch 52.016810178756714
+#15, Training Loss= 0.045631, Validation Loss= 2.577262, Test Loss= 2.691999, Best Valid Loss= 2.482202, Best Test Loss= 2.593380
+consuming time in one epoch 52.35145616531372
+#16, Training Loss= 0.041855, Validation Loss= 2.545649, Test Loss= 2.651619, Best Valid Loss= 2.482202, Best Test Loss= 2.593380
+consuming time in one epoch 52.064316272735596
+#17, Training Loss= 0.042248, Validation Loss= 2.641898, Test Loss= 2.747944, Best Valid Loss= 2.482202, Best Test Loss= 2.593380
+consuming time in one epoch 52.225929260253906
+#18, Training Loss= 0.038508, Validation Loss= 2.623279, Test Loss= 2.756974, Best Valid Loss= 2.482202, Best Test Loss= 2.593380
+consuming time in one epoch 51.712661266326904
+#19, Training Loss= 0.035095, Validation Loss= 2.617796, Test Loss= 2.755005, Best Valid Loss= 2.482202, Best Test Loss= 2.593380
+consuming time in one epoch 50.995060205459595
+#20, Training Loss= 0.031245, Validation Loss= 2.578451, Test Loss= 2.717440, Best Valid Loss= 2.482202, Best Test Loss= 2.593380
+consuming time in one epoch 50.30805015563965
+#21, Training Loss= 0.031252, Validation Loss= 2.594683, Test Loss= 2.705632, Best Valid Loss= 2.482202, Best Test Loss= 2.593380
+consuming time in one epoch 49.533263206481934
+#22, Training Loss= 0.026387, Validation Loss= 2.606853, Test Loss= 2.733582, Best Valid Loss= 2.482202, Best Test Loss= 2.593380
+consuming time in one epoch 49.05590486526489
+#23, Training Loss= 0.027900, Validation Loss= 2.618054, Test Loss= 2.771834, Best Valid Loss= 2.482202, Best Test Loss= 2.593380
+consuming time in one epoch 49.49461388587952
+#24, Training Loss= 0.025175, Validation Loss= 2.617537, Test Loss= 2.736948, Best Valid Loss= 2.482202, Best Test Loss= 2.593380
+consuming time in one epoch 49.77806854248047
+#25, Training Loss= 0.022416, Validation Loss= 2.608838, Test Loss= 2.728325, Best Valid Loss= 2.482202, Best Test Loss= 2.593380
+consuming time in one epoch 49.38012385368347
+#26, Training Loss= 0.021292, Validation Loss= 2.612099, Test Loss= 2.730635, Best Valid Loss= 2.482202, Best Test Loss= 2.593380
+consuming time in one epoch 48.17258834838867
+#27, Training Loss= 0.023213, Validation Loss= 2.622443, Test Loss= 2.736096, Best Valid Loss= 2.482202, Best Test Loss= 2.593380
+consuming time in one epoch 48.31663179397583
+#28, Training Loss= 0.022692, Validation Loss= 2.600858, Test Loss= 2.706479, Best Valid Loss= 2.482202, Best Test Loss= 2.593380
+consuming time in one epoch 49.316704511642456
+#29, Training Loss= 0.039105, Validation Loss= 2.661607, Test Loss= 2.796356, Best Valid Loss= 2.482202, Best Test Loss= 2.593380
+consuming time in one epoch 49.316351890563965
+#30, Training Loss= 0.033099, Validation Loss= 2.666594, Test Loss= 2.794610, Best Valid Loss= 2.482202, Best Test Loss= 2.593380
+consuming time in one epoch 48.994795083999634
+#31, Training Loss= 0.028653, Validation Loss= 2.663329, Test Loss= 2.791982, Best Valid Loss= 2.482202, Best Test Loss= 2.593380
+consuming time in one epoch 49.102832555770874
+#32, Training Loss= 0.025909, Validation Loss= 2.660646, Test Loss= 2.793309, Best Valid Loss= 2.482202, Best Test Loss= 2.593380
+consuming time in one epoch 49.45781064033508
+#33, Training Loss= 0.022749, Validation Loss= 2.646132, Test Loss= 2.780829, Best Valid Loss= 2.482202, Best Test Loss= 2.593380
+Finished!
+----------------------------------------------------------------
+Time: 48.95052623748779
+Valid Loss: 2.4822016
+Test Loss: 2.5933805

@@ -1,0 +1,72 @@
+===================configuration===================
+learning rate :  0.0001
+observation hour [7,19]
+observation threshold :  1080
+prediction time :  86400
+cascade length [10,100]
+model save at : ../model_save/casflow/citation0/
+===================configuration===================
+TF Version: 2.0.0
+Epoch 1/15
+283/283 [==============================] - 283s 999ms/step - loss: 7.0716 - mape: 1.2339 - msle_log2: 2.9334 - val_loss: 3.5604 - val_mape: 1.4771 - val_msle_log2: 2.0643
+Epoch 2/15
+283/283 [==============================] - 249s 880ms/step - loss: 4.3553 - mape: 1.0882 - msle_log2: 1.6584 - val_loss: 3.4189 - val_mape: 1.0834 - val_msle_log2: 1.5469
+Epoch 3/15
+283/283 [==============================] - 250s 882ms/step - loss: 2.9183 - mape: 0.9913 - msle_log2: 1.4657 - val_loss: -0.0370 - val_mape: 0.9855 - val_msle_log2: 1.4006
+Epoch 4/15
+283/283 [==============================] - 254s 897ms/step - loss: -4.1267 - mape: 0.9165 - msle_log2: 1.3261 - val_loss: -7.7702 - val_mape: 0.8466 - val_msle_log2: 1.2956
+Epoch 5/15
+283/283 [==============================] - 254s 898ms/step - loss: -11.5441 - mape: 0.8668 - msle_log2: 1.2371 - val_loss: -15.4118 - val_mape: 0.9029 - val_msle_log2: 1.2733
+Epoch 6/15
+283/283 [==============================] - 260s 918ms/step - loss: -19.7102 - mape: 0.8515 - msle_log2: 1.1926 - val_loss: -24.1741 - val_mape: 0.7777 - val_msle_log2: 1.2728
+Epoch 7/15
+283/283 [==============================] - 257s 909ms/step - loss: -28.9485 - mape: 0.8429 - msle_log2: 1.1786 - val_loss: -33.7445 - val_mape: 0.9357 - val_msle_log2: 1.2374
+Epoch 8/15
+283/283 [==============================] - 256s 905ms/step - loss: -38.0856 - mape: 0.8366 - msle_log2: 1.1571 - val_loss: -41.7774 - val_mape: 0.8954 - val_msle_log2: 1.2240
+Epoch 9/15
+283/283 [==============================] - 305s 1s/step - loss: -46.1359 - mape: 0.8172 - msle_log2: 1.1253 - val_loss: -50.0583 - val_mape: 0.9686 - val_msle_log2: 1.2321
+Epoch 10/15
+283/283 [==============================] - 316s 1s/step - loss: -52.9699 - mape: 0.8195 - msle_log2: 1.1180 - val_loss: -55.7219 - val_mape: 0.8616 - val_msle_log2: 1.1975
+Epoch 11/15
+283/283 [==============================] - 289s 1s/step - loss: -58.8641 - mape: 0.8205 - msle_log2: 1.1176 - val_loss: -61.4412 - val_mape: 0.7758 - val_msle_log2: 1.2080
+Epoch 12/15
+283/283 [==============================] - 268s 946ms/step - loss: -63.8261 - mape: 0.8096 - msle_log2: 1.1001 - val_loss: -66.5561 - val_mape: 1.0251 - val_msle_log2: 1.2365
+Epoch 13/15
+283/283 [==============================] - 264s 934ms/step - loss: -68.4534 - mape: 0.8088 - msle_log2: 1.0936 - val_loss: -70.3432 - val_mape: 0.7550 - val_msle_log2: 1.2202
+Epoch 14/15
+283/283 [==============================] - 267s 942ms/step - loss: -72.5934 - mape: 0.7915 - msle_log2: 1.0707 - val_loss: -74.8312 - val_mape: 0.8700 - val_msle_log2: 1.1817
+Epoch 15/15
+283/283 [==============================] - 261s 921ms/step - loss: -76.1008 - mape: 0.7992 - msle_log2: 1.0743 - val_loss: -78.3719 - val_mape: 0.8137 - val_msle_log2: 1.1983
+Training ended!
+max preds 111.89404296875, max truth 2964
+min preds 1.0, min truth 1
+test MSEL 1.452083121226071
+test mape 0.8467780080836417
+test mSEL 0.5946395661227613
+test acc 0.5478283350568769
+max preds 112.03916931152344, max truth 5041
+min preds 1.0, min truth 1
+val MSEL 1.4115844447600747
+val mape 0.28966736260637116
+val mSEL 0.5774865634944832
+val acc 0.5453605582837943
+Finished! Time used: 68.064mins.
+
+===========Load success=======
+../model_save/casflow/citation0/best_weights.h5
+2021-08-23 13:34:18.409843: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+(7737, 320)
+piclke emb
+max preds 111.752197265625, max truth 2964
+min preds 1.0, min truth 1
+test MSEL 1.4525041269989023
+test mape 0.8468952316166658
+test mSEL 0.5959552155065172
+test acc 0.5486039296794208
+max preds 112.04705810546875, max truth 5041
+min preds 1.0, min truth 1
+val MSEL 1.4115114335607803
+val mape 0.28970881275940924
+val mSEL 0.5775786372100016
+val acc 0.5453605582837943
+Finished! Time used: 1.638mins.

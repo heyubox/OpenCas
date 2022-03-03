@@ -1,0 +1,180 @@
+os.environ: 0
+/home/ta/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/ta/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/ta/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/ta/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/ta/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/ta/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/ta/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/ta/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/ta/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/ta/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/ta/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/ta/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+1.14.0
+WARNING:tensorflow:From run.py:20: The name tf.set_random_seed is deprecated. Please use tf.compat.v1.set_random_seed instead.
+
+ok
+dataset information: nodes:693709, n_sequence:120, n_steps:17 
+===================configuration===================
+dropout prob :  0.001
+l2 0.05
+learning rate :  0.005
+emb_learning_rate :  0.005
+observation hour [7,19]
+observation threshold :  3600
+prediction time :  86400
+cascade length [10,100]
+model save at : ../model_save/deephawkes/weibo/
+===================configuration===================
+---------***---------
+Number: 25284, Max: 15.090567326304047 and Min: 0.0 label Value in Train
+NUmber: 5418, Max: 13.971363924361933 and Min: 0.0 label Value in Test
+NUmber: 5419, Max: 13.223398414711628 and Min: 0.0 label Value in Valid
+---------***---------
+25284 5418 5419
+  4%|▍         | 25216/640001 [03:27<1:27:38, 116.92it/s]finish one epoch, time208.7820794582367
+  4%|▍         | 25216/640001 [03:41<1:27:38, 116.92it/s]
+train mseloss : 3.16612956614388
+lambda1 [-0.    0.01  0.05  0.04  0.08  0.14]
+#0, Training Loss= 3.16160, Valid Loss= 3.22923, Valid median Loss= 1.12904, Best Valid Loss= 3.22923, Test Loss= 3.13758, Test median  Loss= 1.10424, Best Test Loss= 3.13758
+  8%|▊         | 50560/640001 [11:06<1:35:52, 102.48it/s]finish one epoch, time667.2143411636353
+  8%|▊         | 50560/640001 [11:16<1:35:52, 102.48it/s]
+train mseloss : 2.6052555622826876
+lambda1 [0.01 0.   0.05 0.07 0.1  0.15]
+#1, Training Loss= 2.60418, Valid Loss= 2.66407, Valid median Loss= 0.70546, Best Valid Loss= 2.66407, Test Loss= 2.59601, Test median  Loss= 0.70039, Best Test Loss= 2.59601
+ 12%|█▏        | 75904/640001 [19:07<1:11:48, 130.93it/s]finish one epoch, time1148.7216696739197
+ 12%|█▏        | 75904/640001 [19:23<1:11:48, 130.93it/s]
+train mseloss : 2.5557981113557418
+lambda1 [-0.   -0.01 -0.01  0.09  0.13  0.18]
+#2, Training Loss= 2.55071, Valid Loss= 2.46439, Valid median Loss= 0.79857, Best Valid Loss= 2.46439, Test Loss= 2.46752, Test median  Loss= 0.77782, Best Test Loss= 2.46752
+ 16%|█▌        | 101248/640001 [27:22<1:13:07, 122.79it/s]finish one epoch, time1643.8055288791656
+ 16%|█▌        | 101248/640001 [27:41<1:13:07, 122.79it/s]
+train mseloss : 2.514989081390763
+lambda1 [0.   0.01 0.02 0.11 0.16 0.21]
+#3, Training Loss= 2.51600, Valid Loss= 2.56824, Valid median Loss= 0.67399, Best Valid Loss= 2.46439, Test Loss= 2.49107, Test median  Loss= 0.66496, Best Test Loss= 2.46752
+ 20%|█▉        | 126592/640001 [35:39<1:08:43, 124.51it/s]finish one epoch, time2140.6661982536316
+ 20%|█▉        | 126592/640001 [35:50<1:08:43, 124.51it/s]
+train mseloss : 2.5510371480920973
+lambda1 [-0.   -0.01  0.01  0.11  0.16  0.22]
+#4, Training Loss= 2.55857, Valid Loss= 2.51424, Valid median Loss= 0.82856, Best Valid Loss= 2.46439, Test Loss= 2.48928, Test median  Loss= 0.82573, Best Test Loss= 2.46752
+ 24%|██▎       | 151936/640001 [43:49<1:10:35, 115.22it/s]finish one epoch, time2630.1362948417664
+ 24%|██▎       | 151936/640001 [44:05<1:10:35, 115.22it/s]
+train mseloss : 2.3423046773390763
+lambda1 [-0.   -0.    0.02  0.12  0.17  0.24]
+#5, Training Loss= 2.33424, Valid Loss= 2.32953, Valid median Loss= 0.69369, Best Valid Loss= 2.32953, Test Loss= 2.29597, Test median  Loss= 0.69243, Best Test Loss= 2.29597
+ 28%|██▊       | 177280/640001 [51:57<1:02:35, 123.22it/s]finish one epoch, time3119.5511100292206
+ 28%|██▊       | 177280/640001 [52:14<1:02:35, 123.22it/s]
+train mseloss : 2.328084606793124
+lambda1 [-0.   -0.01  0.05  0.14  0.18  0.24]
+#6, Training Loss= 2.32490, Valid Loss= 2.30342, Valid median Loss= 0.63287, Best Valid Loss= 2.30342, Test Loss= 2.31766, Test median  Loss= 0.63930, Best Test Loss= 2.29597
+ 32%|███▏      | 202624/640001 [1:00:12<1:01:59, 117.59it/s]finish one epoch, time3614.0678124427795
+ 32%|███▏      | 202624/640001 [1:00:23<1:01:59, 117.59it/s]
+train mseloss : 2.345725184949973
+lambda1 [-3.77e-05 -6.10e-03  1.18e-02  1.49e-01  1.97e-01  2.66e-01]
+#7, Training Loss= 2.34288, Valid Loss= 2.31828, Valid median Loss= 0.69072, Best Valid Loss= 2.30342, Test Loss= 2.32044, Test median  Loss= 0.67221, Best Test Loss= 2.29597
+ 36%|███▌      | 227968/640001 [1:08:32<56:22, 121.82it/s]  finish one epoch, time4113.30122256279
+ 36%|███▌      | 227968/640001 [1:08:51<56:22, 121.82it/s]
+train mseloss : 2.337043525420307
+lambda1 [-7.50e-03  4.89e-06  3.08e-02  1.60e-01  1.94e-01  2.70e-01]
+#8, Training Loss= 2.33490, Valid Loss= 2.30002, Valid median Loss= 0.63499, Best Valid Loss= 2.30002, Test Loss= 2.29466, Test median  Loss= 0.62550, Best Test Loss= 2.29466
+ 40%|███▉      | 253312/640001 [1:16:46<1:01:27, 104.88it/s]finish one epoch, time4607.103823900223
+ 40%|███▉      | 253312/640001 [1:16:57<1:01:27, 104.88it/s]
+train mseloss : 2.328076422739856
+lambda1 [-0.   -0.01  0.01  0.15  0.2   0.27]
+WARNING:tensorflow:From /home/ta/anaconda3/lib/python3.6/site-packages/tensorflow/python/training/saver.py:960: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+#9, Training Loss= 2.32046, Valid Loss= 2.29115, Valid median Loss= 0.67462, Best Valid Loss= 2.29115, Test Loss= 2.26948, Test median  Loss= 0.67535, Best Test Loss= 2.26948
+ 44%|████▎     | 278656/640001 [1:25:04<50:31, 119.20it/s]finish one epoch, time5106.272252082825
+ 44%|████▎     | 278656/640001 [1:25:16<50:31, 119.20it/s]
+train mseloss : 2.2992128824007905
+lambda1 [-0.01 -0.01 -0.    0.16  0.21  0.26]
+#10, Training Loss= 2.30036, Valid Loss= 2.25717, Valid median Loss= 0.63507, Best Valid Loss= 2.25717, Test Loss= 2.21309, Test median  Loss= 0.61401, Best Test Loss= 2.21309
+ 47%|████▋     | 304000/640001 [1:33:26<45:38, 122.70it/s]finish one epoch, time5608.518052339554
+ 47%|████▋     | 304000/640001 [1:33:43<45:38, 122.70it/s]
+train mseloss : 2.3643437978191653
+lambda1 [-0.   -0.01  0.01  0.19  0.22  0.28]
+#11, Training Loss= 2.35892, Valid Loss= 2.30976, Valid median Loss= 0.71433, Best Valid Loss= 2.25717, Test Loss= 2.33151, Test median  Loss= 0.69912, Best Test Loss= 2.21309
+ 51%|█████▏    | 329344/640001 [1:41:45<44:24, 116.58it/s]finish one epoch, time6106.944932222366
+ 51%|█████▏    | 329344/640001 [1:42:00<44:24, 116.58it/s]
+train mseloss : 2.3165295785704534
+lambda1 [-0.01 -0.    0.05  0.17  0.23  0.3 ]
+#12, Training Loss= 2.31536, Valid Loss= 2.28730, Valid median Loss= 0.62010, Best Valid Loss= 2.25717, Test Loss= 2.24897, Test median  Loss= 0.62062, Best Test Loss= 2.21309
+ 55%|█████▌    | 354688/640001 [1:49:58<45:52, 103.64it/s]finish one epoch, time6598.992890834808
+ 55%|█████▌    | 354688/640001 [1:50:08<45:52, 103.64it/s]
+train mseloss : 2.49741587669082
+lambda1 [-0.   -0.01 -0.    0.18  0.24  0.33]
+#13, Training Loss= 2.49752, Valid Loss= 2.49322, Valid median Loss= 0.83380, Best Valid Loss= 2.25717, Test Loss= 2.45576, Test median  Loss= 0.83058, Best Test Loss= 2.21309
+ 59%|█████▉    | 380032/640001 [1:58:20<33:21, 129.90it/s]finish one epoch, time7101.761363744736
+ 59%|█████▉    | 380032/640001 [1:58:33<33:21, 129.90it/s]
+train mseloss : 2.3235310065423818
+lambda1 [-0.   -0.02  0.03  0.18  0.24  0.34]
+#14, Training Loss= 2.32111, Valid Loss= 2.29901, Valid median Loss= 0.65962, Best Valid Loss= 2.25717, Test Loss= 2.27178, Test median  Loss= 0.66395, Best Test Loss= 2.21309
+ 63%|██████▎   | 405376/640001 [2:06:48<34:33, 113.14it/s]finish one epoch, time7609.255620479584
+ 63%|██████▎   | 405376/640001 [2:07:03<34:33, 113.14it/s]
+train mseloss : 2.3237868627849965
+lambda1 [ 2.72e-04 -1.49e-03 -4.14e-03  1.96e-01  2.38e-01  3.16e-01]
+#15, Training Loss= 2.32214, Valid Loss= 2.30673, Valid median Loss= 0.72146, Best Valid Loss= 2.25717, Test Loss= 2.27622, Test median  Loss= 0.71305, Best Test Loss= 2.21309
+ 67%|██████▋   | 430720/640001 [2:15:13<29:39, 117.59it/s]finish one epoch, time8114.866203069687
+ 67%|██████▋   | 430720/640001 [2:15:32<29:39, 117.59it/s]
+train mseloss : 2.3186409710515203
+lambda1 [-0.   -0.01  0.03  0.2   0.27  0.35]
+#16, Training Loss= 2.31889, Valid Loss= 2.27577, Valid median Loss= 0.66633, Best Valid Loss= 2.25717, Test Loss= 2.26861, Test median  Loss= 0.67194, Best Test Loss= 2.21309
+ 71%|███████▏  | 456064/640001 [2:23:30<31:23, 97.64it/s] finish one epoch, time8610.891648292542
+ 71%|███████▏  | 456064/640001 [2:23:40<31:23, 97.64it/s]
+train mseloss : 2.3601086139309544
+lambda1 [-0.01 -0.02  0.01  0.21  0.26  0.33]
+#17, Training Loss= 2.35663, Valid Loss= 2.33477, Valid median Loss= 0.65627, Best Valid Loss= 2.25717, Test Loss= 2.31018, Test median  Loss= 0.65396, Best Test Loss= 2.21309
+ 75%|███████▌  | 481408/640001 [2:31:51<21:55, 120.54it/s]finish one epoch, time9113.234383583069
+ 75%|███████▌  | 481408/640001 [2:32:02<21:55, 120.54it/s]
+train mseloss : 2.3057865033317557
+lambda1 [-0.01 -0.01  0.03  0.21  0.26  0.34]
+#18, Training Loss= 2.30737, Valid Loss= 2.28719, Valid median Loss= 0.69001, Best Valid Loss= 2.25717, Test Loss= 2.25239, Test median  Loss= 0.68047, Best Test Loss= 2.21309
+ 79%|███████▉  | 506752/640001 [2:40:17<19:50, 111.96it/s]finish one epoch, time9618.114981174469
+ 79%|███████▉  | 506752/640001 [2:40:31<19:50, 111.96it/s]
+train mseloss : 2.308650553230587
+lambda1 [-0.   -0.01  0.04  0.2   0.27  0.36]
+#19, Training Loss= 2.31000, Valid Loss= 2.30153, Valid median Loss= 0.68837, Best Valid Loss= 2.25717, Test Loss= 2.28333, Test median  Loss= 0.68210, Best Test Loss= 2.21309
+ 83%|████████▎ | 532096/640001 [2:48:42<14:24, 124.84it/s]finish one epoch, time10123.823019742966
+ 83%|████████▎ | 532096/640001 [2:48:56<14:24, 124.84it/s]
+train mseloss : 2.3628193932859904
+lambda1 [-0.01 -0.01  0.02  0.19  0.26  0.35]
+#20, Training Loss= 2.35896, Valid Loss= 2.34331, Valid median Loss= 0.72637, Best Valid Loss= 2.25717, Test Loss= 2.32836, Test median  Loss= 0.74384, Best Test Loss= 2.21309
+ 87%|████████▋ | 557440/640001 [2:57:04<12:34, 109.35it/s]finish one epoch, time10625.43966293335
+ 87%|████████▋ | 557440/640001 [2:57:15<12:34, 109.35it/s]
+train mseloss : 2.380384566638003
+lambda1 [-0.01 -0.   -0.01  0.2   0.27  0.37]
+#21, Training Loss= 2.38426, Valid Loss= 2.37806, Valid median Loss= 0.74617, Best Valid Loss= 2.25717, Test Loss= 2.30902, Test median  Loss= 0.76414, Best Test Loss= 2.21309
+ 91%|█████████ | 582784/640001 [3:05:36<07:40, 124.27it/s]finish one epoch, time11136.982355594635
+ 91%|█████████ | 582784/640001 [3:05:54<07:40, 124.27it/s]
+train mseloss : 2.355038233378215
+lambda1 [-0.01 -0.01 -0.01  0.2   0.25  0.35]
+#22, Training Loss= 2.35659, Valid Loss= 2.30262, Valid median Loss= 0.66334, Best Valid Loss= 2.25717, Test Loss= 2.29861, Test median  Loss= 0.65271, Best Test Loss= 2.21309
+ 95%|█████████▌| 608128/640001 [3:14:01<04:36, 115.11it/s]finish one epoch, time11643.413419008255
+ 95%|█████████▌| 608128/640001 [3:14:21<04:36, 115.11it/s]
+train mseloss : 2.290195913594033
+lambda1 [-0.01 -0.   -0.01  0.23  0.29  0.38]
+#23, Training Loss= 2.29291, Valid Loss= 2.25974, Valid median Loss= 0.69337, Best Valid Loss= 2.25717, Test Loss= 2.22293, Test median  Loss= 0.67570, Best Test Loss= 2.21309
+ 99%|█████████▉| 633472/640001 [3:22:24<01:06, 98.63it/s] finish one epoch, time12145.267780542374
+ 99%|█████████▉| 633472/640001 [3:22:39<01:06, 98.63it/s]
+train mseloss : 2.300627864208265
+lambda1 [-0.01 -0.    0.01  0.23  0.32  0.41]
+#24, Training Loss= 2.29809, Valid Loss= 2.28777, Valid median Loss= 0.69048, Best Valid Loss= 2.25717, Test Loss= 2.24034, Test median  Loss= 0.68482, Best Test Loss= 2.21309
+640128it [3:28:03, 112.59it/s]                            Finished!
+----------------------------------------------------------------
+Time: 12483.331389188766
+Valid Loss: 2.2571728
+Test Loss: 2.2130888

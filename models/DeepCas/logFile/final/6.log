@@ -1,0 +1,105 @@
+===================configuration===================
+dropout prob: 1.0
+l2 1e-08
+learning rate: 0.0005
+emb_learning_rate: 0.005
+observation hour [7,19]
+observation threshold: 6
+prediction time: 86400
+cascade length [10,100]
+model save at../model_save/deepcas/dblp1/
+===================configuration===================
+48622 10419 10420
+(?, 200, 10, 50)
+<class 'int'> <class 'int'>
+Total_parameters:24572920
+#1, Training Loss= 10.033397, Validation Loss= 5.924464, Test Loss= 5.870451, Best Valid Loss= 5.924464, Best Test Loss= 5.870451
+consuming time in one epoch 84.7025158405304
+#2, Training Loss= 1.976596, Validation Loss= 2.254122, Test Loss= 2.202744, Best Valid Loss= 2.254122, Best Test Loss= 2.202744
+consuming time in one epoch 83.55973768234253
+#3, Training Loss= 0.728746, Validation Loss= 2.340817, Test Loss= 2.270577, Best Valid Loss= 2.254122, Best Test Loss= 2.202744
+consuming time in one epoch 83.54866051673889
+#4, Training Loss= 0.319320, Validation Loss= 2.160040, Test Loss= 2.128812, Best Valid Loss= 2.160040, Best Test Loss= 2.128812
+consuming time in one epoch 83.30789256095886
+#5, Training Loss= 0.181751, Validation Loss= 2.170127, Test Loss= 2.133315, Best Valid Loss= 2.160040, Best Test Loss= 2.128812
+consuming time in one epoch 83.277902841568
+#6, Training Loss= 0.117598, Validation Loss= 2.145761, Test Loss= 2.102108, Best Valid Loss= 2.145761, Best Test Loss= 2.102108
+consuming time in one epoch 82.9922354221344
+#7, Training Loss= 0.082323, Validation Loss= 2.094061, Test Loss= 2.048078, Best Valid Loss= 2.094061, Best Test Loss= 2.048078
+consuming time in one epoch 83.03531241416931
+#8, Training Loss= 0.072258, Validation Loss= 2.075379, Test Loss= 2.036628, Best Valid Loss= 2.075379, Best Test Loss= 2.036628
+consuming time in one epoch 83.35997438430786
+#9, Training Loss= 0.055076, Validation Loss= 2.083178, Test Loss= 2.055250, Best Valid Loss= 2.075379, Best Test Loss= 2.036628
+consuming time in one epoch 83.3636372089386
+#10, Training Loss= 0.042268, Validation Loss= 2.116970, Test Loss= 2.098690, Best Valid Loss= 2.075379, Best Test Loss= 2.036628
+consuming time in one epoch 83.44726896286011
+#11, Training Loss= 0.035839, Validation Loss= 2.069028, Test Loss= 2.035569, Best Valid Loss= 2.069028, Best Test Loss= 2.035569
+consuming time in one epoch 83.27958726882935
+#12, Training Loss= 0.029590, Validation Loss= 2.089019, Test Loss= 2.050455, Best Valid Loss= 2.069028, Best Test Loss= 2.035569
+consuming time in one epoch 83.32619190216064
+#13, Training Loss= 0.024612, Validation Loss= 2.050346, Test Loss= 2.004360, Best Valid Loss= 2.050346, Best Test Loss= 2.004360
+consuming time in one epoch 83.37227749824524
+#14, Training Loss= 0.021436, Validation Loss= 2.040762, Test Loss= 2.012975, Best Valid Loss= 2.040762, Best Test Loss= 2.012975
+consuming time in one epoch 83.11229920387268
+#15, Training Loss= 0.019072, Validation Loss= 2.061864, Test Loss= 2.015722, Best Valid Loss= 2.040762, Best Test Loss= 2.012975
+consuming time in one epoch 85.92369818687439
+#16, Training Loss= 0.016992, Validation Loss= 2.074285, Test Loss= 2.039493, Best Valid Loss= 2.040762, Best Test Loss= 2.012975
+consuming time in one epoch 89.13705730438232
+#17, Training Loss= 0.015463, Validation Loss= 2.046944, Test Loss= 2.010039, Best Valid Loss= 2.040762, Best Test Loss= 2.012975
+consuming time in one epoch 88.71029877662659
+#18, Training Loss= 0.013651, Validation Loss= 2.075944, Test Loss= 2.039660, Best Valid Loss= 2.040762, Best Test Loss= 2.012975
+consuming time in one epoch 88.05926275253296
+#19, Training Loss= 0.012264, Validation Loss= 2.078579, Test Loss= 2.045371, Best Valid Loss= 2.040762, Best Test Loss= 2.012975
+consuming time in one epoch 83.88256287574768
+#20, Training Loss= 0.011588, Validation Loss= 2.082452, Test Loss= 2.049805, Best Valid Loss= 2.040762, Best Test Loss= 2.012975
+consuming time in one epoch 82.95440316200256
+#21, Training Loss= 0.010221, Validation Loss= 2.082759, Test Loss= 2.052640, Best Valid Loss= 2.040762, Best Test Loss= 2.012975
+consuming time in one epoch 83.16605615615845
+#22, Training Loss= 0.009650, Validation Loss= 2.065560, Test Loss= 2.033459, Best Valid Loss= 2.040762, Best Test Loss= 2.012975
+consuming time in one epoch 83.20001173019409
+#23, Training Loss= 0.008874, Validation Loss= 2.111166, Test Loss= 2.076662, Best Valid Loss= 2.040762, Best Test Loss= 2.012975
+consuming time in one epoch 83.40425729751587
+#24, Training Loss= 0.007932, Validation Loss= 2.155908, Test Loss= 2.118194, Best Valid Loss= 2.040762, Best Test Loss= 2.012975
+consuming time in one epoch 82.86680269241333
+#25, Training Loss= 0.007883, Validation Loss= 2.094295, Test Loss= 2.069030, Best Valid Loss= 2.040762, Best Test Loss= 2.012975
+consuming time in one epoch 82.6941511631012
+#26, Training Loss= 0.007620, Validation Loss= 2.071024, Test Loss= 2.046992, Best Valid Loss= 2.040762, Best Test Loss= 2.012975
+consuming time in one epoch 82.61876678466797
+#27, Training Loss= 0.006983, Validation Loss= 2.095397, Test Loss= 2.070844, Best Valid Loss= 2.040762, Best Test Loss= 2.012975
+consuming time in one epoch 83.32223677635193
+#28, Training Loss= 0.006523, Validation Loss= 2.088331, Test Loss= 2.060073, Best Valid Loss= 2.040762, Best Test Loss= 2.012975
+consuming time in one epoch 82.7651515007019
+#29, Training Loss= 0.006137, Validation Loss= 2.097431, Test Loss= 2.071298, Best Valid Loss= 2.040762, Best Test Loss= 2.012975
+consuming time in one epoch 83.16310381889343
+#30, Training Loss= 0.005936, Validation Loss= 2.094902, Test Loss= 2.064198, Best Valid Loss= 2.040762, Best Test Loss= 2.012975
+consuming time in one epoch 83.13399696350098
+#31, Training Loss= 0.005789, Validation Loss= 2.139914, Test Loss= 2.115280, Best Valid Loss= 2.040762, Best Test Loss= 2.012975
+consuming time in one epoch 83.04377698898315
+#32, Training Loss= 0.006328, Validation Loss= 2.132506, Test Loss= 2.093662, Best Valid Loss= 2.040762, Best Test Loss= 2.012975
+consuming time in one epoch 85.73166799545288
+#33, Training Loss= 0.005424, Validation Loss= 2.102694, Test Loss= 2.068094, Best Valid Loss= 2.040762, Best Test Loss= 2.012975
+consuming time in one epoch 89.5969169139862
+#34, Training Loss= 0.005154, Validation Loss= 2.104874, Test Loss= 2.063294, Best Valid Loss= 2.040762, Best Test Loss= 2.012975
+consuming time in one epoch 89.85717034339905
+#35, Training Loss= 0.004901, Validation Loss= 2.118263, Test Loss= 2.084482, Best Valid Loss= 2.040762, Best Test Loss= 2.012975
+consuming time in one epoch 87.63624882698059
+#36, Training Loss= 0.004875, Validation Loss= 2.098905, Test Loss= 2.064120, Best Valid Loss= 2.040762, Best Test Loss= 2.012975
+consuming time in one epoch 83.0396797657013
+#37, Training Loss= 0.004993, Validation Loss= 2.132003, Test Loss= 2.093835, Best Valid Loss= 2.040762, Best Test Loss= 2.012975
+consuming time in one epoch 82.9528067111969
+#38, Training Loss= 0.004676, Validation Loss= 2.126015, Test Loss= 2.098958, Best Valid Loss= 2.040762, Best Test Loss= 2.012975
+consuming time in one epoch 83.23718762397766
+#39, Training Loss= 0.005016, Validation Loss= 2.115050, Test Loss= 2.088959, Best Valid Loss= 2.040762, Best Test Loss= 2.012975
+consuming time in one epoch 82.8403251171112
+#40, Training Loss= 0.004437, Validation Loss= 2.114675, Test Loss= 2.084070, Best Valid Loss= 2.040762, Best Test Loss= 2.012975
+consuming time in one epoch 83.13856339454651
+#41, Training Loss= 0.004158, Validation Loss= 2.124480, Test Loss= 2.101815, Best Valid Loss= 2.040762, Best Test Loss= 2.012975
+consuming time in one epoch 83.02841329574585
+#42, Training Loss= 0.003940, Validation Loss= 2.117321, Test Loss= 2.085190, Best Valid Loss= 2.040762, Best Test Loss= 2.012975
+consuming time in one epoch 82.92626237869263
+#43, Training Loss= 0.004175, Validation Loss= 2.115618, Test Loss= 2.084202, Best Valid Loss= 2.040762, Best Test Loss= 2.012975
+Finished!
+----------------------------------------------------------------
+Time: 83.50616788864136
+Valid Loss: 2.040762
+Test Loss: 2.0129745

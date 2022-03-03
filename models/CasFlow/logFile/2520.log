@@ -1,0 +1,67 @@
+===================configuration===================
+learning rate :  0.0005
+observation hour [7,19]
+observation threshold :  2520
+prediction time :  86400
+cascade length [10,100]
+model save at : ../model_save/casflow/citation2/
+===================configuration===================
+TF Version: 2.0.0
+Epoch 1/15
+593/593 [==============================] - 597s 1s/step - loss: -22.1979 - mape: 1.0257 - msle_log2: 1.3719 - val_loss: -63.2849 - val_mape: 0.9828 - val_msle_log2: 1.1170
+Epoch 2/15
+593/593 [==============================] - 567s 956ms/step - loss: -80.3243 - mape: 0.8945 - msle_log2: 1.1047 - val_loss: -89.1460 - val_mape: 0.8879 - val_msle_log2: 1.0679
+Epoch 3/15
+593/593 [==============================] - 580s 978ms/step - loss: -99.1997 - mape: 0.8794 - msle_log2: 1.0720 - val_loss: -105.0347 - val_mape: 1.0531 - val_msle_log2: 1.1133
+Epoch 4/15
+593/593 [==============================] - 588s 991ms/step - loss: -107.9924 - mape: 0.8683 - msle_log2: 1.0507 - val_loss: -112.9823 - val_mape: 0.7745 - val_msle_log2: 1.0858
+Epoch 5/15
+593/593 [==============================] - 583s 983ms/step - loss: -113.6392 - mape: 0.8629 - msle_log2: 1.0425 - val_loss: -110.3591 - val_mape: 0.9732 - val_msle_log2: 1.0582
+Epoch 6/15
+593/593 [==============================] - 591s 996ms/step - loss: -102.1070 - mape: 0.8604 - msle_log2: 1.0346 - val_loss: -97.2261 - val_mape: 0.8753 - val_msle_log2: 1.0341
+Epoch 7/15
+593/593 [==============================] - 587s 989ms/step - loss: -99.7239 - mape: 0.8545 - msle_log2: 1.0258 - val_loss: -100.7729 - val_mape: 0.7989 - val_msle_log2: 1.0342
+Epoch 8/15
+593/593 [==============================] - 582s 981ms/step - loss: -43.7112 - mape: 0.8487 - msle_log2: 1.0149 - val_loss: -15.7382 - val_mape: 0.9450 - val_msle_log2: 1.0403
+Epoch 9/15
+593/593 [==============================] - 594s 1s/step - loss: -11.4264 - mape: 0.8455 - msle_log2: 1.0087 - val_loss: 5.4589 - val_mape: 0.9581 - val_msle_log2: 1.0381
+Epoch 10/15
+593/593 [==============================] - 580s 979ms/step - loss: 0.3071 - mape: 0.8355 - msle_log2: 0.9921 - val_loss: 2.8962 - val_mape: 0.9260 - val_msle_log2: 1.0702
+Epoch 11/15
+593/593 [==============================] - 582s 981ms/step - loss: 3.9836 - mape: 0.8404 - msle_log2: 0.9948 - val_loss: 3.4952 - val_mape: 0.7634 - val_msle_log2: 1.0614
+Epoch 12/15
+593/593 [==============================] - 589s 994ms/step - loss: 3.9982 - mape: 0.8298 - msle_log2: 0.9785 - val_loss: 3.5846 - val_mape: 0.9413 - val_msle_log2: 1.0482
+Epoch 13/15
+593/593 [==============================] - 582s 981ms/step - loss: 2.8538 - mape: 0.8116 - msle_log2: 0.9489 - val_loss: 2.9891 - val_mape: 0.9195 - val_msle_log2: 1.0577
+Epoch 14/15
+593/593 [==============================] - 581s 980ms/step - loss: 3.7209 - mape: 0.8035 - msle_log2: 0.9357 - val_loss: 3.3530 - val_mape: 1.0140 - val_msle_log2: 1.0670
+Epoch 15/15
+593/593 [==============================] - 590s 995ms/step - loss: 2.6740 - mape: 0.7812 - msle_log2: 0.9020 - val_loss: 2.7714 - val_mape: 0.9424 - val_msle_log2: 1.0755
+Training ended!
+max preds 155.84596252441406, max truth 1914
+min preds 1.0, min truth 1
+test MSEL 1.4630795391079876
+test mape 0.940593708693164
+test mSEL 0.6021054066659179
+test acc 0.44226981782373215
+max preds 148.16847229003906, max truth 2915
+min preds 1.0, min truth 1
+val MSEL 1.4089281394874407
+val mape 0.39294571668268835
+val mSEL 0.5792040211181795
+val acc 0.4449778434268833
+Finished! Time used: 148.037mins.
+
+max preds 87.72834014892578, max truth 1914
+min preds 1.0, min truth 1
+test MSEL 1.4476273688130832
+test mape 0.7570766579980197
+test mSEL 0.6445227501477288
+test acc 0.4149433776464796
+max preds 86.51375579833984, max truth 2915
+min preds 1.0, min truth 1
+val MSEL 1.4058968114813863
+val mape 0.3573433420871433
+val mSEL 0.6264668570643198
+val acc 0.4107582471688823
+Finished! Time used: 3.165mins.

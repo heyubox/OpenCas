@@ -1,0 +1,57 @@
+===========configuration loading success==========
+Start to run the TopoLSTM preprocess code!
+
+Dataset path: ../../rawdata/dataset_weibo.txt
+
+total_readin: 119313
+discard_midnight: 46157
+discard_outer: 19972
+total: 53184
+Number of valid cascades: 53184/119313
+Number of valid train cascades: 37228
+Number of valid   val cascades: 7978
+Number of valid  test cascades: 7978
+Processing time: 39.03s
+===========configuration loading success==========
+752545 seen nodes.
+total train cascade : 37228
+total   val cascade : 7978
+total  test cascade : 7978
+===========configuration loading success==========
+Start to run the TopoLSTM preprocess code!
+
+Dataset path: ../../rawdata/dataset_weibo.txt
+
+total_readin: 119313
+discard_midnight: 46157
+discard_outer: 16695
+total: 56461
+Number of valid cascades: 56461/119313
+Number of valid train cascades: 39522
+Number of valid   val cascades: 8470
+Number of valid  test cascades: 8469
+Processing time: 44.89s
+===========configuration loading success==========
+858654 seen nodes.
+total train cascade : 39522
+total   val cascade : 8470
+total  test cascade : 8469
+===========configuration loading success==========
+Start to run the TopoLSTM preprocess code!
+
+Dataset path: ../../rawdata/dataset_weibo.txt
+
+total_readin: 119313
+discard_midnight: 46157
+discard_outer: 15798
+total: 57358
+Number of valid cascades: 57358/119313
+Number of valid train cascades: 40150
+Number of valid   val cascades: 8604
+Number of valid  test cascades: 8604
+Processing time: 61.80s
+===========configuration loading success==========
+908674 seen nodes.
+total train cascade : 40150
+total   val cascade : 8604
+total  test cascade : 8604

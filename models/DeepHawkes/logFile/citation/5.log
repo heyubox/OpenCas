@@ -1,0 +1,182 @@
+os.environ: 0
+1.14.0
+ok
+dataset information: nodes:137831, n_sequence:120, n_steps:16 
+===================configuration===================
+dropout prob :  0.001
+l2 0.05
+learning rate :  0.0005
+emb_learning_rate :  0.0005
+observation hour [7,19]
+observation threshold :  1800
+prediction time :  86400
+cascade length [10,100]
+model save at : ../model_save/deephawkes/citation/
+===================configuration===================
+---------***---------
+Number: 20527, Max: 9.779719355143405 and Min: 0.0 label Value in Train
+NUmber: 4399, Max: 10.422064766172813 and Min: 0.0 label Value in Test
+NUmber: 4399, Max: 9.992938336165814 and Min: 0.0 label Value in Valid
+---------***---------
+20527 4399 4399
+Total_parameters:6916805
+finish one epoch, time98.49761080741882
+
+train mseloss : 4.85447928196286
+lambda1 [0.08 0.06 0.06 0.08 0.06 0.09]
+#0, Training Loss= 4.84665, Valid Loss= 5.00883, Valid median Loss= 2.66656, Best Valid Loss= 5.00883, Test Loss= 4.76138, Test median  Loss= 2.63378, Best Test Loss= 4.76138
+finish one epoch, time337.9572238922119
+
+train mseloss : 2.8844653414994625
+lambda1 [0.06 0.04 0.05 0.07 0.07 0.11]
+#1, Training Loss= 2.88147, Valid Loss= 2.97745, Valid median Loss= 1.44531, Best Valid Loss= 2.97745, Test Loss= 2.85020, Test median  Loss= 1.38937, Best Test Loss= 2.85020
+finish one epoch, time591.4508991241455
+
+train mseloss : 1.8657211464368366
+lambda1 [0.02 0.01 0.04 0.07 0.08 0.12]
+#2, Training Loss= 1.86071, Valid Loss= 1.89347, Valid median Loss= 0.84201, Best Valid Loss= 1.89347, Test Loss= 1.89180, Test median  Loss= 0.85809, Best Test Loss= 1.89180
+finish one epoch, time846.929803609848
+
+train mseloss : 1.6636625572358406
+lambda1 [-0.01 -0.01  0.03  0.06  0.08  0.12]
+#3, Training Loss= 1.66819, Valid Loss= 1.71317, Valid median Loss= 0.77662, Best Valid Loss= 1.71317, Test Loss= 1.69959, Test median  Loss= 0.75872, Best Test Loss= 1.69959
+finish one epoch, time1104.8905346393585
+
+train mseloss : 1.6227033572789433
+lambda1 [-0.02 -0.01  0.02  0.05  0.08  0.12]
+#4, Training Loss= 1.61359, Valid Loss= 1.65603, Valid median Loss= 0.74880, Best Valid Loss= 1.65603, Test Loss= 1.65520, Test median  Loss= 0.74115, Best Test Loss= 1.65520
+finish one epoch, time1375.1153590679169
+
+train mseloss : 1.5909608296900488
+lambda1 [-0.03 -0.01  0.02  0.05  0.08  0.12]
+#5, Training Loss= 1.59021, Valid Loss= 1.62195, Valid median Loss= 0.71964, Best Valid Loss= 1.62195, Test Loss= 1.62304, Test median  Loss= 0.69937, Best Test Loss= 1.62304
+finish one epoch, time1670.6582782268524
+
+train mseloss : 1.583593984229395
+lambda1 [-0.03 -0.01  0.02  0.05  0.08  0.13]
+#6, Training Loss= 1.58207, Valid Loss= 1.61345, Valid median Loss= 0.72189, Best Valid Loss= 1.61345, Test Loss= 1.62866, Test median  Loss= 0.69580, Best Test Loss= 1.62304
+finish one epoch, time1960.4529948234558
+
+train mseloss : 1.5788601771633772
+lambda1 [-0.03 -0.01  0.02  0.05  0.08  0.13]
+#7, Training Loss= 1.57303, Valid Loss= 1.60274, Valid median Loss= 0.72468, Best Valid Loss= 1.60274, Test Loss= 1.60902, Test median  Loss= 0.68225, Best Test Loss= 1.60902
+finish one epoch, time2258.7245814800262
+
+train mseloss : 1.5620767719961592
+lambda1 [-0.03 -0.01  0.02  0.05  0.08  0.13]
+#8, Training Loss= 1.55898, Valid Loss= 1.60111, Valid median Loss= 0.70908, Best Valid Loss= 1.60111, Test Loss= 1.60925, Test median  Loss= 0.69677, Best Test Loss= 1.60902
+finish one epoch, time2555.4461352825165
+
+train mseloss : 1.5583306285374274
+lambda1 [-0.03 -0.01  0.02  0.05  0.08  0.13]
+#9, Training Loss= 1.56016, Valid Loss= 1.61039, Valid median Loss= 0.72370, Best Valid Loss= 1.60111, Test Loss= 1.62198, Test median  Loss= 0.72241, Best Test Loss= 1.60902
+finish one epoch, time2848.8957669734955
+
+train mseloss : 1.5487607417464209
+lambda1 [-0.03 -0.01  0.02  0.05  0.08  0.13]
+#10, Training Loss= 1.54679, Valid Loss= 1.57566, Valid median Loss= 0.70702, Best Valid Loss= 1.57566, Test Loss= 1.59821, Test median  Loss= 0.69280, Best Test Loss= 1.59821
+finish one epoch, time3150.749677181244
+
+train mseloss : 1.5457492068202388
+lambda1 [-0.03 -0.01  0.02  0.05  0.08  0.14]
+#11, Training Loss= 1.54590, Valid Loss= 1.59446, Valid median Loss= 0.70813, Best Valid Loss= 1.57566, Test Loss= 1.60847, Test median  Loss= 0.69022, Best Test Loss= 1.59821
+finish one epoch, time3446.2693498134613
+
+train mseloss : 1.53393725234755
+lambda1 [-0.03 -0.01  0.02  0.05  0.08  0.14]
+#12, Training Loss= 1.53265, Valid Loss= 1.57624, Valid median Loss= 0.68770, Best Valid Loss= 1.57566, Test Loss= 1.58759, Test median  Loss= 0.68203, Best Test Loss= 1.58759
+finish one epoch, time3745.7608795166016
+
+train mseloss : 1.532562263810263
+lambda1 [-0.03 -0.01  0.02  0.05  0.08  0.14]
+#13, Training Loss= 1.53132, Valid Loss= 1.56805, Valid median Loss= 0.68019, Best Valid Loss= 1.56805, Test Loss= 1.58819, Test median  Loss= 0.70917, Best Test Loss= 1.58759
+finish one epoch, time4045.470617055893
+
+train mseloss : 1.5357740442772707
+lambda1 [-0.04 -0.01  0.02  0.05  0.08  0.14]
+#14, Training Loss= 1.53424, Valid Loss= 1.58539, Valid median Loss= 0.70982, Best Valid Loss= 1.56805, Test Loss= 1.59858, Test median  Loss= 0.70603, Best Test Loss= 1.58759
+finish one epoch, time4337.369615793228
+
+train mseloss : 1.5256580211236714
+lambda1 [-0.03 -0.01  0.02  0.05  0.08  0.14]
+#15, Training Loss= 1.52762, Valid Loss= 1.56058, Valid median Loss= 0.67673, Best Valid Loss= 1.56058, Test Loss= 1.57332, Test median  Loss= 0.66460, Best Test Loss= 1.57332
+finish one epoch, time4645.712784051895
+
+train mseloss : 1.5103278589178342
+lambda1 [-0.03 -0.01  0.02  0.05  0.08  0.14]
+#16, Training Loss= 1.50987, Valid Loss= 1.55136, Valid median Loss= 0.65895, Best Valid Loss= 1.55136, Test Loss= 1.56371, Test median  Loss= 0.67262, Best Test Loss= 1.56371
+finish one epoch, time4940.201547384262
+
+train mseloss : 1.504965989971849
+lambda1 [-0.03 -0.01  0.02  0.05  0.09  0.15]
+#17, Training Loss= 1.50688, Valid Loss= 1.53683, Valid median Loss= 0.65361, Best Valid Loss= 1.53683, Test Loss= 1.55889, Test median  Loss= 0.66664, Best Test Loss= 1.55889
+finish one epoch, time5242.327069044113
+
+train mseloss : 1.4926892587876526
+lambda1 [-0.03 -0.01  0.02  0.05  0.09  0.15]
+#18, Training Loss= 1.49476, Valid Loss= 1.52459, Valid median Loss= 0.64502, Best Valid Loss= 1.52459, Test Loss= 1.54902, Test median  Loss= 0.67026, Best Test Loss= 1.54902
+finish one epoch, time5542.942106246948
+
+train mseloss : 1.4888064981087425
+lambda1 [-0.03 -0.01  0.02  0.05  0.09  0.15]
+#19, Training Loss= 1.48821, Valid Loss= 1.52536, Valid median Loss= 0.67038, Best Valid Loss= 1.52459, Test Loss= 1.55251, Test median  Loss= 0.67549, Best Test Loss= 1.54902
+finish one epoch, time5836.4621596336365
+
+train mseloss : 1.4761684334591083
+lambda1 [-0.03 -0.01  0.02  0.05  0.09  0.15]
+#20, Training Loss= 1.47562, Valid Loss= 1.50535, Valid median Loss= 0.64764, Best Valid Loss= 1.50535, Test Loss= 1.53044, Test median  Loss= 0.66247, Best Test Loss= 1.53044
+finish one epoch, time6144.355190753937
+
+train mseloss : 1.46882928367771
+lambda1 [-0.03 -0.01  0.02  0.05  0.09  0.15]
+#21, Training Loss= 1.46993, Valid Loss= 1.49675, Valid median Loss= 0.65301, Best Valid Loss= 1.49675, Test Loss= 1.52091, Test median  Loss= 0.65675, Best Test Loss= 1.52091
+finish one epoch, time6439.782395839691
+
+train mseloss : 1.4645237342552222
+lambda1 [-0.03 -0.01  0.02  0.05  0.09  0.16]
+#22, Training Loss= 1.46274, Valid Loss= 1.49330, Valid median Loss= 0.63820, Best Valid Loss= 1.49330, Test Loss= 1.52746, Test median  Loss= 0.65955, Best Test Loss= 1.52091
+finish one epoch, time6745.545207262039
+
+train mseloss : 1.4612777379392934
+lambda1 [-0.03 -0.01  0.02  0.06  0.09  0.16]
+#23, Training Loss= 1.45964, Valid Loss= 1.49202, Valid median Loss= 0.66304, Best Valid Loss= 1.49202, Test Loss= 1.51368, Test median  Loss= 0.65499, Best Test Loss= 1.51368
+finish one epoch, time7044.979544401169
+
+train mseloss : 1.455358739713215
+lambda1 [-0.03 -0.01  0.02  0.05  0.09  0.16]
+#24, Training Loss= 1.45665, Valid Loss= 1.49145, Valid median Loss= 0.65280, Best Valid Loss= 1.49145, Test Loss= 1.52693, Test median  Loss= 0.67367, Best Test Loss= 1.51368
+finish one epoch, time7346.141441583633
+
+train mseloss : 1.4514275800967587
+lambda1 [-0.03 -0.01  0.02  0.06  0.1   0.16]
+#25, Training Loss= 1.45131, Valid Loss= 1.48809, Valid median Loss= 0.64409, Best Valid Loss= 1.48809, Test Loss= 1.51243, Test median  Loss= 0.66313, Best Test Loss= 1.51243
+finish one epoch, time7656.019972324371
+
+train mseloss : 1.466141969193655
+lambda1 [-0.03 -0.01  0.02  0.06  0.1   0.16]
+#26, Training Loss= 1.46426, Valid Loss= 1.50735, Valid median Loss= 0.66177, Best Valid Loss= 1.48809, Test Loss= 1.53649, Test median  Loss= 0.69158, Best Test Loss= 1.51243
+finish one epoch, time7947.152681827545
+
+train mseloss : 1.448573175371548
+lambda1 [-0.03 -0.    0.03  0.06  0.1   0.16]
+#27, Training Loss= 1.45064, Valid Loss= 1.48209, Valid median Loss= 0.65778, Best Valid Loss= 1.48209, Test Loss= 1.51114, Test median  Loss= 0.66211, Best Test Loss= 1.51114
+finish one epoch, time8259.667294979095
+
+train mseloss : 1.4557506045986908
+lambda1 [-0.03 -0.01  0.03  0.06  0.1   0.16]
+#28, Training Loss= 1.45426, Valid Loss= 1.48166, Valid median Loss= 0.64348, Best Valid Loss= 1.48166, Test Loss= 1.51221, Test median  Loss= 0.65425, Best Test Loss= 1.51114
+finish one epoch, time8558.14384150505
+
+train mseloss : 1.4468923877987507
+lambda1 [-0.03 -0.01  0.02  0.06  0.1   0.16]
+#29, Training Loss= 1.44427, Valid Loss= 1.48159, Valid median Loss= 0.64358, Best Valid Loss= 1.48159, Test Loss= 1.50480, Test median  Loss= 0.66361, Best Test Loss= 1.50480
+finish one epoch, time8855.467739343643
+
+train mseloss : 1.4444185679101822
+lambda1 [-0.03 -0.01  0.02  0.06  0.1   0.16]
+#30, Training Loss= 1.44228, Valid Loss= 1.46798, Valid median Loss= 0.63515, Best Valid Loss= 1.46798, Test Loss= 1.50068, Test median  Loss= 0.65296, Best Test Loss= 1.50068
+Finished!
+----------------------------------------------------------------
+Time: 9040.78079199791
+Valid Loss: 1.4679803
+Test Loss: 1.5006776

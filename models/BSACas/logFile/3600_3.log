@@ -1,0 +1,22 @@
+===================configuration===================
+learning rate :0.001 
+num_mlp_layers : 1
+num_layers : 2
+gnn input_features : 100
+gnn output_features : 64
+input of rnn/transformer : 64
+hidden_size (out put of rnn/tranformer) : 64
+observation hour [7,19]
+observation interval : 360
+observation threshold : 10800
+prediction time : 86400
+cascade length [5,100]
+model save at : ../model_save/cas2vec/weibo3/
+====bidirected: True, attention: GAT, gcn_type: self, rnn: gru====
+===================configuration===================
+len(Y_train), len(Y_valid), len(Y_test): 40150 8604 8604
+preparing time:202.44803857803345
+total parameters 86045
+---------------*****---------------
+Starting training the epoch: 0 
+total batch: 627.34375 

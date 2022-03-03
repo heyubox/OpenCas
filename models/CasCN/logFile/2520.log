@@ -1,0 +1,204 @@
+Working in TF version 1.14....
+===================configuration===================
+l2 0.001
+learning rate :  0.0005
+observation hour [7,19]
+observation threshold :  2520
+prediction time :  86400
+cascade length [10,100]
+model save at : ../model_save/cascn/citation2/
+===================configuration===================
+-----------------display step-------------------
+display step : 2369
+1->2->3->4->5->6->7->8->9->10->11->12->13->14->15->16->17->18->19->20->21->22->23->24->25->26->27->28->29->30->31->32->33->34->35->36->37->38->39->40->41->42->43->44->45->46->47->48->49->50->51->52->53->54->55->56->57->58->59->60->61->62->63->64->65->66->67->68->69->70->71->72->73->74->75->76->77->78->79->80->81->82->83->84->85->86->87->88->89->90->91->92->93->94->95->96->97->98->99->100->building time: 109.52298545837402
+-----------------display step-------------------
+display step : 37904
+l2 0.001
+learning rate: 0.0005
+
+feat_in: 100 
+num_nodes: 100 
+n_sequences: 100
+n_nodes:   243760
+-----------start to train--------------
+
+traing time for an epoch: 1796.3104496002197 
+ evaluating.........
+
+#1.0, Training Loss= 1.964692, Validation Loss= 1.505489, Test Loss= 1.608806, Best Valid Loss= 1.505489, Best Test Loss= 1.608806
+ Val Loss mSEL:0.607232, Test Loss mSEL:0.624891,
+ Val acc:0.430966, Test acc:0.422367,
+ Val Loss mape:0.408062, Test Loss mape:0.418244,
+
+
+after evaluating: 2314.933179140091
+
+traing time for an epoch: 1393.7222514152527 
+ evaluating.........
+
+#2.0, Training Loss= 1.253455, Validation Loss= 1.250782, Test Loss= 1.322819, Best Valid Loss= 1.250782, Best Test Loss= 1.322819
+ Val Loss mSEL:0.544375, Test Loss mSEL:0.546286,
+ Val acc:0.448348, Test acc:0.445128,
+ Val Loss mape:0.379328, Test Loss mape:0.389031,
+
+
+after evaluating: 1800.5127129554749
+
+traing time for an epoch: 1331.0936074256897 
+ evaluating.........
+
+#3.0, Training Loss= 1.223121, Validation Loss= 1.201375, Test Loss= 1.266261, Best Valid Loss= 1.201375, Best Test Loss= 1.266261
+ Val Loss mSEL:0.538227, Test Loss mSEL:0.519975,
+ Val acc:0.450567, Test acc:0.446604,
+ Val Loss mape:0.367309, Test Loss mape:0.376348,
+
+
+after evaluating: 1782.9808979034424
+
+traing time for an epoch: 1438.888733625412 
+ evaluating.........
+
+#4.0, Training Loss= 1.207945, Validation Loss= 1.204375, Test Loss= 1.269041, Best Valid Loss= 1.201375, Best Test Loss= 1.266261
+ Val Loss mSEL:0.543129, Test Loss mSEL:0.529172,
+ Val acc:0.451307, Test acc:0.449188,
+ Val Loss mape:0.371590, Test Loss mape:0.380831,
+
+
+after evaluating: 1824.2873892784119
+
+traing time for an epoch: 1201.557522058487 
+ evaluating.........
+
+#5.0, Training Loss= 1.204701, Validation Loss= 1.206243, Test Loss= 1.271142, Best Valid Loss= 1.201375, Best Test Loss= 1.266261
+ Val Loss mSEL:0.537821, Test Loss mSEL:0.530796,
+ Val acc:0.452786, Test acc:0.447712,
+ Val Loss mape:0.372950, Test Loss mape:0.382191,
+
+
+after evaluating: 1567.8129835128784
+
+traing time for an epoch: 1184.0765206813812 
+ evaluating.........
+
+#6.0, Training Loss= 1.203257, Validation Loss= 1.189752, Test Loss= 1.254888, Best Valid Loss= 1.189752, Best Test Loss= 1.254888
+ Val Loss mSEL:0.540130, Test Loss mSEL:0.528274,
+ Val acc:0.452786, Test acc:0.446604,
+ Val Loss mape:0.368419, Test Loss mape:0.377612,
+
+
+after evaluating: 1559.8389024734497
+
+traing time for an epoch: 1362.3289287090302 
+ evaluating.........
+
+#7.0, Training Loss= 1.201014, Validation Loss= 1.187526, Test Loss= 1.250181, Best Valid Loss= 1.187526, Best Test Loss= 1.250181
+ Val Loss mSEL:0.541586, Test Loss mSEL:0.524346,
+ Val acc:0.453156, Test acc:0.450049,
+ Val Loss mape:0.369610, Test Loss mape:0.378504,
+
+
+after evaluating: 1810.4771978855133
+
+traing time for an epoch: 1210.618988752365 
+ evaluating.........
+
+#8.0, Training Loss= 1.200947, Validation Loss= 1.196233, Test Loss= 1.259456, Best Valid Loss= 1.187526, Best Test Loss= 1.250181
+ Val Loss mSEL:0.545140, Test Loss mSEL:0.527166,
+ Val acc:0.454142, Test acc:0.449188,
+ Val Loss mape:0.372843, Test Loss mape:0.381919,
+
+
+after evaluating: 1577.7047877311707
+
+traing time for an epoch: 1188.4952788352966 
+ evaluating.........
+
+#9.0, Training Loss= 1.201493, Validation Loss= 1.190843, Test Loss= 1.252258, Best Valid Loss= 1.187526, Best Test Loss= 1.250181
+ Val Loss mSEL:0.538670, Test Loss mSEL:0.526717,
+ Val acc:0.452663, Test acc:0.450418,
+ Val Loss mape:0.368991, Test Loss mape:0.377881,
+
+
+after evaluating: 1554.8432216644287
+
+traing time for an epoch: 1187.1834454536438 
+ evaluating.........
+
+#10.0, Training Loss= 1.200341, Validation Loss= 1.185222, Test Loss= 1.245268, Best Valid Loss= 1.185222, Best Test Loss= 1.245268
+ Val Loss mSEL:0.535304, Test Loss mSEL:0.525272,
+ Val acc:0.455375, Test acc:0.452264,
+ Val Loss mape:0.368603, Test Loss mape:0.377331,
+
+
+after evaluating: 1589.6502692699432
+
+traing time for an epoch: 1237.3721821308136 
+ evaluating.........
+
+#11.0, Training Loss= 1.200167, Validation Loss= 1.191744, Test Loss= 1.258696, Best Valid Loss= 1.185222, Best Test Loss= 1.245268
+ Val Loss mSEL:0.537798, Test Loss mSEL:0.530404,
+ Val acc:0.455005, Test acc:0.449311,
+ Val Loss mape:0.370198, Test Loss mape:0.379416,
+
+
+after evaluating: 1628.7191219329834
+
+traing time for an epoch: 1237.1702206134796 
+ evaluating.........
+
+#12.0, Training Loss= 1.200345, Validation Loss= 1.184048, Test Loss= 1.249382, Best Valid Loss= 1.184048, Best Test Loss= 1.249382
+ Val Loss mSEL:0.535413, Test Loss mSEL:0.520829,
+ Val acc:0.456731, Test acc:0.451526,
+ Val Loss mape:0.368643, Test Loss mape:0.377732,
+
+
+after evaluating: 1637.4722759723663
+
+traing time for an epoch: 1236.4694747924805 
+ evaluating.........
+
+#13.0, Training Loss= 1.199791, Validation Loss= 1.178315, Test Loss= 1.237520, Best Valid Loss= 1.178315, Best Test Loss= 1.237520
+ Val Loss mSEL:0.532125, Test Loss mSEL:0.524848,
+ Val acc:0.454635, Test acc:0.453371,
+ Val Loss mape:0.367062, Test Loss mape:0.375582,
+
+
+after evaluating: 1632.8315680027008
+
+traing time for an epoch: 1232.7609128952026 
+ evaluating.........
+
+#14.0, Training Loss= 1.199934, Validation Loss= 1.192028, Test Loss= 1.255944, Best Valid Loss= 1.178315, Best Test Loss= 1.237520
+ Val Loss mSEL:0.541695, Test Loss mSEL:0.524519,
+ Val acc:0.454512, Test acc:0.449311,
+ Val Loss mape:0.371115, Test Loss mape:0.380208,
+
+
+after evaluating: 1616.6534533500671
+
+traing time for an epoch: 1236.93234872818 
+ evaluating.........
+
+#15.0, Training Loss= 1.200255, Validation Loss= 1.188095, Test Loss= 1.252817, Best Valid Loss= 1.178315, Best Test Loss= 1.237520
+ Val Loss mSEL:0.532924, Test Loss mSEL:0.526448,
+ Val acc:0.454758, Test acc:0.449065,
+ Val Loss mape:0.369324, Test Loss mape:0.378332,
+
+
+after evaluating: 1627.7614755630493
+
+traing time for an epoch: 1229.295595407486 
+ evaluating.........
+
+#16.0, Training Loss= 1.199903, Validation Loss= 1.176198, Test Loss= 1.237468, Best Valid Loss= 1.176198, Best Test Loss= 1.237468
+ Val Loss mSEL:0.526616, Test Loss mSEL:0.524950,
+ Val acc:0.452293, Test acc:0.449680,
+ Val Loss mape:0.363631, Test Loss mape:0.372096,
+
+
+after evaluating: 1630.1317963600159
+Finished!
+----------------------------------------------------------------
+Time: 1089.8744235038757
+Valid Loss: 1.1761979
+Test Loss: 1.2374685

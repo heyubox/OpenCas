@@ -1,0 +1,46 @@
+===================configuration===================
+learning rate :  0.0005
+observation hour [7,19]
+observation threshold :  3
+prediction time :  86400
+cascade length [10,100]
+model save at : ../model_save/casflow/dblp1/
+===================configuration===================
+TF Version: 2.0.0
+Epoch 1/10
+247/247 [==============================] - 343s 1s/step - loss: 3.4232 - mape: 1.1560 - msle_log2: 3.8517 - val_loss: -8.4248 - val_mape: 1.4530 - val_msle_log2: 2.2344
+Epoch 2/10
+247/247 [==============================] - 285s 1s/step - loss: -27.0098 - mape: 1.1046 - msle_log2: 1.9206 - val_loss: -47.7612 - val_mape: 1.1430 - val_msle_log2: 1.8825
+Epoch 3/10
+247/247 [==============================] - 294s 1s/step - loss: -60.9564 - mape: 1.0676 - msle_log2: 1.7858 - val_loss: -71.3826 - val_mape: 1.2070 - val_msle_log2: 1.8010
+Epoch 4/10
+247/247 [==============================] - 292s 1s/step - loss: -78.1806 - mape: 1.0423 - msle_log2: 1.7085 - val_loss: -85.2899 - val_mape: 1.0665 - val_msle_log2: 1.6952
+Epoch 5/10
+247/247 [==============================] - 297s 1s/step - loss: -88.7115 - mape: 1.0021 - msle_log2: 1.6248 - val_loss: -91.7424 - val_mape: 0.9246 - val_msle_log2: 1.6923
+Epoch 6/10
+247/247 [==============================] - 294s 1s/step - loss: -95.3294 - mape: 0.9777 - msle_log2: 1.5709 - val_loss: -98.0979 - val_mape: 0.9262 - val_msle_log2: 1.6811
+Epoch 7/10
+247/247 [==============================] - 289s 1s/step - loss: -100.0370 - mape: 0.9581 - msle_log2: 1.5345 - val_loss: -100.5685 - val_mape: 1.1845 - val_msle_log2: 1.6782
+Epoch 8/10
+247/247 [==============================] - 282s 1s/step - loss: -103.6252 - mape: 0.9426 - msle_log2: 1.4968 - val_loss: -106.5145 - val_mape: 0.8557 - val_msle_log2: 1.6647
+Epoch 9/10
+247/247 [==============================] - 294s 1s/step - loss: -106.1175 - mape: 0.9366 - msle_log2: 1.4821 - val_loss: -105.9853 - val_mape: 0.8327 - val_msle_log2: 1.6965
+Epoch 10/10
+247/247 [==============================] - 294s 1s/step - loss: -108.9611 - mape: 0.9160 - msle_log2: 1.4417 - val_loss: -112.5799 - val_mape: 0.9498 - val_msle_log2: 1.6179
+Training ended!
+53/53 [==============================] - 21s 390ms/step - loss: -112.6380 - mape: 0.9180 - msle_log2: 1.5304
+1.7447222489022012
+Finished! Time used: 50.433mins.
+max preds 460.9425048828125, max truth 5294
+min preds 6.376941680908203, min truth 1
+test MSEL 1.6277948818864423
+test mape 0.9153827245902997
+test mSEL 0.6740362363949091
+test acc 0.6654856805432536
+max preds 461.0215148925781, max truth 5385
+min preds 7.522582530975342, min truth 1
+val MSEL 1.7231311431690797
+val mape 0.20891939539733478
+val mSEL 0.671188704926041
+val acc 0.6610569825804546
+Finished! Time used: 0.923mins.

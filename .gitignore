@@ -1,0 +1,26 @@
+! **/model_save/**/init.py
+**/model_save/
+**/models/data/**/*.txt
+**/models/data/**/*.pkl
+**/.ipynb_checkpoints
+**/__pycache__
+**/gpn/COLLAB
+**/gpn/IMDBBINARY
+**/gpn/IMDBMULTI
+**/gpn/MUTAG
+**/gpn/NCI1
+**/gpn/PROTEINS
+**/gpn/PTC
+**/gpn/REDDITBINARY
+**/gpn/REDDITMULTI5K
+**/DeepCas_ing
+data_formating.ipynb
+z/*
+**/.vscode
+# **/nohup.out
+**/train
+# **/*.out
+**/*.pkl
+rawdata
+data
+tmp

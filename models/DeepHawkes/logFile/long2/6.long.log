@@ -1,0 +1,182 @@
+os.environ: 0
+1.14.0
+dataset information: nodes:429472, n_sequence:120, n_steps:14 
+===================configuration===================
+dropout prob :  0.001
+l2 0.05
+learning rate :  0.0005
+emb_learning_rate :  0.0005
+observation hour [7,19]
+observation threshold :  6
+prediction time :  86400
+cascade length [10,100]
+model save at : ../model_save/deephawkes/dblp/
+===================configuration===================
+---------***---------
+Number: 48622, Max: 12.250594507192316 and Min: 0.0 label Value in Train
+NUmber: 10419, Max: 11.470150435274359 and Min: 0.0 label Value in Test
+NUmber: 10420, Max: 10.658211482751796 and Min: 0.0 label Value in Valid
+---------***---------
+48622 10419 10420
+Total_parameters:21498855
+finish one epoch, time579.9635689258575
+#0, Training Loss= nan, Valid Loss= 3.29317, Valid median Loss= 1.41423, Best Valid Loss= 3.29317, Test Loss= 3.22672, Test median  Loss= 1.35821, Best Test Loss= 3.22672
+ Val Loss mSEL:1.414228, Test Loss mSEL:1.358206,
+ Val acc:0.360918, Test acc:0.365837,
+ Val Loss mape:3.909613, Test Loss mape:3.216688,
+
+finish one epoch, time1488.0418894290924
+#1, Training Loss= nan, Valid Loss= 1.87905, Valid median Loss= 0.76317, Best Valid Loss= 1.87905, Test Loss= 1.83080, Test median  Loss= 0.76868, Best Test Loss= 1.83080
+ Val Loss mSEL:0.763166, Test Loss mSEL:0.768677,
+ Val acc:0.527103, Test acc:0.525077,
+ Val Loss mape:4.767684, Test Loss mape:3.912153,
+
+finish one epoch, time2466.770831346512
+#2, Training Loss= nan, Valid Loss= 1.74621, Valid median Loss= 0.70573, Best Valid Loss= 1.74621, Test Loss= 1.70530, Test median  Loss= 0.70442, Best Test Loss= 1.70530
+ Val Loss mSEL:0.705726, Test Loss mSEL:0.704424,
+ Val acc:0.544078, Test acc:0.543403,
+ Val Loss mape:4.493784, Test Loss mape:3.776129,
+
+finish one epoch, time3481.3212237358093
+#3, Training Loss= nan, Valid Loss= 1.66787, Valid median Loss= 0.69432, Best Valid Loss= 1.66787, Test Loss= 1.62959, Test median  Loss= 0.66273, Best Test Loss= 1.62959
+ Val Loss mSEL:0.694320, Test Loss mSEL:0.662726,
+ Val acc:0.550829, Test acc:0.548032,
+ Val Loss mape:4.388058, Test Loss mape:3.683964,
+
+finish one epoch, time4522.225746870041
+#4, Training Loss= nan, Valid Loss= 1.62829, Valid median Loss= 0.67551, Best Valid Loss= 1.62829, Test Loss= 1.57946, Test median  Loss= 0.65523, Best Test Loss= 1.57946
+ Val Loss mSEL:0.675508, Test Loss mSEL:0.655234,
+ Val acc:0.551698, Test acc:0.553627,
+ Val Loss mape:4.282945, Test Loss mape:3.497364,
+
+finish one epoch, time5572.95222902298
+#5, Training Loss= nan, Valid Loss= 1.60510, Valid median Loss= 0.66874, Best Valid Loss= 1.60510, Test Loss= 1.55743, Test median  Loss= 0.63182, Best Test Loss= 1.55743
+ Val Loss mSEL:0.668736, Test Loss mSEL:0.631818,
+ Val acc:0.553819, Test acc:0.557292,
+ Val Loss mape:4.235858, Test Loss mape:3.506073,
+
+finish one epoch, time6631.4865193367
+#6, Training Loss= nan, Valid Loss= 1.59089, Valid median Loss= 0.67564, Best Valid Loss= 1.59089, Test Loss= 1.54831, Test median  Loss= 0.63527, Best Test Loss= 1.54831
+ Val Loss mSEL:0.675643, Test Loss mSEL:0.635270,
+ Val acc:0.550347, Test acc:0.555363,
+ Val Loss mape:4.037761, Test Loss mape:3.383876,
+
+finish one epoch, time7675.506309270859
+#7, Training Loss= nan, Valid Loss= 1.59004, Valid median Loss= 0.65660, Best Valid Loss= 1.59004, Test Loss= 1.54247, Test median  Loss= 0.63796, Best Test Loss= 1.54247
+ Val Loss mSEL:0.656595, Test Loss mSEL:0.637964,
+ Val acc:0.549865, Test acc:0.557485,
+ Val Loss mape:4.099507, Test Loss mape:3.350908,
+
+finish one epoch, time8726.97622680664
+#8, Training Loss= nan, Valid Loss= 1.58868, Valid median Loss= 0.65875, Best Valid Loss= 1.58868, Test Loss= 1.53759, Test median  Loss= 0.63292, Best Test Loss= 1.53759
+ Val Loss mSEL:0.658754, Test Loss mSEL:0.632920,
+ Val acc:0.553337, Test acc:0.555556,
+ Val Loss mape:4.207156, Test Loss mape:3.436981,
+
+finish one epoch, time9788.914406061172
+#9, Training Loss= nan, Valid Loss= 1.59421, Valid median Loss= 0.67734, Best Valid Loss= 1.58868, Test Loss= 1.54947, Test median  Loss= 0.63688, Best Test Loss= 1.53759
+ Val Loss mSEL:0.677344, Test Loss mSEL:0.636876,
+ Val acc:0.549769, Test acc:0.554880,
+ Val Loss mape:4.161425, Test Loss mape:3.412846,
+
+finish one epoch, time10835.664459466934
+#10, Training Loss= nan, Valid Loss= 1.57713, Valid median Loss= 0.66580, Best Valid Loss= 1.57713, Test Loss= 1.54005, Test median  Loss= 0.62947, Best Test Loss= 1.53759
+ Val Loss mSEL:0.665797, Test Loss mSEL:0.629470,
+ Val acc:0.552373, Test acc:0.554784,
+ Val Loss mape:4.082880, Test Loss mape:3.388928,
+
+finish one epoch, time11894.827906608582
+#11, Training Loss= nan, Valid Loss= 1.58209, Valid median Loss= 0.67438, Best Valid Loss= 1.57713, Test Loss= 1.53511, Test median  Loss= 0.63427, Best Test Loss= 1.53511
+ Val Loss mSEL:0.674376, Test Loss mSEL:0.634273,
+ Val acc:0.548804, Test acc:0.553819,
+ Val Loss mape:4.049945, Test Loss mape:3.355138,
+
+finish one epoch, time12947.158265829086
+#12, Training Loss= nan, Valid Loss= 1.58615, Valid median Loss= 0.67143, Best Valid Loss= 1.57713, Test Loss= 1.53863, Test median  Loss= 0.62945, Best Test Loss= 1.53511
+ Val Loss mSEL:0.671431, Test Loss mSEL:0.629448,
+ Val acc:0.552469, Test acc:0.557388,
+ Val Loss mape:4.171209, Test Loss mape:3.418872,
+
+finish one epoch, time14001.285383462906
+#13, Training Loss= nan, Valid Loss= 1.58302, Valid median Loss= 0.66890, Best Valid Loss= 1.57713, Test Loss= 1.53768, Test median  Loss= 0.63219, Best Test Loss= 1.53511
+ Val Loss mSEL:0.668900, Test Loss mSEL:0.632186,
+ Val acc:0.548611, Test acc:0.556038,
+ Val Loss mape:4.089039, Test Loss mape:3.368502,
+
+finish one epoch, time15066.70026731491
+#14, Training Loss= nan, Valid Loss= 1.58912, Valid median Loss= 0.67370, Best Valid Loss= 1.57713, Test Loss= 1.53852, Test median  Loss= 0.63452, Best Test Loss= 1.53511
+ Val Loss mSEL:0.673704, Test Loss mSEL:0.634524,
+ Val acc:0.549286, Test acc:0.556809,
+ Val Loss mape:4.163637, Test Loss mape:3.389726,
+
+finish one epoch, time16119.769216775894
+#15, Training Loss= nan, Valid Loss= 1.58166, Valid median Loss= 0.66674, Best Valid Loss= 1.57713, Test Loss= 1.53656, Test median  Loss= 0.62920, Best Test Loss= 1.53511
+ Val Loss mSEL:0.666739, Test Loss mSEL:0.629205,
+ Val acc:0.546200, Test acc:0.554784,
+ Val Loss mape:4.093293, Test Loss mape:3.361954,
+
+finish one epoch, time17103.699278116226
+#16, Training Loss= nan, Valid Loss= 1.58666, Valid median Loss= 0.67545, Best Valid Loss= 1.57713, Test Loss= 1.53340, Test median  Loss= 0.63191, Best Test Loss= 1.53340
+ Val Loss mSEL:0.675446, Test Loss mSEL:0.631911,
+ Val acc:0.545428, Test acc:0.553916,
+ Val Loss mape:4.061104, Test Loss mape:3.316640,
+
+finish one epoch, time17913.585690021515
+#17, Training Loss= nan, Valid Loss= 1.57623, Valid median Loss= 0.66692, Best Valid Loss= 1.57623, Test Loss= 1.53214, Test median  Loss= 0.62231, Best Test Loss= 1.53214
+ Val Loss mSEL:0.666919, Test Loss mSEL:0.622314,
+ Val acc:0.548804, Test acc:0.556617,
+ Val Loss mape:4.116060, Test Loss mape:3.364762,
+
+finish one epoch, time18731.356137752533
+#18, Training Loss= nan, Valid Loss= 1.58184, Valid median Loss= 0.66826, Best Valid Loss= 1.57623, Test Loss= 1.53598, Test median  Loss= 0.62343, Best Test Loss= 1.53214
+ Val Loss mSEL:0.668257, Test Loss mSEL:0.623432,
+ Val acc:0.547743, Test acc:0.555073,
+ Val Loss mape:4.062254, Test Loss mape:3.319734,
+
+finish one epoch, time19731.38755273819
+#19, Training Loss= nan, Valid Loss= 1.57761, Valid median Loss= 0.66178, Best Valid Loss= 1.57623, Test Loss= 1.53496, Test median  Loss= 0.62189, Best Test Loss= 1.53214
+ Val Loss mSEL:0.661785, Test Loss mSEL:0.621887,
+ Val acc:0.549961, Test acc:0.558063,
+ Val Loss mape:4.109803, Test Loss mape:3.339524,
+
+finish one epoch, time20528.726284980774
+#20, Training Loss= nan, Valid Loss= 1.58018, Valid median Loss= 0.66382, Best Valid Loss= 1.57623, Test Loss= 1.53131, Test median  Loss= 0.62228, Best Test Loss= 1.53131
+ Val Loss mSEL:0.663817, Test Loss mSEL:0.622277,
+ Val acc:0.554591, Test acc:0.562018,
+ Val Loss mape:4.182146, Test Loss mape:3.432592,
+
+finish one epoch, time21354.98996067047
+#21, Training Loss= nan, Valid Loss= 1.57492, Valid median Loss= 0.66865, Best Valid Loss= 1.57492, Test Loss= 1.53026, Test median  Loss= 0.62506, Best Test Loss= 1.53026
+ Val Loss mSEL:0.668647, Test Loss mSEL:0.625064,
+ Val acc:0.549769, Test acc:0.558642,
+ Val Loss mape:4.131744, Test Loss mape:3.397558,
+
+finish one epoch, time22997.4530210495
+#22, Training Loss= nan, Valid Loss= 1.58033, Valid median Loss= 0.66484, Best Valid Loss= 1.57492, Test Loss= 1.53498, Test median  Loss= 0.63362, Best Test Loss= 1.53026
+ Val Loss mSEL:0.664835, Test Loss mSEL:0.633617,
+ Val acc:0.545718, Test acc:0.554398,
+ Val Loss mape:4.038417, Test Loss mape:3.333474,
+
+finish one epoch, time24913.763043642044
+#23, Training Loss= nan, Valid Loss= 1.58134, Valid median Loss= 0.67200, Best Valid Loss= 1.57492, Test Loss= 1.53133, Test median  Loss= 0.62249, Best Test Loss= 1.53026
+ Val Loss mSEL:0.672002, Test Loss mSEL:0.622490,
+ Val acc:0.548900, Test acc:0.559606,
+ Val Loss mape:4.127636, Test Loss mape:3.370457,
+
+finish one epoch, time26792.99144768715
+#24, Training Loss= nan, Valid Loss= 1.57745, Valid median Loss= 0.66625, Best Valid Loss= 1.57492, Test Loss= 1.53176, Test median  Loss= 0.62625, Best Test Loss= 1.53026
+ Val Loss mSEL:0.666246, Test Loss mSEL:0.626254,
+ Val acc:0.550733, Test acc:0.556617,
+ Val Loss mape:4.140249, Test Loss mape:3.395873,
+
+finish one epoch, time28695.56559085846
+#25, Training Loss= nan, Valid Loss= 1.57677, Valid median Loss= 0.66582, Best Valid Loss= 1.57492, Test Loss= 1.53040, Test median  Loss= 0.62136, Best Test Loss= 1.53026
+ Val Loss mSEL:0.665823, Test Loss mSEL:0.621364,
+ Val acc:0.549672, Test acc:0.555652,
+ Val Loss mape:4.097704, Test Loss mape:3.324473,
+
+Finished!
+----------------------------------------------------------------
+Time: 29673.276000976562
+Valid Loss: 1.5749243
+Test Loss: 1.5302616

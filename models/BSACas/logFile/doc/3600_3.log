@@ -1,0 +1,43 @@
+error id at ['1089184', '-1']
+error id at ['2216751', '-1']
+error id at ['953561', '-1']
+error id at ['4781546', '-1']
+error id at ['5000830', '-1']
+error id at ['5263156', '-1']
+error id at ['5263156', '-1']
+error id at ['652902', '-1']
+total_readin: 119313
+discard_midnight: 46157
+discard_outer: 27511
+total valid: 45645
+==============generation complete===============
+caslist 45645
+len(Y_train):31951
+ len(Y_valid):6847
+ len(Y_test):6847
+
+===================configuration===================
+learning rate :0.0005 
+num_mlp_layers : 1
+num_layers : 2
+gnn input_features : 100
+gnn output_features : 64
+input of rnn/transformer : 64
+hidden_size (out put of rnn/tranformer) : 64
+observation hour [7,19]
+observation interval : 360
+observation threshold : 10800
+prediction time : 86400
+cascade length [10,100]
+model save at : ../model_save/cas2vec/weibo/
+====bidirected: True, attention: GAT, gcn_type: self, rnn: gru====
+===================configuration===================
+len(Y_train), len(Y_valid), len(Y_test): 31951 6847 6847
+preparing time:153.4684352874756
+total parameters 86045
+---------------*****---------------
+Starting training the epoch: 0 
+total batch: 499.234375 
+batch:99 average train loss 2.9037
+batch:199 average train loss 2.6546
+batch:299 average train loss 2.5286

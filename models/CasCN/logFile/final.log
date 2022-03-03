@@ -1,0 +1,80 @@
+
+
+after evaluating: 1148.9778861999512
+[Testing] 491/491 [==============================] 502.0ms/step  loss: 1.5309   788  
+#3.0, Training Loss= 2.072844, Validation Loss= 2.210389, Test Loss= 2.034493, Best Valid Loss= 2.202527, Best Test Loss= 2.017778
+ Val Loss mSEL:0.595040, Test Loss mSEL:0.584844,
+ Val acc:0.833845, Test acc:0.843304,
+ Val Loss mape:0.349278, Test Loss mape:0.338799,
+
+
+after evaluating: 1139.4974403381348
+[Testing] 491/491 [==============================] 509.9ms/step  loss: 1.4964   542  
+#4.0, Training Loss= 2.044484, Validation Loss= 2.149953, Test Loss= 1.961286, Best Valid Loss= 2.149953, Best Test Loss= 1.961286
+ Val Loss mSEL:0.590027, Test Loss mSEL:0.551837,
+ Val acc:0.845092, Test acc:0.849669,
+ Val Loss mape:0.331512, Test Loss mape:0.320469,
+
+
+after evaluating: 1160.8522601127625
+[Testing] 491/491 [==============================] 506.5ms/step  loss: 1.3869   4684  
+#5.0, Training Loss= 2.037501, Validation Loss= 2.188363, Test Loss= 2.004891, Best Valid Loss= 2.149953, Best Test Loss= 1.961286
+ Val Loss mSEL:0.589055, Test Loss mSEL:0.562730,
+ Val acc:0.839980, Test acc:0.845596,
+ Val Loss mape:0.336252, Test Loss mape:0.324933,
+
+
+after evaluating: 1140.4937615394592
+[Testing] 491/491 [==============================] 500.3ms/step  loss: 1.3444   2449  
+#6.0, Training Loss= 2.045073, Validation Loss= 2.204829, Test Loss= 2.013466, Best Valid Loss= 2.149953, Best Test Loss= 1.961286
+ Val Loss mSEL:0.582026, Test Loss mSEL:0.557294,
+ Val acc:0.842536, Test acc:0.849924,
+ Val Loss mape:0.331754, Test Loss mape:0.319965,
+
+
+after evaluating: 1142.4447898864746
+[Testing] 491/491 [==============================] 491.0ms/step  loss: 1.0789   3507  
+#7.0, Training Loss= 2.040842, Validation Loss= 2.233397, Test Loss= 2.023440, Best Valid Loss= 2.149953, Best Test Loss= 1.961286
+ Val Loss mSEL:0.588137, Test Loss mSEL:0.570502,
+ Val acc:0.838574, Test acc:0.844450,
+ Val Loss mape:0.334296, Test Loss mape:0.320400,
+
+
+after evaluating: 1141.546775341034
+[Testing] 491/491 [==============================] 503.1ms/step  loss: 1.4186   0438  
+#8.0, Training Loss= 2.038110, Validation Loss= 2.199572, Test Loss= 2.014896, Best Valid Loss= 2.149953, Best Test Loss= 1.961286
+ Val Loss mSEL:0.572260, Test Loss mSEL:0.564948,
+ Val acc:0.838574, Test acc:0.845978,
+ Val Loss mape:0.338005, Test Loss mape:0.325864,
+
+
+after evaluating: 1144.5610184669495
+[Testing] 491/491 [==============================] 506.9ms/step  loss: 1.2424   7421  
+#9.0, Training Loss= 2.028492, Validation Loss= 2.206113, Test Loss= 2.024385, Best Valid Loss= 2.149953, Best Test Loss= 1.961286
+ Val Loss mSEL:0.581208, Test Loss mSEL:0.570324,
+ Val acc:0.839213, Test acc:0.844959,
+ Val Loss mape:0.346440, Test Loss mape:0.335011,
+
+
+after evaluating: 1151.6673352718353
+[Testing] 491/491 [==============================] 503.0ms/step  loss: 1.2913   9046  
+#10.0, Training Loss= 2.024425, Validation Loss= 2.200520, Test Loss= 2.013303, Best Valid Loss= 2.149953, Best Test Loss= 1.961286
+ Val Loss mSEL:0.602392, Test Loss mSEL:0.591105,
+ Val acc:0.832950, Test acc:0.838213,
+ Val Loss mape:0.345889, Test Loss mape:0.333840,
+
+
+after evaluating: 1151.571650505066
+[Testing] 491/491 [==============================] 505.2ms/step  loss: 1.3562   8366  
+#11.0, Training Loss= 2.023218, Validation Loss= 2.206707, Test Loss= 2.030406, Best Valid Loss= 2.149953, Best Test Loss= 1.961286
+ Val Loss mSEL:0.606384, Test Loss mSEL:0.604159,
+ Val acc:0.832439, Test acc:0.838086,
+ Val Loss mape:0.340771, Test Loss mape:0.329447,
+
+
+after evaluating: 1145.3732385635376
+Finished!
+----------------------------------------------------------------
+Time: 0.00010967254638671875
+Valid Loss: 2.1499534
+Test Loss: 1.9612861

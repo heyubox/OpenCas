@@ -1,0 +1,141 @@
+
+feat_in: 100 
+num_nodes: 100 
+n_sequences: 100
+n_nodes:   100
+-----------start to train--------------
+2022-01-01 14:17:36.858658: W tensorflow/core/framework/allocator.cc:107] Allocation of 64000000 exceeds 10% of system memory.
+2022-01-01 14:17:37.088746: W tensorflow/core/framework/allocator.cc:107] Allocation of 64000000 exceeds 10% of system memory.
+2022-01-01 14:18:58.711458: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10
+2022-01-01 14:18:59.896726: W tensorflow/core/framework/allocator.cc:107] Allocation of 64000000 exceeds 10% of system memory.
+2022-01-01 14:19:00.221137: W tensorflow/core/framework/allocator.cc:107] Allocation of 64000000 exceeds 10% of system memory.
+[Training] 2/40001 [..............................] - ETA: 646:12:51  loss: 33.2269 2022-01-01 14:19:28.699945: W tensorflow/core/framework/allocator.cc:107] Allocation of 64000000 exceeds 10% of system memory.
+[Testing] 547/547 [==============================] 545.8ms/step  loss: 3.3913    65  
+
+#1.0, Training Loss= 3.593546, Validation Loss= 3.164780, Test Loss= 3.103128, Best Valid Loss= 3.164780, Best Test Loss= 3.103128
+ Val Loss mSEL:0.661206, Test Loss mSEL:0.670241,
+ Val acc:0.846207, Test acc:0.852034,
+ Val Loss mape:0.457716, Test Loss mape:0.447880,
+
+
+after evaluating: 1529.4001905918121
+[Testing] 547/547 [==============================] 501.3ms/step  loss: 3.4527    25  
+#2.0, Training Loss= 3.135119, Validation Loss= 3.152223, Test Loss= 3.096618, Best Valid Loss= 3.152223, Best Test Loss= 3.096618
+ Val Loss mSEL:0.652051, Test Loss mSEL:0.664689,
+ Val acc:0.845178, Test acc:0.850434,
+ Val Loss mape:0.460316, Test Loss mape:0.450908,
+
+
+after evaluating: 1261.0944561958313
+[Testing] 547/547 [==============================] 500.8ms/step  loss: 3.5259    15  
+#3.0, Training Loss= 3.094291, Validation Loss= 3.187504, Test Loss= 3.129697, Best Valid Loss= 3.152223, Best Test Loss= 3.096618
+ Val Loss mSEL:0.603101, Test Loss mSEL:0.608389,
+ Val acc:0.845293, Test acc:0.848949,
+ Val Loss mape:0.455940, Test Loss mape:0.446215,
+
+
+after evaluating: 1255.5404677391052
+[Testing] 547/547 [==============================] 510.2ms/step  loss: 3.4501    786 
+#4.0, Training Loss= 3.085024, Validation Loss= 3.124834, Test Loss= 3.063738, Best Valid Loss= 3.124834, Best Test Loss= 3.063738
+ Val Loss mSEL:0.630448, Test Loss mSEL:0.640457,
+ Val acc:0.847806, Test acc:0.851577,
+ Val Loss mape:0.455901, Test Loss mape:0.446147,
+
+
+after evaluating: 1273.2190971374512
+[Testing] 547/547 [==============================] 512.9ms/step  loss: 3.3994    165  
+#5.0, Training Loss= 3.081086, Validation Loss= 3.128154, Test Loss= 3.080428, Best Valid Loss= 3.124834, Best Test Loss= 3.063738
+ Val Loss mSEL:0.632124, Test Loss mSEL:0.656716,
+ Val acc:0.848606, Test acc:0.854548,
+ Val Loss mape:0.442044, Test Loss mape:0.433589,
+
+
+after evaluating: 1267.5176990032196
+[Testing] 547/547 [==============================] 501.4ms/step  loss: 3.3225    881  
+#6.0, Training Loss= 3.075207, Validation Loss= 3.118752, Test Loss= 3.057796, Best Valid Loss= 3.118752, Best Test Loss= 3.057796
+ Val Loss mSEL:0.635364, Test Loss mSEL:0.652704,
+ Val acc:0.848720, Test acc:0.854548,
+ Val Loss mape:0.445474, Test Loss mape:0.435763,
+
+
+after evaluating: 1283.3201832771301
+[Testing] 547/547 [==============================] 516.4ms/step  loss: 3.3751    886  
+#7.0, Training Loss= 3.073135, Validation Loss= 3.118762, Test Loss= 3.058999, Best Valid Loss= 3.118752, Best Test Loss= 3.057796
+ Val Loss mSEL:0.644362, Test Loss mSEL:0.657258,
+ Val acc:0.850548, Test acc:0.856604,
+ Val Loss mape:0.444646, Test Loss mape:0.435217,
+
+
+after evaluating: 1293.413403749466
+[Testing] 547/547 [==============================] 510.9ms/step  loss: 3.3519    168  
+#8.0, Training Loss= 3.068033, Validation Loss= 3.136244, Test Loss= 3.063751, Best Valid Loss= 3.118752, Best Test Loss= 3.057796
+ Val Loss mSEL:0.654112, Test Loss mSEL:0.659591,
+ Val acc:0.848835, Test acc:0.855005,
+ Val Loss mape:0.445098, Test Loss mape:0.434301,
+
+
+after evaluating: 1267.6088976860046
+[Testing] 547/547 [==============================] 506.5ms/step  loss: 3.4388    985  
+#9.0, Training Loss= 3.067525, Validation Loss= 3.120312, Test Loss= 3.055089, Best Valid Loss= 3.118752, Best Test Loss= 3.057796
+ Val Loss mSEL:0.642277, Test Loss mSEL:0.648130,
+ Val acc:0.848835, Test acc:0.853976,
+ Val Loss mape:0.449182, Test Loss mape:0.439393,
+
+
+after evaluating: 1271.7036623954773
+[Testing] 547/547 [==============================] 476.3ms/step  loss: 3.3159    694  
+#10.0, Training Loss= 3.062907, Validation Loss= 3.133016, Test Loss= 3.071761, Best Valid Loss= 3.118752, Best Test Loss= 3.057796
+ Val Loss mSEL:0.664969, Test Loss mSEL:0.695277,
+ Val acc:0.850663, Test acc:0.856833,
+ Val Loss mape:0.440024, Test Loss mape:0.430670,
+
+
+after evaluating: 1234.5575439929962
+[Testing] 547/547 [==============================] 491.3ms/step  loss: 3.3589    917  
+#11.0, Training Loss= 3.059152, Validation Loss= 3.117032, Test Loss= 3.052882, Best Valid Loss= 3.117032, Best Test Loss= 3.052882
+ Val Loss mSEL:0.635531, Test Loss mSEL:0.647777,
+ Val acc:0.849177, Test acc:0.853976,
+ Val Loss mape:0.446048, Test Loss mape:0.436408,
+
+
+after evaluating: 1230.7209076881409
+[Testing] 547/547 [==============================] 474.2ms/step  loss: 3.3817 WARNING:tensorflow:From /home/yuhang/miniconda3/envs/tf14/lib/python3.7/site-packages/tensorflow/python/training/saver.py:960: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+
+#12.0, Training Loss= 3.059662, Validation Loss= 3.116857, Test Loss= 3.052934, Best Valid Loss= 3.116857, Best Test Loss= 3.052934
+ Val Loss mSEL:0.633296, Test Loss mSEL:0.651743,
+ Val acc:0.848378, Test acc:0.853291,
+ Val Loss mape:0.446618, Test Loss mape:0.436987,
+
+
+after evaluating: 1225.3036284446716
+[Testing] 547/547 [==============================] 491.5ms/step  loss: 3.2905    5    
+#13.0, Training Loss= 3.063256, Validation Loss= 3.125152, Test Loss= 3.063699, Best Valid Loss= 3.116857, Best Test Loss= 3.052934
+ Val Loss mSEL:0.661811, Test Loss mSEL:0.677007,
+ Val acc:0.851348, Test acc:0.856833,
+ Val Loss mape:0.440498, Test Loss mape:0.431164,
+
+
+after evaluating: 1218.4584803581238
+[Testing] 547/547 [==============================] 502.5ms/step  loss: 3.2907    3  
+#14.0, Training Loss= 3.062425, Validation Loss= 3.130506, Test Loss= 3.073461, Best Valid Loss= 3.116857, Best Test Loss= 3.052934
+ Val Loss mSEL:0.659860, Test Loss mSEL:0.691825,
+ Val acc:0.851234, Test acc:0.856833,
+ Val Loss mape:0.440582, Test Loss mape:0.431520,
+
+
+after evaluating: 1260.9492282867432
+[Testing] 547/547 [==============================] 896.4ms/step  loss: 3.3303    1  
+#15.0, Training Loss= 3.063094, Validation Loss= 3.129921, Test Loss= 3.069593, Best Valid Loss= 3.116857, Best Test Loss= 3.052934
+ Val Loss mSEL:0.666894, Test Loss mSEL:0.699993,
+ Val acc:0.851691, Test acc:0.857747,
+ Val Loss mape:0.439940, Test Loss mape:0.430496,
+
+
+after evaluating: 1516.890499830246
+[Training] 40002/40001 [==============================] 512.0ms/step  loss: 1.7853 Finished!
+----------------------------------------------------------------
+Time: 1208.1885542869568
+Valid Loss: 3.1168568
+Test Loss: 3.052934
