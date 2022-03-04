@@ -17,7 +17,7 @@ op = OptionParser()
 ge_op = OptionGroup(op, "General Options")
 ge_op.add_option("--rawdata_root", dest="rawdata_root", type="string", default="./rawdata/", help="raw dataset root")
 ge_op.add_option("--rawdataset", dest="rawdataset", type="string", default="dataset_weibo.txt", help="raw data set")
-ge_op.add_option("--data_root", dest="data_root", type="string", default="./data/cas2vec/", help="data root.")
+ge_op.add_option("--data_root", dest="data_root", type="string", default="./data/bsacas/", help="data root.")
 ge_op.add_option("--dataset", dest="dataset", type="string", default="weibo/", help="data set.")
 
 ge_op.add_option("--cascade_train", dest="cascade_train", type="string", default="cascade_train.txt", help="formated train data result")
@@ -51,7 +51,7 @@ ge_op.add_option('--observation_time', dest="observation_time", type="int", defa
 ge_op.add_option('--prediction_time', dest="prediction_time", type="int", default=24 * 3600, help='Number of observation time.')
 
 ge_op.add_option('--time_or_number', dest="time_or_number", type="string", default='Time', help='Observation by Time or Num.')
-ge_op.add_option("--save_dir", dest="save_dir", type="string", default="../model_save/cas2vec/", help="model save dir")
+ge_op.add_option("--save_dir", dest="save_dir", type="string", default="../model_save/bsacas/", help="model save dir")
 
 op.add_option_group(ge_op)
 # ---------------------config for TensorFlow------------
@@ -74,7 +74,7 @@ tfop.add_option('--epochs', dest="epochs", default=50, type="int", help='Number 
 tfop.add_option('--gnn_mlp_hidden', dest="gnn_mlp_hidden", type="int", default=32, help='gnn_mlp_hidden kernal size')
 tfop.add_option('--windows_size', dest="windows_size", type="int", default=5, help='Context size for optimization.')
 tfop.add_option('--bidirection', dest="bidirection", type="string",  default=True, help='bidirection settings of gru/lstm.')
-tfop.add_option('--attention_type', dest="attention_type",  type="string", default='GAT', help='attention_type ,no attention when set to None.choice:[GAT/None].')
+tfop.add_option('--attention_type', dest="attention_type",  type="string", default='ATT', help='attention_type ,no attention when set to None.choice:[ATT/None].')
 tfop.add_option('--gcn_type', dest="gcn_type",  type="string", default='self', help='gcn_type: self/gcn.')
 tfop.add_option('--rnn_type', dest="rnn_type",  type="string", default='gru', help='rnn_type: gru/lstm.')
 

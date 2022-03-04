@@ -1,0 +1,3 @@
+torch==^1.9.0
+sklearn==^1.0.1
+torch-geometric torch-scatter torch-sparse torch-cluster torch-spline-conv at https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html

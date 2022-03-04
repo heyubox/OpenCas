@@ -4,14 +4,16 @@ This repository is an implementation of our novel model and the collection of in
 
 ## Features
 
-* **Configurable**. The origianl model are fixed and the assumption of each model differs. In the `config.py`, you can easily preprocess the raw data and config the model hyperparameters in your way.
-* **Comparable**. Running the model with the same preprocess and model hyperparameters you can easily compare each model in an authentic way
+* **Configurable**. The origianl model are fixed and the assumption of each model differs. In the `config.py`, you can config the model hyperparameters and easily preprocess the raw data.
+* **Comparable**. Running the model with the same preprocess and model hyperparameters you can easily compare each model fairly.
 * **Datasets**. We are going to run the models on more datasets. Now with `dataset_weibo.txt`, the model may generate many preprocessing file, we reorganize the floder.
+* **Environment**. The required environment is in `requirements.txt`
+
 ## OpenCas Models
 
-### How to run
+### How to run?
 
-#### 建议文件位置
+#### File Structure
 
 ```
 .
@@ -22,13 +24,14 @@ This repository is an implementation of our novel model and the collection of in
 │   ├── DeepCas
 │   ├── DeepHawkes
 │   ├── TopoLSTM
-│   ├── cas2vec
+│   ├── BSACas
 │   └── model_save
 └── rawdata
     └── dataset_weibo.txt
 ```
 
-1. 修改每一个model文件夹下的config.py文件，确保rawdata_root（原始数据的文件夹）,rawdataset（原始数据文件名，最后文件会从rawdata_root/rawdataset中读取）,data_root（中间文件生成的文件夹根目录）,dataset（中间文件生成的文件夹根目录下的子目录，针对不同任务有不同的文件夹）配置正确。**建议rawdata_root使用../../rawdata/，即放在和models文件夹同等级的目录下**
+<!-- 1. 修改每一个model文件夹下的config.py文件，确保rawdata_root（原始数据的文件夹）,rawdataset（原始数据文件名，最后文件会从rawdata_root/rawdataset中读取）,data_root（中间文件生成的文件夹根目录）,dataset（中间文件生成的文件夹根目录下的子目录，针对不同任务有不同的文件夹）配置正确。**建议rawdata_root使用../../rawdata/，即放在和models文件夹同等级的目录下** -->
+1. Pay attention to the file path. 
 
 ```python
 ge_op.add_option("--rawdata_root", dest="rawdata_root", type="string", default="../../rawdata/", help="raw dataset root")
@@ -37,18 +40,16 @@ ge_op.add_option("--data_root", dest="data_root", type="string", default="/data/
 ge_op.add_option("--dataset", dest="dataset", type="string", default="citation1/", help="data set.")
 ```
 
-另外注意up_num、save_dir、observation_time。
 
-2. cd对应的model,按顺序执行数据预处理和训练,比如:
+1. A sample to run the  model:
 ```bash
-cd models/cas2vec
+cd models/BSACas
 python -u gen_cas.py --rawdataset=dataset_weibo.txt --dataset=weibo/ --observation_time=7200 --interval=180 --up_num=100
 python -u run.py --rawdataset=dataset_weibo.txt --dataset=weibo/ --observation_time=7200 --interval=180 --up_num=100
 ```
-或
+or
 ```bash
-cd models/targetModel
-sh run.sh
+sh models/targetModel/run.sh
 ```
 
 ### BASCas
@@ -61,7 +62,7 @@ sklearn==^1.0.1
 torch-geometric torch-scatter torch-sparse torch-cluster torch-spline-conv at https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html
 ```
 
-##### 一些参数（其他参数见config.py）
+#### parameters
 ```
 learning rate :0.001
 num_mlp_layers : 1
@@ -75,12 +76,8 @@ observation interval : 90
 observation threshold : 1800
 prediction time : 86400
 cascade length [10,100]
-bidirected: Tru
-attention: GAT
-gcn_type: self
-rnn: gru
 ```
-##### quick run(default weibos)
+#### quick run(default weibos)
 ```bash
 cd models/cas2vec
 python -u gen_cas.py 
@@ -102,7 +99,7 @@ Prediction and Understanding of Information Cascades. In Proceedings of CIKM'17,
 tensorflow-gpu==1.14.0
 python==3.6
 ```
-#### 一些参数（其他参数见config.py）
+#### parameters
 ```
 dropout prob :  0.001
 l2 0.05
@@ -114,7 +111,7 @@ prediction time :  86400
 cascade length [10,100]
 ```
 
-##### quick run(default weibos)
+#### quick run(default weibos)
 ```bash
 cd models/DeepHawkes
 python -u gen_cas.py
@@ -141,7 +138,7 @@ scipy==1.3.3
 tensorflow-gpu==2.0.0a0
 ```
 
-#### 一些参数（其他参数见config.py）
+#### parameters
 ```
 learning rate :  0.0005
 observation hour [7,19]
@@ -150,7 +147,7 @@ prediction time :  86400
 cascade length [10,100]
 ```
 
-##### quick run(default weibos)
+#### quick run(default weibos)
 
 ```bash
 cd models/CasFlow
@@ -177,7 +174,7 @@ X. Chen, F. Zhou, K. Zhang, G. Trajcevski, T. Zhong and F. Zhang,
 tensorflow-gpu==1.14.0
 python==3.6
 ```
-#### 一些参数（其他参数见config.py）
+#### parameters
 
 ```
 l2 0.001
@@ -188,7 +185,7 @@ prediction time :  86400
 cascade length [10,100]
 ```
 
-##### quick run(default weibos)
+#### quick run(default weibos)
 
 ```bash
 cd models/CasCN
@@ -214,7 +211,8 @@ tensorflow-gpu==1.14.0
 gensim==4.0.1
 networkx==2.5
 ```
-#### 一些参数（其他参数见config.py）
+#### parameters
+
 ```
 dropout prob: 0.01
 l2 1e-06
@@ -225,7 +223,7 @@ observation threshold: 1800
 prediction time: 86400
 cascade length [10,100]
 ```
-##### quick run(default weibos)
+#### quick run(default weibos)
 
 ```bash
 cd models/DeepCas
@@ -241,7 +239,8 @@ python -u run.py
 ```
 pytorch==^1.1.0
 ```
-#### 一些参数（其他参数见config.py）
+#### parameters
+
 ```
 learning rate :  0.001
 observation hour [7,19]
@@ -250,7 +249,7 @@ prediction time :  86400
 cascade length [10,100]
 ```
 
-##### quick run(default weibos)
+#### quick run(default weibos)
 
 ```bash
 cd models/TopoLSTM

@@ -1,16 +1,14 @@
 from config import opts
 import math
 import os
-from utils.GNNConv import BSA
+from models.BSACas.utils.GNNTemporal import BSA
 import numpy as np
 import torch
 import pickle
 import time
 from torch_geometric.data import Data, Batch
-from utils.process_cascade import normalize_adj
 from utils.metrics import mape_loss_func2, mSEL, accuracy, MSEL
-from utils.utils_func import seed_everything, sparse_mx_to_torch_sparse_tensor, atten_mx, atten_self_mx, gen_ptr, array2tensor, gen_index, ProgressBar
-import math
+from utils.utils_func import seed_everything, atten_mx, atten_self_mx, gen_ptr, array2tensor, ProgressBar
 
 
 def model_train(model, optimizer, X_train, Y_train, batch_size, n_seq=None, device=None, load_concat=False, epoch=0):
@@ -251,7 +249,7 @@ if __name__ == '__main__':
     print("prediction time : {}".format(opts.prediction_time))
     print("cascade length [{},{}]".format(opts.least_num, opts.up_num))
     print("model save at : {}".format(opts.save_dir))
-    print('====bidirected: {}, attention: {}, gcn_type: {}, rnn: {}===='.format(opts.bidirection, opts.attention_type, opts.gcn_type, opts.rnn_type))
+    print('====bidirected: {}, attention: {}, rnn: {}===='.format(opts.bidirection, opts.attention_type, opts.rnn_type))
     print("===================configuration===================")
 
     start = time.time()
@@ -274,20 +272,18 @@ if __name__ == '__main__':
     print('preparing time:{}'.format(time.time() - start))
 
     model = BSA(n_seq=opts.n_seq,
-                                    input_features=opts.input_features,
-                                    batch_size=opts.batch_size,
-                                    emb_size=opts.middle_size,
-                                    hidden_size=opts.hidden_size,
-                                    num_layers=opts.num_layers,
-                                    gnn_out_features=opts.gnn_out_features,
-                                    max_len=opts.up_num,
-                                    gnn_mlp_hidden=opts.gnn_mlp_hidden,
-                                    bidirected=opts.bidirection,
-                                    device=device,
-                                    n_vocabulary=None,  # id_num
-                                    gcn_type=opts.gcn_type,  # self or geo
-                                    atten_type=opts.attention_type,
-                                    rnn=opts.rnn_type)
+                input_features=opts.input_features,
+                batch_size=opts.batch_size,
+                emb_size=opts.middle_size,
+                hidden_size=opts.hidden_size,
+                num_layers=opts.num_layers,
+                gnn_out_features=opts.gnn_out_features,
+                max_len=opts.up_num,
+                gnn_mlp_hidden=opts.gnn_mlp_hidden,
+                bidirected=opts.bidirection,
+                device=device,
+                atten_type=opts.attention_type,
+                rnn=opts.rnn_type)
     model.to(device)
     optimizer = torch.optim.RMSprop(model.parameters(), lr=opts.learning_rate)
     # optimizer = torch.optim.Adam(model.parameters(), lr=opts.learning_rate, weight_decay=1e-5)
@@ -308,7 +304,7 @@ if __name__ == '__main__':
         print('Starting training the epoch: {} '.format(epoch))
 
         start = time.time()
-        load_concat = True
+        load_concat = False
         if epoch >= 1:
             load_concat = True
 
@@ -339,11 +335,3 @@ if __name__ == '__main__':
 
         if scheduler:
             print("epoch:{} current learning rate :{}".format(epoch, scheduler.get_lr()))
-    loss_dict = {"train": train_los_list, "val": val_loss_list, "test": test_loss_list,
-                 'text': ""}
-    save_num = 0
-    save_loss = "loss{}.pkl".format(save_num)
-    while(os.path.exists(save_loss)):
-        save_num += 1
-        save_loss = "loss{}.pkl".format(save_num)
-    pickle.dump(loss_dict, open(save_loss, 'wb'))

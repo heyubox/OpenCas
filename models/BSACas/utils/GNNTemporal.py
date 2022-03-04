@@ -3,11 +3,16 @@ from torch import tensor
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.nn.modules import dropout
-from models.BSACas.utils.bgn import GPN, MLP
+from .bgn import BGA, MLP
 from torch.autograd import Variable
 import math
+"""_summary_
+This is the implementation of bidirectional graph neural network with temporal attention.
+Please cite our paper BSACas.
 
-class GRU_Cascade_Dynamic_GPN(nn.Module):
+"""
+
+class BSA(nn.Module):
     def __init__(self,
                  n_seq,
                  input_features,
@@ -19,12 +24,10 @@ class GRU_Cascade_Dynamic_GPN(nn.Module):
                  gnn_out_features=128,
                  gnn_mlp_hidden=32,
                  bidirected=True,  # disable when using transformer
-                 n_vocabulary=None,  # not use anymore
                  atten_type=None,  # naive-self-attn or GAT
-                 gcn_type=None,  # self or geo
                  device=torch.device('cpu'),
                  rnn='gru'):
-        super(GRU_Cascade_Dynamic_GPN, self).__init__()
+        super(BSA, self).__init__()
         self.n_seq = n_seq
         self.rnn = rnn
         num_layers_rnn = 1
@@ -33,17 +36,16 @@ class GRU_Cascade_Dynamic_GPN(nn.Module):
         self.gnn_out_features = gnn_out_features
         num_mlp_layers = 2
         num_layers = 2
-        self.gnn = GPN(num_layers,
+        self.gnn = BGA(num_layers,
                        num_mlp_layers,
                        input_dim=input_features,
                        hidden_dim=mlp_hidden,
                        output_dim=self.gnn_out_features,
                        return_middle_feature=False,
                        max_len=max_len,
-                       gcn_type=gcn_type,
+                       gcn_type='self',
                        usr_attn_type=atten_type,  # node attentions
-                       batch_step_dim=[batch_size, n_seq],
-                       n_vocabulary=n_vocabulary)
+                       batch_step_dim=[batch_size, n_seq])
 
         self.diff_mlp = MLP(2, self.gnn_out_features, 64, 1)
 
@@ -79,11 +81,8 @@ class GRU_Cascade_Dynamic_GPN(nn.Module):
         Ks = [7, 5]if self.rnn_model else [2]
         out_c = 64
         self.convs = []
-        # self.convs = [nn.Conv2d(in_channels=1, out_channels=out_c, kernel_size=(K, conv_out_dim), padding=(K//2, 0)).to(device)for K in Ks]
         for K in Ks:
             self.convs.append([nn.Conv1d(conv_out_dim, out_c, K, padding=K//2).to(device), nn.Conv1d(out_c, conv_out_dim, 3, padding=3//2).to(device)])
-
-        # self.convs = [nn.Conv2d(in_channels=1, out_channels=conv_out_dim, kernel_size=(K, conv_out_dim), padding=(K//2, 0)).to(device)for K in Ks]
 
         if self.rnn == 'gru':
             self.hidden = torch.zeros([self.num_layers * self.num_direction, self.batch_size, self.hidden_size], device=self.device)

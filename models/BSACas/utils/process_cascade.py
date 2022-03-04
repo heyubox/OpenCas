@@ -1,6 +1,5 @@
 import os
 
-os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 import networkx as nx
 import numpy as np
 import pickle
@@ -35,10 +34,10 @@ def id2node_in_batch(graph_seq):
     shift = 0
     for g in graph_seq:
         map_dict = g.id2nodes
-        for k,v in map_dict.items():
-            
-            id2nodes_new[int(k)+shift]=str(v)
-        shift+=len(map_dict)
+        for k, v in map_dict.items():
+
+            id2nodes_new[int(k)+shift] = str(v)
+        shift += len(map_dict)
     return id2nodes_new
 
 
@@ -49,6 +48,7 @@ def normalize_adj(mx):
     r_inv_sqrt[np.isinf(r_inv_sqrt)] = 0.
     r_mat_inv_sqrt = sp.diags(r_inv_sqrt)
     return mx.dot(r_mat_inv_sqrt).transpose().dot(r_mat_inv_sqrt)
+
 
 def count_cascade_num(file_name):
     num = 0

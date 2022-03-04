@@ -1,2 +1,2 @@
-python -u models/cas2vec/gen_cas.py --observation_time=1800 --least_num=10 --rawdataset=dataset_citation.txt --dataset=aps/ --batch_size=64
-python -u models/cas2vec/run.py --observation_time=1800 --least_num=10 --rawdataset=dataset_citation.txt --dataset=aps/  --batch_size=64
+python -u models/BSACas/gen_cas.py
+python -u models/BSACas/run.py

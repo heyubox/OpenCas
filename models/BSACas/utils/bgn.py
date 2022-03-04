@@ -6,15 +6,147 @@ from torch import tensor
 import torch.nn as nn
 import torch.nn.functional as F
 from torch_geometric.data import batch
-from torch_geometric.nn import global_add_pool, GCNConv, GATv2Conv
+from torch_geometric.nn import global_add_pool, GCNConv
 from torch_scatter import scatter_add
 from scipy import sparse as sp
 import numpy as np
+from typing import Union, Tuple, Optional
+from torch_geometric.typing import (Adj, Size, OptTensor, PairTensor)
+from torch import Tensor
+from torch.nn import Parameter
+from torch_sparse import SparseTensor, set_diag
+from torch_geometric.nn.conv import MessagePassing
+from torch_geometric.nn.dense.linear import Linear
+from torch_geometric.utils import remove_self_loops, add_self_loops, softmax
+from torch_geometric.nn.inits import glorot, zeros
+"""_summary_
+This is the implementation of bidirectional graph neural network
+The codes is based on torch_geometric and much referred its codes. Thanks for Thomas Kipf.
+Please cite his paper Fast Graph Representation Learning with PyTorch Geometric
+and our paper BSACas.
+"""
+
+class ATTConv(MessagePassing):
+
+    def __init__(self, in_channels: int, out_channels: int, heads: int = 1,
+                 concat: bool = True, negative_slope: float = 0.2,
+                 dropout: float = 0., add_self_loops: bool = True,
+                 bias: bool = True, share_weights: bool = False, **kwargs):
+        super(ATTConv, self).__init__(node_dim=0, **kwargs)
+
+        self.in_channels = in_channels
+        self.out_channels = out_channels
+        self.heads = heads
+        self.concat = concat
+        self.negative_slope = negative_slope
+        self.dropout = dropout
+        self.add_self_loops = add_self_loops
+        self.share_weights = share_weights
+
+        self.lin_l = Linear(in_channels, heads * out_channels, bias=bias,
+                            weight_initializer='glorot')
+        if share_weights:
+            self.lin_r = self.lin_l
+        else:
+            self.lin_r = Linear(in_channels, heads * out_channels, bias=bias,
+                                weight_initializer='glorot')
+
+        self.att = Parameter(torch.Tensor(1, heads, out_channels))
+
+        if bias and concat:
+            self.bias = Parameter(torch.Tensor(heads * out_channels))
+        elif bias and not concat:
+            self.bias = Parameter(torch.Tensor(out_channels))
+        else:
+            self.register_parameter('bias', None)
+
+        self._alpha = None
+
+        self.reset_parameters()
+
+    def reset_parameters(self):
+        self.lin_l.reset_parameters()
+        self.lin_r.reset_parameters()
+        glorot(self.att)
+        zeros(self.bias)
+
+    def forward(self, x: Union[Tensor, PairTensor], edge_index: Adj,
+                size: Size = None, return_attention_weights: bool = None):
+    
+        H, C = self.heads, self.out_channels
+
+        x_l: OptTensor = None
+        x_r: OptTensor = None
+        if isinstance(x, Tensor):
+            assert x.dim() == 2
+            x_l = self.lin_l(x).view(-1, H, C)
+            if self.share_weights:
+                x_r = x_l
+            else:
+                x_r = self.lin_r(x).view(-1, H, C)
+        else:
+            x_l, x_r = x[0], x[1]
+            assert x[0].dim() == 2
+            x_l = self.lin_l(x_l).view(-1, H, C)
+            if x_r is not None:
+                x_r = self.lin_r(x_r).view(-1, H, C)
+
+        assert x_l is not None
+        assert x_r is not None
+
+        if self.add_self_loops:
+            if isinstance(edge_index, Tensor):
+                num_nodes = x_l.size(0)
+                if x_r is not None:
+                    num_nodes = min(num_nodes, x_r.size(0))
+                if size is not None:
+                    num_nodes = min(size[0], size[1])
+                edge_index, _ = remove_self_loops(edge_index)
+                edge_index, _ = add_self_loops(edge_index, num_nodes=num_nodes)
+            elif isinstance(edge_index, SparseTensor):
+                edge_index = set_diag(edge_index)
+
+        out = self.propagate(edge_index, x=(x_l, x_r), size=size)
+
+        alpha = self._alpha
+        self._alpha = None
+
+        if self.concat:
+            out = out.view(-1, self.heads * self.out_channels)
+        else:
+            out = out.mean(dim=1)
+
+        if self.bias is not None:
+            out += self.bias
+
+        if isinstance(return_attention_weights, bool):
+            assert alpha is not None
+            if isinstance(edge_index, Tensor):
+                return out, (edge_index, alpha)
+            elif isinstance(edge_index, SparseTensor):
+                return out, edge_index.set_value(alpha, layout='coo')
+        else:
+            return out
+
+    def message(self, x_j: Tensor, x_i: Tensor, index: Tensor, ptr: OptTensor,
+                size_i: Optional[int]) -> Tensor:
+        x = x_i + x_j
+        x = F.leaky_relu(x, self.negative_slope)
+        alpha = (x * self.att).sum(dim=-1)
+        alpha = softmax(alpha, index, ptr, size_i)
+        self._alpha = alpha
+        alpha = F.dropout(alpha, p=self.dropout, training=self.training)
+        return x_j * alpha.unsqueeze(-1)
+
+    def __repr__(self):
+        return '{}({}, {}, heads={})'.format(self.__class__.__name__,
+                                             self.in_channels,
+                                             self.out_channels, self.heads)
 
 
-class GPNConv(torch.nn.Module):
+class GANConv(torch.nn.Module):
     def __init__(self, nn, input_size=None, hidden_size=None, gates_num=4):
-        super(GPNConv, self).__init__()
+        super(GANConv, self).__init__()
         # self.nn = NNLinear(input_size, hidden_size, gates_num)
         if nn is not None:
             self.nn = nn
@@ -78,7 +210,7 @@ class Identical(nn.Module):
 
 
 class BGA(nn.Module):
-    def __init__(self, num_layers, num_mlp_layers, input_dim, hidden_dim, output_dim, max_len=None, return_middle_feature=False, gcn_type=None, usr_attn_type=None, batch_step_dim=None, n_vocabulary=None):
+    def __init__(self, num_layers, num_mlp_layers, input_dim, hidden_dim, output_dim, max_len=None, return_middle_feature=False, gcn_type=None, usr_attn_type=None, batch_step_dim=None):
         super(BGA, self).__init__()
 
         self.batch = batch_step_dim[0]
@@ -99,26 +231,18 @@ class BGA(nn.Module):
                 else:
                     mlp = MLP(num_mlp_layers, hidden_dim, hidden_dim, hidden_dim)
 
-                gpn_conv = GPNConv(mlp, 0)
+                gpn_conv = GANConv(mlp, 0)
                 self.gpn_layers.append(gpn_conv)
 
                 batch_norm = nn.BatchNorm1d(hidden_dim)
                 self.batch_norms.append(batch_norm)
-            elif gcn_type == 'geo':
-                print('geometric gcn')
-                if layer == 0:
-                    gpn_conv = GCNConv(input_dim, hidden_dim)
-                else:
-                    gpn_conv = GCNConv(hidden_dim, hidden_dim)
-                self.gpn_layers.append(gpn_conv)
-                self.batch_norms.append(Identical())
 
         # attention layers
-        if usr_attn_type == 'GAT':
-            # self.gcn_conv = GCNConv(hidden_dim,hidden_dim)
-            self.atten_self = GATv2Conv(hidden_dim, hidden_dim, add_self_loops=False, heads=self.num_heads, dropout=0.01, concat=True)
-            self.atten = GATv2Conv(hidden_dim*self.num_heads, hidden_dim, add_self_loops=False, heads=self.num_heads, dropout=0.001, concat=False)
-
+        if usr_attn_type == 'ATT':
+            self.atten_self = ATTConv(hidden_dim, hidden_dim, add_self_loops=False, heads=self.num_heads, dropout=0.01, concat=True)
+            self.atten = ATTConv(hidden_dim*self.num_heads, hidden_dim, add_self_loops=False, heads=self.num_heads, dropout=0.001, concat=False)
+        elif usr_attn_type == 'GCN':
+            self.gcn_conv = GCNConv(hidden_dim,hidden_dim)
         else:
             self.attn = None
 
@@ -153,9 +277,8 @@ class BGA(nn.Module):
         output_h = 0
         weights = ['edge_index', 'value']
         atten_out = None
-        if self.usr_attn_type == 'GAT':
+        if self.usr_attn_type == 'ATT':
             output_emb = hidden_rep[-1]
-
             # print(output_emb.size()[0])
             # <*,features>
             # output_emb=self.gcn_conv(output_emb,A)
@@ -181,28 +304,3 @@ class BGA(nn.Module):
             return outputs, output_h
 
         return outputs, atten_out, (A.tolist(), weights)
-
-
-# if __name__ == '__main__':
-#     from torch_geometric.datasets import TUDataset
-#     from torch_geometric.data import DataLoader
-
-#     dataset = TUDataset(root='/tmp/ENZYMES', name='ENZYMES')
-#     loader = DataLoader(dataset, batch_size=32, shuffle=True)
-
-#     data = None
-#     for d in loader:
-#         data = d
-#         break
-#     gpn = GPN(2, 2, 3, 8, 5)
-#     outputs = gpn(data.x, data.edge_index, data.batch)
-#     print(outputs.shape)
-
-
-# GRU->transformer
-# NodeAttention-> remove RNN+CNN
-# Temporal(RNNCNN) -> remove NodeAttention
-# Temporal(CNN) -> remove RNN
-# Temporal(RNN) -> remove CNN
-# Structural -> remove RNN & nodeattention
-# * -> loss_ + diff_loss_
